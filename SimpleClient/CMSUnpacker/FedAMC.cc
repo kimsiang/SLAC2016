@@ -1,5 +1,5 @@
 
-#include "unpacker/FedAMC.hh"
+#include "FedAMC.hh"
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>

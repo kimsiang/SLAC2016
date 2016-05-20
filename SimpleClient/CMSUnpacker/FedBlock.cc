@@ -1,6 +1,6 @@
 
 //Definitions of class functions for FedBlock
-#include "unpacker/FedBlock.hh"
+#include "FedBlock.hh"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>

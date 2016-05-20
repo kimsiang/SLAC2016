@@ -1,5 +1,5 @@
 
-#include "unpacker/FedEvent.hh"
+#include "FedEvent.hh"
 #include <stdlib.h>		// for NULL
 #include <stdio.h>
 #include <string.h>
@@ -123,6 +123,7 @@ namespace FedAMC13{
     //Check header values
     size_t NAMC = (dataVector[NAMC_WORD]>>NAMC_BIT) & NAMC_MASK;
     if(((dataVector[BOE_WORD]>>BOE_BIT) & BOE_MASK) == MAGIC_WORD){
+
       if(NAMC > 0 && NAMC < 13){
 	dataVector.resize(HEADER_WORDS + NAMC);
 	fileStream.read( (char*)(dataVector.data() + HEADER_WORDS), NAMC*sizeof(uint64_t));
