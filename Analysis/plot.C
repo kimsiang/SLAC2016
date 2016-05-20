@@ -3,8 +3,10 @@ void plot(){
     gStyle->SetTitleSize(0.04,"zyx");
     gStyle->SetLabelSize(0.04,"zyx");
 
+    int runNum = 1865;
+
     // Declare file you want to analyze
-    TFile *file = new TFile(Form("gm2uw_run0%d_analysis.root", 1865));
+    TFile *file = new TFile(Form("gm2uw_run0%d_analysis.root", runNum));
 
     // TTrees for headers, riders, islands, and fit results 
     TTree *header;
@@ -32,7 +34,7 @@ void plot(){
 
     // the "int" type of TH1 is only 32 bit (TH1I), which is used when you call TTree->Draw() in our case   
     // define instead TH1D (float 14 digits) to show the histogram
-    TH1D *cc = new TH1D("clockCounter","clockCounter",10000,1.74e12,1.75e12);
+    TH1D *cc = new TH1D("clockCounter","clockCounter",10000,1.7433e12,1.7443e12);
     c1->cd(1);
     c1->cd(1)->SetLogz();
     header->Draw("clockCounter>>clockCounter"); 
@@ -40,9 +42,9 @@ void plot(){
     c1->cd(2);
     header->Draw("triggerNum"); 
 
-    TH2D *cc2 = new TH2D("cctrig","clockCounter vs trigNum",200,0,1000,500,1.743e12,1.746e12);
+    TH2D *cc2 = new TH2D("cctrig","clockCounter vs trigNum",300,0,300,500,1.743e12,1.745e12);
     c1->cd(3);
-    header->Draw("clockCounter:triggerNum>>cctrig","","colz"); 
+    header->Draw("clockCounter:triggerNum>>cctrig","","l"); 
     cc2->GetXaxis()->SetTitle("triggerNum");
     cc2->GetYaxis()->SetTitle("Clock Counter");
 
@@ -142,20 +144,27 @@ void plot(){
 
     c5->cd(2);
     TCut cut1("chi2>0 && energy>0 && xtalNum==20 && pedestal > 1500");
-    result->Draw("energy:clockCounter>>ec(100,1e9,3e9,50,4300,5500)",cut1,"colz");
+    result->Draw("energy:clockCounter>>ec(100,0.7e9,1.8e9,50,4300,5500)",cut1,"colz");
     // example on how to access to the TH2 after creating it in TTree::Draw()
     TH2F *ec = (TH2F*)gROOT->FindObject("ec");
     ec->GetXaxis()->SetTitle("Clock Counter");
     ec->GetYaxis()->SetTitle("Energy (uncalibrated)");
 
     c5->cd(3);
-    result->Draw("pedestal:clockCounter>>pc(100,1e9,3e9,50,1730,1750)",cut1,"colz");
+    result->Draw("pedestal:clockCounter>>pc(100,0.7e9,1.8e9,50,1730,1750)",cut1,"colz");
     TH2F *pc = (TH2F*)gROOT->FindObject("pc");
     pc->GetXaxis()->SetTitle("Clock Counter");
     pc->GetYaxis()->SetTitle("ADC samples");
 
     c5->cd(4);
     result->Draw("pedestal:energy",cut1,"colz");
+
+    // Output the TCanvas as PDF files
+    c1->Print(Form("run%05d_analysis_header.pdf",runNum));
+    c2->Print(Form("run%05d_analysis_rider.pdf",runNum));
+    c3->Print(Form("run%05d_analysis_island.pdf",runNum));
+    c4->Print(Form("run%05d_analysis_fitresult.pdf",runNum));
+    c5->Print(Form("run%05d_analysis_analysis.pdf",runNum));
 
 }
 
