@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Tue May 24 23:45:54 2016 by ROOT version 6.06/02
+// Wed May 25 15:13:29 2016 by ROOT version 6.06/02
 // from TTree eventTree/Tree of Events
 // found on file: gm2slac2016_slacAnalyzer.root
 //////////////////////////////////////////////////////////
@@ -12,11 +12,11 @@
 #include <TChain.h>
 #include <TFile.h>
 
+// Namespace
 using namespace std;
 
 // Header file for the classes stored in the TTree if any.
 #include <vector>
-
 
 class EventCollection {
 public :
@@ -26,52 +26,62 @@ public :
 // Fixed size dimensions of array or collections stored in the TTree if any.
 
    // Declaration of leaf types
-   vector<unsigned long> *clockCounter;
-   vector<unsigned int> *trigNum;
+   Int_t           eventNum;
+   vector<unsigned long long> *AMC13_ClockCounter;
+   vector<unsigned int> *AMC13_TriggerNum;
    vector<unsigned int> *Rider_EventNum;
    vector<unsigned int> *Rider_CaloNum;
    vector<unsigned int> *Rider_XtalNum;
    vector<unsigned int> *Rider_RiderNum;
-   vector<unsigned int> *Rider_ChannelNum;
    vector<unsigned int> *Rider_UtcaSlotNum;
-   vector<unsigned long> *Rider_ClockCounter;
+   vector<unsigned int> *Rider_ChannelNum;
+   vector<unsigned long long> *Rider_ClockCounter;
    vector<unsigned int> *Rider_TriggerNum;
    vector<vector<short> > *Rider_Trace;
    vector<unsigned int> *Island_EventNum;
+   vector<unsigned int> *Island_FillType;
    vector<unsigned int> *Island_CaloNum;
    vector<unsigned int> *Island_XtalNum;
-   vector<unsigned int> *Island_Num;
+   vector<unsigned int> *Island_UtcaSlotNum;
+   vector<unsigned int> *Island_ChannelNum;
+   vector<unsigned int> *Island_IslandNum;
    vector<unsigned int> *Island_Length;
    vector<unsigned int> *Island_Time;
-   vector<unsigned long> *Island_ClockCounter;
+   vector<unsigned long long> *Island_ClockCounter;
    vector<unsigned int> *Island_TriggerNum;
    vector<vector<short> > *Island_Trace;
    vector<unsigned int> *FitResult_EventNum;
    vector<unsigned int> *FitResult_CaloNum;
    vector<unsigned int> *FitResult_XtalNum;
+   vector<unsigned int> *FitResult_UtcaSlotNum;
+   vector<unsigned int> *FitResult_ChannelNum;
    vector<unsigned int> *FitResult_IslandNum;
    vector<double>  *FitResult_Pedestal;
    vector<double>  *FitResult_Energy;
    vector<double>  *FitResult_Time;
    vector<double>  *FitResult_Chi2;
-   vector<unsigned long> *FitResult_ClockCounter;
+   vector<unsigned long long> *FitResult_ClockCounter;
 
    // List of branches
-   TBranch        *b_clockCounter;   //!
-   TBranch        *b_trigNum;   //!
+   TBranch        *b_eventNum;   //!
+   TBranch        *b_AMC13_ClockCounter;   //!
+   TBranch        *b_AMC13_TriggerNum;   //!
    TBranch        *b_Rider_EventNum;   //!
    TBranch        *b_Rider_CaloNum;   //!
    TBranch        *b_Rider_XtalNum;   //!
    TBranch        *b_Rider_RiderNum;   //!
-   TBranch        *b_Rider_ChannelNum;   //!
    TBranch        *b_Rider_UtcaSlotNum;   //!
+   TBranch        *b_Rider_ChannelNum;   //!
    TBranch        *b_Rider_ClockCounter;   //!
    TBranch        *b_Rider_TriggerNum;   //!
    TBranch        *b_Rider_Trace;   //!
    TBranch        *b_Island_EventNum;   //!
+   TBranch        *b_Island_FillType;   //!
    TBranch        *b_Island_CaloNum;   //!
    TBranch        *b_Island_XtalNum;   //!
-   TBranch        *b_Island_Num;   //!
+   TBranch        *b_Island_UtcaSlotNum;   //!
+   TBranch        *b_Island_ChannelNum;   //!
+   TBranch        *b_Island_IslandNum;   //!
    TBranch        *b_Island_Length;   //!
    TBranch        *b_Island_Time;   //!
    TBranch        *b_Island_ClockCounter;   //!
@@ -80,6 +90,8 @@ public :
    TBranch        *b_FitResult_EventNum;   //!
    TBranch        *b_FitResult_CaloNum;   //!
    TBranch        *b_FitResult_XtalNum;   //!
+   TBranch        *b_FitResult_UtcaSlotNum;   //!
+   TBranch        *b_FitResult_ChannelNum;   //!
    TBranch        *b_FitResult_IslandNum;   //!
    TBranch        *b_FitResult_Pedestal;   //!
    TBranch        *b_FitResult_Energy;   //!
@@ -153,21 +165,24 @@ void EventCollection::Init(TTree *tree)
    // (once per file to be processed).
 
    // Set object pointer
-   clockCounter = 0;
-   trigNum = 0;
+   AMC13_ClockCounter = 0;
+   AMC13_TriggerNum = 0;
    Rider_EventNum = 0;
    Rider_CaloNum = 0;
    Rider_XtalNum = 0;
    Rider_RiderNum = 0;
-   Rider_ChannelNum = 0;
    Rider_UtcaSlotNum = 0;
+   Rider_ChannelNum = 0;
    Rider_ClockCounter = 0;
    Rider_TriggerNum = 0;
    Rider_Trace = 0;
    Island_EventNum = 0;
+   Island_FillType = 0;
    Island_CaloNum = 0;
    Island_XtalNum = 0;
-   Island_Num = 0;
+   Island_UtcaSlotNum = 0;
+   Island_ChannelNum = 0;
+   Island_IslandNum = 0;
    Island_Length = 0;
    Island_Time = 0;
    Island_ClockCounter = 0;
@@ -176,6 +191,8 @@ void EventCollection::Init(TTree *tree)
    FitResult_EventNum = 0;
    FitResult_CaloNum = 0;
    FitResult_XtalNum = 0;
+   FitResult_UtcaSlotNum = 0;
+   FitResult_ChannelNum = 0;
    FitResult_IslandNum = 0;
    FitResult_Pedestal = 0;
    FitResult_Energy = 0;
@@ -188,21 +205,25 @@ void EventCollection::Init(TTree *tree)
    fCurrent = -1;
    fChain->SetMakeClass(1);
 
-   fChain->SetBranchAddress("clockCounter", &clockCounter, &b_clockCounter);
-   fChain->SetBranchAddress("trigNum", &trigNum, &b_trigNum);
+   fChain->SetBranchAddress("eventNum", &eventNum, &b_eventNum);
+   fChain->SetBranchAddress("AMC13_ClockCounter", &AMC13_ClockCounter, &b_AMC13_ClockCounter);
+   fChain->SetBranchAddress("AMC13_TriggerNum", &AMC13_TriggerNum, &b_AMC13_TriggerNum);
    fChain->SetBranchAddress("Rider_EventNum", &Rider_EventNum, &b_Rider_EventNum);
    fChain->SetBranchAddress("Rider_CaloNum", &Rider_CaloNum, &b_Rider_CaloNum);
    fChain->SetBranchAddress("Rider_XtalNum", &Rider_XtalNum, &b_Rider_XtalNum);
    fChain->SetBranchAddress("Rider_RiderNum", &Rider_RiderNum, &b_Rider_RiderNum);
-   fChain->SetBranchAddress("Rider_ChannelNum", &Rider_ChannelNum, &b_Rider_ChannelNum);
    fChain->SetBranchAddress("Rider_UtcaSlotNum", &Rider_UtcaSlotNum, &b_Rider_UtcaSlotNum);
+   fChain->SetBranchAddress("Rider_ChannelNum", &Rider_ChannelNum, &b_Rider_ChannelNum);
    fChain->SetBranchAddress("Rider_ClockCounter", &Rider_ClockCounter, &b_Rider_ClockCounter);
    fChain->SetBranchAddress("Rider_TriggerNum", &Rider_TriggerNum, &b_Rider_TriggerNum);
    fChain->SetBranchAddress("Rider_Trace", &Rider_Trace, &b_Rider_Trace);
    fChain->SetBranchAddress("Island_EventNum", &Island_EventNum, &b_Island_EventNum);
+   fChain->SetBranchAddress("Island_FillType", &Island_FillType, &b_Island_FillType);
    fChain->SetBranchAddress("Island_CaloNum", &Island_CaloNum, &b_Island_CaloNum);
    fChain->SetBranchAddress("Island_XtalNum", &Island_XtalNum, &b_Island_XtalNum);
-   fChain->SetBranchAddress("Island_Num", &Island_Num, &b_Island_Num);
+   fChain->SetBranchAddress("Island_UtcaSlotNum", &Island_UtcaSlotNum, &b_Island_UtcaSlotNum);
+   fChain->SetBranchAddress("Island_ChannelNum", &Island_ChannelNum, &b_Island_ChannelNum);
+   fChain->SetBranchAddress("Island_IslandNum", &Island_IslandNum, &b_Island_IslandNum);
    fChain->SetBranchAddress("Island_Length", &Island_Length, &b_Island_Length);
    fChain->SetBranchAddress("Island_Time", &Island_Time, &b_Island_Time);
    fChain->SetBranchAddress("Island_ClockCounter", &Island_ClockCounter, &b_Island_ClockCounter);
@@ -211,6 +232,8 @@ void EventCollection::Init(TTree *tree)
    fChain->SetBranchAddress("FitResult_EventNum", &FitResult_EventNum, &b_FitResult_EventNum);
    fChain->SetBranchAddress("FitResult_CaloNum", &FitResult_CaloNum, &b_FitResult_CaloNum);
    fChain->SetBranchAddress("FitResult_XtalNum", &FitResult_XtalNum, &b_FitResult_XtalNum);
+   fChain->SetBranchAddress("FitResult_UtcaSlotNum", &FitResult_UtcaSlotNum, &b_FitResult_UtcaSlotNum);
+   fChain->SetBranchAddress("FitResult_ChannelNum", &FitResult_ChannelNum, &b_FitResult_ChannelNum);
    fChain->SetBranchAddress("FitResult_IslandNum", &FitResult_IslandNum, &b_FitResult_IslandNum);
    fChain->SetBranchAddress("FitResult_Pedestal", &FitResult_Pedestal, &b_FitResult_Pedestal);
    fChain->SetBranchAddress("FitResult_Energy", &FitResult_Energy, &b_FitResult_Energy);
