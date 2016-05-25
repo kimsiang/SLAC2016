@@ -9,3 +9,5 @@ make clean; make
 Insert the root file that you want to analyze into the input.script file and analyze the file by running
 
 ./ana input.script
+
+Variables that can be accessed from the root file are defined in EventCollection.h. You can add your analysis codes to the file SLAC2016Ana.C and SLAC2016Ana.h.
