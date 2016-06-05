@@ -2,9 +2,8 @@
 #include <iostream>
 
 void SLAC2016Ana::Loop(string &filename){
-    cout << "Loop()" << endl;
 
-    initialize(filename);
+    initialize();
 
     if (fChain == 0) return;
 
@@ -16,34 +15,41 @@ void SLAC2016Ana::Loop(string &filename){
         if (ientry < 0) break;
         nb = fChain->GetEntry(jentry);   nbytes += nb;
 
-        clear();
         execute();
 
     }
 
-    finalize(filename);
+    finalize();
 
 }
-void SLAC2016Ana::initialize(string &filename){
+void SLAC2016Ana::initialize(){
+
     cout << "initialize()" << endl;
+
+    file_ = new TFile("test.root","recreate");
+    energy_ = new TH1D("energy","energy",300,0,3000);
+    energy_->SetCanExtend(kTRUE);
+
 
 }
 
 void SLAC2016Ana::execute(){
-    cout << "execute()" << endl;
 
-   for(const auto &length : (*Island_Length)){
-//  cout<<length<<endl;
-   }
+    cout << "--> execute(), eventNum: " << eventNum <<endl;
 
-}
 
-void SLAC2016Ana::finalize(string &filename){
+    for(size_t iC=0; iC<Cluster_EventNum->size();iC++){
 
-    cout << "finalize()" << endl;
+        energy_->Fill(Cluster_Energy->at(iC));
+    }
 
 }
 
-void SLAC2016Ana::clear(){
-    cout << "clear()" << endl;
+void SLAC2016Ana::finalize(){
+
+    cout << "\tfinalize()" << endl;
+
+    file_->Write();
+    file_->Close();
+
 }
