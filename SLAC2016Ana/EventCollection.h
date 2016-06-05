@@ -1,8 +1,8 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Wed May 25 15:13:29 2016 by ROOT version 6.06/02
+// Sun Jun  5 10:14:19 2016 by ROOT version 6.06/02
 // from TTree eventTree/Tree of Events
-// found on file: gm2slac2016_slacAnalyzer.root
+// found on file: /Users/kimsiang/slac2016_data/analysis/gm2slac_run01751.root
 //////////////////////////////////////////////////////////
 
 #ifndef EventCollection_h
@@ -11,8 +11,6 @@
 #include <TROOT.h>
 #include <TChain.h>
 #include <TFile.h>
-
-// Namespace
 using namespace std;
 
 // Header file for the classes stored in the TTree if any.
@@ -26,30 +24,11 @@ public :
 // Fixed size dimensions of array or collections stored in the TTree if any.
 
    // Declaration of leaf types
-   Int_t           eventNum;
-   vector<unsigned long long> *AMC13_ClockCounter;
-   vector<unsigned int> *AMC13_TriggerNum;
-   vector<unsigned int> *Rider_EventNum;
-   vector<unsigned int> *Rider_CaloNum;
-   vector<unsigned int> *Rider_XtalNum;
-   vector<unsigned int> *Rider_RiderNum;
-   vector<unsigned int> *Rider_UtcaSlotNum;
-   vector<unsigned int> *Rider_ChannelNum;
-   vector<unsigned long long> *Rider_ClockCounter;
-   vector<unsigned int> *Rider_TriggerNum;
-   vector<vector<short> > *Rider_Trace;
-   vector<unsigned int> *Island_EventNum;
-   vector<unsigned int> *Island_FillType;
-   vector<unsigned int> *Island_CaloNum;
-   vector<unsigned int> *Island_XtalNum;
-   vector<unsigned int> *Island_UtcaSlotNum;
-   vector<unsigned int> *Island_ChannelNum;
-   vector<unsigned int> *Island_IslandNum;
-   vector<unsigned int> *Island_Length;
-   vector<unsigned int> *Island_Time;
-   vector<unsigned long long> *Island_ClockCounter;
-   vector<unsigned int> *Island_TriggerNum;
-   vector<vector<short> > *Island_Trace;
+   UInt_t          eventNum;
+   vector<unsigned long long> *CaloAMC13_ClockCounter;
+   vector<unsigned int> *CaloAMC13_TriggerNum;
+   vector<unsigned long long> *FC7_ClockCounter;
+   vector<unsigned int> *FC7_TriggerNum;
    vector<unsigned int> *FitResult_EventNum;
    vector<unsigned int> *FitResult_CaloNum;
    vector<unsigned int> *FitResult_XtalNum;
@@ -61,32 +40,35 @@ public :
    vector<double>  *FitResult_Time;
    vector<double>  *FitResult_Chi2;
    vector<unsigned long long> *FitResult_ClockCounter;
+   vector<unsigned int> *Italiano_EventNum;
+   vector<unsigned int> *Italiano_CaloNum;
+   vector<unsigned int> *Italiano_XtalNum;
+   vector<unsigned int> *Italiano_UtcaSlotNum;
+   vector<unsigned int> *Italiano_ChannelNum;
+   vector<unsigned int> *Italiano_IslandNum;
+   vector<double>  *Italiano_Pedestal;
+   vector<double>  *Italiano_Amplitude;
+   vector<double>  *Italiano_Area;
+   vector<double>  *Italiano_Time;
+   vector<unsigned long long> *Italiano_ClockCounter;
+   vector<unsigned int> *XtalHit_EventNum;
+   vector<unsigned int> *XtalHit_CaloNum;
+   vector<unsigned int> *XtalHit_XtalNum;
+   vector<unsigned int> *XtalHit_IslandNum;
+   vector<double>  *XtalHit_Energy;
+   vector<double>  *XtalHit_Time;
+   vector<unsigned int> *Cluster_EventNum;
+   vector<unsigned int> *Cluster_CaloNum;
+   vector<unsigned int> *Cluster_IslandNum;
+   vector<double>  *Cluster_Energy;
+   vector<double>  *Cluster_Time;
 
    // List of branches
    TBranch        *b_eventNum;   //!
-   TBranch        *b_AMC13_ClockCounter;   //!
-   TBranch        *b_AMC13_TriggerNum;   //!
-   TBranch        *b_Rider_EventNum;   //!
-   TBranch        *b_Rider_CaloNum;   //!
-   TBranch        *b_Rider_XtalNum;   //!
-   TBranch        *b_Rider_RiderNum;   //!
-   TBranch        *b_Rider_UtcaSlotNum;   //!
-   TBranch        *b_Rider_ChannelNum;   //!
-   TBranch        *b_Rider_ClockCounter;   //!
-   TBranch        *b_Rider_TriggerNum;   //!
-   TBranch        *b_Rider_Trace;   //!
-   TBranch        *b_Island_EventNum;   //!
-   TBranch        *b_Island_FillType;   //!
-   TBranch        *b_Island_CaloNum;   //!
-   TBranch        *b_Island_XtalNum;   //!
-   TBranch        *b_Island_UtcaSlotNum;   //!
-   TBranch        *b_Island_ChannelNum;   //!
-   TBranch        *b_Island_IslandNum;   //!
-   TBranch        *b_Island_Length;   //!
-   TBranch        *b_Island_Time;   //!
-   TBranch        *b_Island_ClockCounter;   //!
-   TBranch        *b_Island_TriggerNum;   //!
-   TBranch        *b_Island_Trace;   //!
+   TBranch        *b_CaloAMC13_ClockCounter;   //!
+   TBranch        *b_CaloAMC13_TriggerNum;   //!
+   TBranch        *b_FC7_ClockCounter;   //!
+   TBranch        *b_FC7_TriggerNum;   //!
    TBranch        *b_FitResult_EventNum;   //!
    TBranch        *b_FitResult_CaloNum;   //!
    TBranch        *b_FitResult_XtalNum;   //!
@@ -98,6 +80,28 @@ public :
    TBranch        *b_FitResult_Time;   //!
    TBranch        *b_FitResult_Chi2;   //!
    TBranch        *b_FitResult_ClockCounter;   //!
+   TBranch        *b_Italiano_EventNum;   //!
+   TBranch        *b_Italiano_CaloNum;   //!
+   TBranch        *b_Italiano_XtalNum;   //!
+   TBranch        *b_Italiano_UtcaSlotNum;   //!
+   TBranch        *b_Italiano_ChannelNum;   //!
+   TBranch        *b_Italiano_IslandNum;   //!
+   TBranch        *b_Italiano_Pedestal;   //!
+   TBranch        *b_Italiano_Amplitude;   //!
+   TBranch        *b_Italiano_Area;   //!
+   TBranch        *b_Italiano_Time;   //!
+   TBranch        *b_Italiano_ClockCounter;   //!
+   TBranch        *b_XtalHit_EventNum;   //!
+   TBranch        *b_XtalHit_CaloNum;   //!
+   TBranch        *b_XtalHit_XtalNum;   //!
+   TBranch        *b_XtalHit_IslandNum;   //!
+   TBranch        *b_XtalHit_Energy;   //!
+   TBranch        *b_XtalHit_Time;   //!
+   TBranch        *b_Cluster_EventNum;   //!
+   TBranch        *b_Cluster_CaloNum;   //!
+   TBranch        *b_Cluster_IslandNum;   //!
+   TBranch        *b_Cluster_Energy;   //!
+   TBranch        *b_Cluster_Time;   //!
 
    EventCollection(TTree *tree=0);
    virtual ~EventCollection();
@@ -118,11 +122,11 @@ EventCollection::EventCollection(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("gm2slac2016_slacAnalyzer.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/Users/kimsiang/slac2016_data/analysis/gm2slac_run01751.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("gm2slac2016_slacAnalyzer.root");
+         f = new TFile("/Users/kimsiang/slac2016_data/analysis/gm2slac_run01751.root");
       }
-      TDirectory * dir = (TDirectory*)f->Get("gm2slac2016_slacAnalyzer.root:/slacAnalyzer");
+      TDirectory * dir = (TDirectory*)f->Get("/Users/kimsiang/slac2016_data/analysis/gm2slac_run01751.root:/slacAnalyzer");
       dir->GetObject("eventTree",tree);
 
    }
@@ -165,29 +169,10 @@ void EventCollection::Init(TTree *tree)
    // (once per file to be processed).
 
    // Set object pointer
-   AMC13_ClockCounter = 0;
-   AMC13_TriggerNum = 0;
-   Rider_EventNum = 0;
-   Rider_CaloNum = 0;
-   Rider_XtalNum = 0;
-   Rider_RiderNum = 0;
-   Rider_UtcaSlotNum = 0;
-   Rider_ChannelNum = 0;
-   Rider_ClockCounter = 0;
-   Rider_TriggerNum = 0;
-   Rider_Trace = 0;
-   Island_EventNum = 0;
-   Island_FillType = 0;
-   Island_CaloNum = 0;
-   Island_XtalNum = 0;
-   Island_UtcaSlotNum = 0;
-   Island_ChannelNum = 0;
-   Island_IslandNum = 0;
-   Island_Length = 0;
-   Island_Time = 0;
-   Island_ClockCounter = 0;
-   Island_TriggerNum = 0;
-   Island_Trace = 0;
+   CaloAMC13_ClockCounter = 0;
+   CaloAMC13_TriggerNum = 0;
+   FC7_ClockCounter = 0;
+   FC7_TriggerNum = 0;
    FitResult_EventNum = 0;
    FitResult_CaloNum = 0;
    FitResult_XtalNum = 0;
@@ -199,6 +184,28 @@ void EventCollection::Init(TTree *tree)
    FitResult_Time = 0;
    FitResult_Chi2 = 0;
    FitResult_ClockCounter = 0;
+   Italiano_EventNum = 0;
+   Italiano_CaloNum = 0;
+   Italiano_XtalNum = 0;
+   Italiano_UtcaSlotNum = 0;
+   Italiano_ChannelNum = 0;
+   Italiano_IslandNum = 0;
+   Italiano_Pedestal = 0;
+   Italiano_Amplitude = 0;
+   Italiano_Area = 0;
+   Italiano_Time = 0;
+   Italiano_ClockCounter = 0;
+   XtalHit_EventNum = 0;
+   XtalHit_CaloNum = 0;
+   XtalHit_XtalNum = 0;
+   XtalHit_IslandNum = 0;
+   XtalHit_Energy = 0;
+   XtalHit_Time = 0;
+   Cluster_EventNum = 0;
+   Cluster_CaloNum = 0;
+   Cluster_IslandNum = 0;
+   Cluster_Energy = 0;
+   Cluster_Time = 0;
    // Set branch addresses and branch pointers
    if (!tree) return;
    fChain = tree;
@@ -206,29 +213,10 @@ void EventCollection::Init(TTree *tree)
    fChain->SetMakeClass(1);
 
    fChain->SetBranchAddress("eventNum", &eventNum, &b_eventNum);
-   fChain->SetBranchAddress("AMC13_ClockCounter", &AMC13_ClockCounter, &b_AMC13_ClockCounter);
-   fChain->SetBranchAddress("AMC13_TriggerNum", &AMC13_TriggerNum, &b_AMC13_TriggerNum);
-   fChain->SetBranchAddress("Rider_EventNum", &Rider_EventNum, &b_Rider_EventNum);
-   fChain->SetBranchAddress("Rider_CaloNum", &Rider_CaloNum, &b_Rider_CaloNum);
-   fChain->SetBranchAddress("Rider_XtalNum", &Rider_XtalNum, &b_Rider_XtalNum);
-   fChain->SetBranchAddress("Rider_RiderNum", &Rider_RiderNum, &b_Rider_RiderNum);
-   fChain->SetBranchAddress("Rider_UtcaSlotNum", &Rider_UtcaSlotNum, &b_Rider_UtcaSlotNum);
-   fChain->SetBranchAddress("Rider_ChannelNum", &Rider_ChannelNum, &b_Rider_ChannelNum);
-   fChain->SetBranchAddress("Rider_ClockCounter", &Rider_ClockCounter, &b_Rider_ClockCounter);
-   fChain->SetBranchAddress("Rider_TriggerNum", &Rider_TriggerNum, &b_Rider_TriggerNum);
-   fChain->SetBranchAddress("Rider_Trace", &Rider_Trace, &b_Rider_Trace);
-   fChain->SetBranchAddress("Island_EventNum", &Island_EventNum, &b_Island_EventNum);
-   fChain->SetBranchAddress("Island_FillType", &Island_FillType, &b_Island_FillType);
-   fChain->SetBranchAddress("Island_CaloNum", &Island_CaloNum, &b_Island_CaloNum);
-   fChain->SetBranchAddress("Island_XtalNum", &Island_XtalNum, &b_Island_XtalNum);
-   fChain->SetBranchAddress("Island_UtcaSlotNum", &Island_UtcaSlotNum, &b_Island_UtcaSlotNum);
-   fChain->SetBranchAddress("Island_ChannelNum", &Island_ChannelNum, &b_Island_ChannelNum);
-   fChain->SetBranchAddress("Island_IslandNum", &Island_IslandNum, &b_Island_IslandNum);
-   fChain->SetBranchAddress("Island_Length", &Island_Length, &b_Island_Length);
-   fChain->SetBranchAddress("Island_Time", &Island_Time, &b_Island_Time);
-   fChain->SetBranchAddress("Island_ClockCounter", &Island_ClockCounter, &b_Island_ClockCounter);
-   fChain->SetBranchAddress("Island_TriggerNum", &Island_TriggerNum, &b_Island_TriggerNum);
-   fChain->SetBranchAddress("Island_Trace", &Island_Trace, &b_Island_Trace);
+   fChain->SetBranchAddress("CaloAMC13_ClockCounter", &CaloAMC13_ClockCounter, &b_CaloAMC13_ClockCounter);
+   fChain->SetBranchAddress("CaloAMC13_TriggerNum", &CaloAMC13_TriggerNum, &b_CaloAMC13_TriggerNum);
+   fChain->SetBranchAddress("FC7_ClockCounter", &FC7_ClockCounter, &b_FC7_ClockCounter);
+   fChain->SetBranchAddress("FC7_TriggerNum", &FC7_TriggerNum, &b_FC7_TriggerNum);
    fChain->SetBranchAddress("FitResult_EventNum", &FitResult_EventNum, &b_FitResult_EventNum);
    fChain->SetBranchAddress("FitResult_CaloNum", &FitResult_CaloNum, &b_FitResult_CaloNum);
    fChain->SetBranchAddress("FitResult_XtalNum", &FitResult_XtalNum, &b_FitResult_XtalNum);
@@ -240,6 +228,28 @@ void EventCollection::Init(TTree *tree)
    fChain->SetBranchAddress("FitResult_Time", &FitResult_Time, &b_FitResult_Time);
    fChain->SetBranchAddress("FitResult_Chi2", &FitResult_Chi2, &b_FitResult_Chi2);
    fChain->SetBranchAddress("FitResult_ClockCounter", &FitResult_ClockCounter, &b_FitResult_ClockCounter);
+   fChain->SetBranchAddress("Italiano_EventNum", &Italiano_EventNum, &b_Italiano_EventNum);
+   fChain->SetBranchAddress("Italiano_CaloNum", &Italiano_CaloNum, &b_Italiano_CaloNum);
+   fChain->SetBranchAddress("Italiano_XtalNum", &Italiano_XtalNum, &b_Italiano_XtalNum);
+   fChain->SetBranchAddress("Italiano_UtcaSlotNum", &Italiano_UtcaSlotNum, &b_Italiano_UtcaSlotNum);
+   fChain->SetBranchAddress("Italiano_ChannelNum", &Italiano_ChannelNum, &b_Italiano_ChannelNum);
+   fChain->SetBranchAddress("Italiano_IslandNum", &Italiano_IslandNum, &b_Italiano_IslandNum);
+   fChain->SetBranchAddress("Italiano_Pedestal", &Italiano_Pedestal, &b_Italiano_Pedestal);
+   fChain->SetBranchAddress("Italiano_Amplitude", &Italiano_Amplitude, &b_Italiano_Amplitude);
+   fChain->SetBranchAddress("Italiano_Area", &Italiano_Area, &b_Italiano_Area);
+   fChain->SetBranchAddress("Italiano_Time", &Italiano_Time, &b_Italiano_Time);
+   fChain->SetBranchAddress("Italiano_ClockCounter", &Italiano_ClockCounter, &b_Italiano_ClockCounter);
+   fChain->SetBranchAddress("XtalHit_EventNum", &XtalHit_EventNum, &b_XtalHit_EventNum);
+   fChain->SetBranchAddress("XtalHit_CaloNum", &XtalHit_CaloNum, &b_XtalHit_CaloNum);
+   fChain->SetBranchAddress("XtalHit_XtalNum", &XtalHit_XtalNum, &b_XtalHit_XtalNum);
+   fChain->SetBranchAddress("XtalHit_IslandNum", &XtalHit_IslandNum, &b_XtalHit_IslandNum);
+   fChain->SetBranchAddress("XtalHit_Energy", &XtalHit_Energy, &b_XtalHit_Energy);
+   fChain->SetBranchAddress("XtalHit_Time", &XtalHit_Time, &b_XtalHit_Time);
+   fChain->SetBranchAddress("Cluster_EventNum", &Cluster_EventNum, &b_Cluster_EventNum);
+   fChain->SetBranchAddress("Cluster_CaloNum", &Cluster_CaloNum, &b_Cluster_CaloNum);
+   fChain->SetBranchAddress("Cluster_IslandNum", &Cluster_IslandNum, &b_Cluster_IslandNum);
+   fChain->SetBranchAddress("Cluster_Energy", &Cluster_Energy, &b_Cluster_Energy);
+   fChain->SetBranchAddress("Cluster_Time", &Cluster_Time, &b_Cluster_Time);
    Notify();
 }
 
