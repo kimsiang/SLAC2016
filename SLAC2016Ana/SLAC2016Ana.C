@@ -27,8 +27,8 @@ void SLAC2016Ana::initialize(){
     cout << "initialize()" << endl;
 
     file_ = new TFile("test.root","recreate");
-    energy_ = new TH1D("energy","energy",300,0,3000);
-    energy_->SetCanExtend(kTRUE);
+    energy_ = new TH1D("energy","energy",300,0,10000);
+//    energy_->SetCanExtend(kTRUE);
 
 
 }
