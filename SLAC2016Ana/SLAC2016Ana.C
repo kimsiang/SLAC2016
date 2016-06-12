@@ -35,7 +35,7 @@ void SLAC2016Ana::initialize(){
 
 void SLAC2016Ana::execute(){
 
-    cout << "--> execute(), eventNum: " << eventNum <<endl;
+    cout << "--> execute(), EventNum: " << EventNum <<endl;
 
 
     for(size_t iC=0; iC<Cluster_EventNum->size();iC++){
