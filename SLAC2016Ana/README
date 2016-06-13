@@ -6,7 +6,7 @@ Then go to the SLAC2016Ana/ folder and execute the following command:
 
 make clean; make
 
-Insert the root file (currently gm2uw_run01865_analysis.root) that you want to analyze into the input.script file and analyze the file by running
+Insert the root file (currently gm2slac_run01751.root) that you want to analyze into the input.script file and analyze the file by running
 
 ./ana input.script
 
