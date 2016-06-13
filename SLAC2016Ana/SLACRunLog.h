@@ -42,4 +42,4 @@ class SLACRunLog{
 
 };
 
-#endif // #ifdef SLACRunLog_cxx
+#endif // #ifdef SLACRunLog_h
