@@ -1,8 +1,8 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Sun Jun  5 10:14:19 2016 by ROOT version 6.06/02
+// Tue Jun  7 02:46:52 2016 by ROOT version 5.34/25
 // from TTree eventTree/Tree of Events
-// found on file: /Users/kimsiang/slac2016_data/analysis/gm2slac_run01751.root
+// found on file: /data1/slac2016/analysis/gm2slac_run02352.root
 //////////////////////////////////////////////////////////
 
 #ifndef EventCollection_h
@@ -16,15 +16,16 @@ using namespace std;
 // Header file for the classes stored in the TTree if any.
 #include <vector>
 
+// Fixed size dimensions of array or collections stored in the TTree if any.
+
 class EventCollection {
 public :
    TTree          *fChain;   //!pointer to the analyzed TTree or TChain
    Int_t           fCurrent; //!current Tree number in a TChain
 
-// Fixed size dimensions of array or collections stored in the TTree if any.
-
    // Declaration of leaf types
-   UInt_t          eventNum;
+   UInt_t          RunNum;
+   UInt_t          EventNum;
    vector<unsigned long long> *CaloAMC13_ClockCounter;
    vector<unsigned int> *CaloAMC13_TriggerNum;
    vector<unsigned long long> *FC7_ClockCounter;
@@ -64,7 +65,8 @@ public :
    vector<double>  *Cluster_Time;
 
    // List of branches
-   TBranch        *b_eventNum;   //!
+   TBranch        *b_RunNum;   //!
+   TBranch        *b_EventNum;   //!
    TBranch        *b_CaloAMC13_ClockCounter;   //!
    TBranch        *b_CaloAMC13_TriggerNum;   //!
    TBranch        *b_FC7_ClockCounter;   //!
@@ -122,11 +124,11 @@ EventCollection::EventCollection(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/Users/kimsiang/slac2016_data/analysis/gm2slac_run01751.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/data1/slac2016/analysis/gm2slac_run02352.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("/Users/kimsiang/slac2016_data/analysis/gm2slac_run01751.root");
+         f = new TFile("/data1/slac2016/analysis/gm2slac_run02352.root");
       }
-      TDirectory * dir = (TDirectory*)f->Get("/Users/kimsiang/slac2016_data/analysis/gm2slac_run01751.root:/slacAnalyzer");
+      TDirectory * dir = (TDirectory*)f->Get("/data1/slac2016/analysis/gm2slac_run02352.root:/slacAnalyzer");
       dir->GetObject("eventTree",tree);
 
    }
@@ -212,7 +214,8 @@ void EventCollection::Init(TTree *tree)
    fCurrent = -1;
    fChain->SetMakeClass(1);
 
-   fChain->SetBranchAddress("eventNum", &eventNum, &b_eventNum);
+   fChain->SetBranchAddress("RunNum", &RunNum, &b_RunNum);
+   fChain->SetBranchAddress("EventNum", &EventNum, &b_EventNum);
    fChain->SetBranchAddress("CaloAMC13_ClockCounter", &CaloAMC13_ClockCounter, &b_CaloAMC13_ClockCounter);
    fChain->SetBranchAddress("CaloAMC13_TriggerNum", &CaloAMC13_TriggerNum, &b_CaloAMC13_TriggerNum);
    fChain->SetBranchAddress("FC7_ClockCounter", &FC7_ClockCounter, &b_FC7_ClockCounter);
