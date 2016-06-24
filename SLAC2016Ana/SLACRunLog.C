@@ -7,6 +7,7 @@ SLACRunLog::SLACRunLog(){
     myfile = new TFile("RunLog.root");
     runTree = (TTree*)myfile->Get("RunLog");
     runTree->SetBranchAddress("run",&runNum);
+    runTree->SetBranchAddress("startTime",&startTime);
     runTree->SetBranchAddress("quality",&quality);
     runTree->SetBranchAddress("comment",&comment);
     runTree->SetBranchAddress("crew",&crew);
