@@ -1,0 +1,15 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of the electromagnetic shower of an electron injected from the left to the right, in a $9\times 6$ array PbF$_2$ calorimeter. Cherenkov lights created by the charged shower particles are collected by the Silicon Photomultipliers (SiPMs) glued to the end of the PbF$_2$ crystals.\relax }}{1}{figure.caption.6}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces SLAC Offline analysis GUI. This is a very preminary prototype.\relax }}{11}{figure.caption.10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Offline framework for SLAC experimental data.\relax }}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces AMC13 to DAQ data format.\relax }}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Rider to AMC13 data format.\relax }}{14}{figure.caption.16}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Rider Channel data format.\relax }}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Per event data format\relax }}{16}{figure.caption.18}

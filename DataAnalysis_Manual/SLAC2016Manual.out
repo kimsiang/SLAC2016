@@ -1,0 +1,18 @@
+\BOOKMARK [0][-]{section*.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Contents}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{List of Figures}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{List of Tables}{}% 4
+\BOOKMARK [0][-]{chapter*.5}{Acronyms}{}% 5
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 6
+\BOOKMARK [0][-]{chapter.2}{2 Datasets}{}% 7
+\BOOKMARK [1][-]{section.2.1}{2.1 Data samples}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 File naming}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Location of the files}{section.2.1}% 10
+\BOOKMARK [0][-]{chapter.3}{3 Data format and structure for the ROOT tree}{}% 11
+\BOOKMARK [0][-]{chapter.4}{4 Standalone C++ Analysis framework}{}% 12
+\BOOKMARK [0][-]{chapter.5}{5 ROOT-based offline event display}{}% 13
+\BOOKMARK [0][-]{appendix.A}{A Data analysis framework}{}% 14
+\BOOKMARK [1][-]{section.A.1}{A.1 Offline framework for the SLAC test beam}{appendix.A}% 15
+\BOOKMARK [1][-]{section.A.2}{A.2 Header information}{appendix.A}% 16
+\BOOKMARK [1][-]{section.A.3}{A.3 Header and trailer formats}{appendix.A}% 17
+\BOOKMARK [0][-]{appendix*.19}{Bibliography}{}% 18

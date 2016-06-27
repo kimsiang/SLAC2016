@@ -1,0 +1,71 @@
+\chapter{Data format and structure for the ROOT tree}
+\label{chap:three}
+
+The data samples for this tutorial are stored in ROOT trees. The tree contains a collection of variables (called branches) which are filled once per event (could be 1 or more electrons). The list of variables along with their data type and further explanations are given in the following.
+
+\subsection*{For studies using higher level objects}
+
+\begin{itemize}
+
+\item \verb+FitResult_EventNum+ (\verb+vector<int>+): event number of this fit result
+\item \verb+FitResult_CaloNum+ (\verb+vector<int>+): calorimeter number of this fit result
+\item \verb+FitResult_XtalNum+ (\verb+vector<int>+): crystal number of this fit result
+\item \verb+FitResult_IslandNum+ (\verb+vector<int>+): island number of this fit result
+\item \verb+FitResult_UtcaSlotNum+ (\verb+vector<int>+): utca slot number of this fit result
+\item \verb+FitResult_ChannelNum+ (\verb+vector<int>+): rider channel number of this fit result
+\item \verb+FitResult_Energy+ (\verb+vector<double>+): energy (number of photons) of this fit result
+\item \verb+FitResult_Time+ (\verb+vector<double>+): time (clock tick of 800 MHz) of this fit result within the fill/event
+\item \verb+FitResult_Pedestal+ (\verb+vector<double>+): pedestal of this fit result
+\item \verb+FitResult_Chi2+ (\verb+vector<double>+): Chi squared of this fit result
+\item \verb+FitResult_ClockCounter+ (\verb+vector<long long>+): time stamp (clock tick of 40 MHz) of this fit result from Rider header information
+
+\item \verb+XtalHit_EventNum+ (\verb+vector<int>+): event number of this crystal hit
+\item \verb+XtalHit_CaloNum+ (\verb+vector<int>+): calorimeter number of this crystal hit
+\item \verb+XtalHit_XtalNum+ (\verb+vector<int>+): crystal number of this crystal hit
+\item \verb+XtalHit_IslandNum+ (\verb+vector<int>+): island number of this crystal hit
+\item \verb+XtalHit_UtcaSlotNum+ (\verb+vector<int>+): utca slot number of this crystal hit
+\item \verb+XtalHit_ChannelNum+ (\verb+vector<int>+): rider channel number of this crystal hit
+\item \verb+XtalHit_Energy+ (\verb+vector<double>+): energy (number of photons) of this crystal hit
+\item \verb+XtalHit_Time+ (\verb+vector<double>+): time (clock tick of 800 MHz) of this crystal hit within the fill/event
+\item \verb+XtalHit_ClockCounter+ (\verb+vector<long long>+): time stamp (clock tick of 40 MHz) of this crystal hit from Rider header information
+
+\item \verb+Cluster_EventNum+ (\verb+vector<int>+): event number of this cluster 
+\item \verb+Cluster_CaloNum+ (\verb+vector<int>+): calorimeter number of this cluster
+\item \verb+Cluster_IslandNum+ (\verb+vector<int>+): island number of this cluster
+\item \verb+Cluster_Energy+ (\verb+vector<double>+): energy (number of photons) of this cluster
+\item \verb+Cluster_Time+ (\verb+vector<double>+): time (clock tick) of this cluster 
+\item \verb+Cluster_X+ (\verb+vector<double>+): local x-position of this cluster (logarithmic-weighted)
+\item \verb+Cluster_Y+ (\verb+vector<double>+): local x-position of this cluster (logarithmic-weighted)
+
+\item \verb+Italiano_EventNum+ (\verb+vector<int>+): event number of this analyzed laser crate waveform
+\item \verb+Italiano_CaloNum+ (\verb+vector<int>+): calorimeter number of this analyzed laser crate waveform
+\item \verb+Italiano_XtalNum+ (\verb+vector<int>+): crystal number of this analyzed laser crate waveform
+\item \verb+Italiano_IslandNum+ (\verb+vector<int>+): island number of this analyzed laser crate waveform
+\item \verb+Italiano_UtcaSlotNum+ (\verb+vector<int>+): utca slot number of this analyzed laser crate waveform
+\item \verb+Italiano_ChannelNum+ (\verb+vector<int>+): rider channel number of this analyzed laser crate waveform
+\item \verb+Italiano_Amplitude+ (\verb+vector<double>+): amplitude (ADC samples) of this analyzed laser crate waveform
+\item \verb+Italiano_Time+ (\verb+vector<double>+): time (clock tick of 800 MHz) of this analyzed laser crate waveform within the fill/event
+\item \verb+Italiano_Pedestal+ (\verb+vector<double>+): pedestal of this analyzed laser crate waveform
+\item \verb+Italiano_Area+ (\verb+vector<double>+): Area of this analyzed laser crate waveform
+\item \verb+Italiano_ClockCounter+ (\verb+vector<long long>+): time stamp (clock tick of 40 MHz) of this analyzed laser crate waveform from Rider header information
+\end{itemize}
+
+\subsection*{For studies using lower level objects}
+Blow are the Tleaves of the \verb+islandTree+.
+
+\begin{itemize}
+\item \verb+RunNum+ (\verb+int+): run number of this island
+\item \verb+EventNum+ (\verb+int+): event number of this island
+\item \verb+FillType+ (\verb+int+): fill type of this island (1 is muon fill, 2 is laser fill)
+\item \verb+TriggerNum+ (\verb+int+): trigger number of this island
+\item \verb+CaloNum+ (\verb+int+): calorimeter number of this island
+\item \verb+XtalNum+ (\verb+int+): crystal number of this island
+\item \verb+IslandNum+ (\verb+int+): island number of this island
+\item \verb+UtcaSlotNum+ (\verb+int+): utca slot number of this island
+\item \verb+ChannelNum+ (\verb+int+): rider channel number of this island
+\item \verb+Length+ (\verb+int+): number of sample of this island
+\item \verb+Time+ (\verb+int+): time (clock tick of 800 MHz) of the first sample of this island within the fill/event
+\item \verb+ClockCounter+ (\verb+long+): time stamp (clock tick of 40 MHz) of this island from Rider header information
+\item \verb+Trace+ (\verb+vector<short>+): ADC samples of this island
+\end{itemize}
+
