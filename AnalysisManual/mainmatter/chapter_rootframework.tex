@@ -1,5 +1,29 @@
-\chapter{Data format and structure for the ROOT tree}
-\label{chap:three}
+\chapter{Standalone C++ Analysis framework}
+\label{chap:rootframework}
+
+The package \verb+SLAC2016Ana+ contains an example \verb+C+++ framework to help you getting started. You can get it from the github.com by \verb+git clone https://github.com/kimsiang/SLAC2016+. You can build your additional analysis code on top of this example or write a new one based on it. The example is already running but it's not doing much yet. You can compile the analysis code by first sourcing your ROOT environment (e.g. \verb+source /usr/local/bin/thisroot.sh+) and then followed by executing the command \verb+make+.
+
+This will read the necessary ingredients for compilation from the \verb+Makefile+ in the same directory. Don't have to worry much about this file at the moment unless you want to add in more classes to the analysis code.
+The point is that it creates an executable named \verb+ana+. You can then execute the program by the command \verb+./ana input.script+ where \verb+input.script+ includes a path to the root file that you want to analyze (e.g. \verb+./test.root+). 
+
+A description of the individual components of the example are given in the following list. Indicated are also the places where you should start adding your own code:
+
+\begin{itemize}
+\item  \verb+main.cxx+: This is the first starting point. It contains the \verb+main()+ function which is necessary for any \verb+C+++ program. The first step is to create instances of \verb+MyAna()+ class which is implemented in the files \verb+MyAna.h+ and \verb+MyAna.C+ (explained in the next items). The \verb+TChain+ represents the ROOT tree discussed in section 3. The files which should be read from disk are specified in the function \verb+Add(filename)+. The tree is then read and processed by the \verb+MyAna()+ class which takes the \verb+TChain+ as argument. The real work is then done in the \verb+Loop()+ function of the \verb+MyAna()+ class which is discussed in the next two items. 
+
+\item \verb+MyAna.h+: Definition of the class \verb+MyAna+, which inherits from the \verb+TTree::MakeClass+. It declares variables and ROOT objects that will be used or stored in your analysis. Several basic functions that are common among event-based particle physics analysis like \verb+initialize()+, \verb+clear()+, \verb+execute()+ and\verb+finalize()+ are declared here.
+%% to myself
+%% need to change the names like Loop, execute, etc because it is a bit confusing
+\item \verb+MyAna.C+: The main function which is called automatically which processing the ROOT trees are \verb+Loop()+. The \verb+Loop()+ function is called only once per run. In the \verb+Loop()+ function, \verb+initialize()+ is called at the beginning of the analysis run, \verb+clear()+ and \verb+execute()+ is called every event, and \verb+finalize()+ at the end of the analysis run.
+
+\item \verb+t1.h+: Header file for the class \verb+t1+ created using \verb+TTree::MakeClass+.  
+
+\item \verb+t1.C+: Source file for the class \verb+t1+ created using \verb+TTree::MakeClass+. The class \verb+Loop()+ is used by \verb+MyAna+ to loop through each \verb+TBranch+.
+
+\item \verb+PlotAll.C+: A ROOT macro which can be used for automatic plotting of a set of histograms which are stored in a ROOT file. Please read the header of the file on how to use it. 
+\end{itemize}
+
+\section{Data format and structure for the ROOT tree}
 
 The data samples for this tutorial are stored in ROOT trees. The tree contains a collection of variables (called branches) which are filled once per event (could be 1 or more electrons). The list of variables along with their data type and further explanations are given in the following.
 
