@@ -8,8 +8,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces SLAC Offline analysis GUI. This is a very preminary prototype.\relax }}{11}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Offline framework for SLAC experimental data.\relax }}{13}{figure.caption.14}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces AMC13 to DAQ data format.\relax }}{14}{figure.caption.15}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Rider to AMC13 data format.\relax }}{14}{figure.caption.16}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Rider Channel data format.\relax }}{15}{figure.caption.17}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Per event data format\relax }}{16}{figure.caption.18}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Offline framework for SLAC experimental data.\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces AMC13 to DAQ data format.\relax }}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Rider to AMC13 data format.\relax }}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Rider Channel data format.\relax }}{17}{figure.caption.17}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Per event data format\relax }}{18}{figure.caption.18}

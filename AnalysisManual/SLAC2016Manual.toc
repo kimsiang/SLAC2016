@@ -12,8 +12,9 @@
 \contentsline {chapter}{\numberline {3}Data format and structure for the ROOT tree}{5}{chapter.3}
 \contentsline {chapter}{\numberline {4}Standalone C++ Analysis framework}{9}{chapter.4}
 \contentsline {chapter}{\numberline {5}ROOT-based offline event display}{11}{chapter.5}
-\contentsline {chapter}{\numberline {A}Data analysis framework}{13}{appendix.A}
-\contentsline {section}{\numberline {A.1}Offline framework for the SLAC test beam}{13}{section.A.1}
-\contentsline {section}{\numberline {A.2}Header information}{14}{section.A.2}
-\contentsline {section}{\numberline {A.3}Header and trailer formats}{14}{section.A.3}
-\contentsline {chapter}{Bibliography}{17}{appendix*.19}
+\contentsline {chapter}{\numberline {6}Napoli DAQ}{13}{chapter.6}
+\contentsline {chapter}{\numberline {A}Data analysis framework}{15}{appendix.A}
+\contentsline {section}{\numberline {A.1}Offline framework for the SLAC test beam}{15}{section.A.1}
+\contentsline {section}{\numberline {A.2}Header information}{16}{section.A.2}
+\contentsline {section}{\numberline {A.3}Header and trailer formats}{16}{section.A.3}
+\contentsline {chapter}{Bibliography}{19}{appendix*.19}

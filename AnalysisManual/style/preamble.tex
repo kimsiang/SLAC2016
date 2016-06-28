@@ -1,6 +1,5 @@
 \documentclass[12pt,letterpaper]{book}
-%\usepackage{epstopdf}
-\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
 \usepackage{fancyhdr}  
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{booktabs}
@@ -21,11 +20,18 @@
 \usepackage{fancybox}
 \usepackage{xcolor}
 \usepackage{listings}
-\usepackage{eso-pic}
+
+%% title page with background
+\usepackage[pages=some]{background}
+\backgroundsetup{scale = 1, angle = 0, opacity = 0.95,
+  contents = {\includegraphics[width = 1.0\paperwidth,
+    height = 1.0\paperheight, keepaspectratio]
+      {pics/IMG_7946.jpg}}}
+        % Adjust filename and path to match your own image 
 
 %%%%%%%Some style changes
-\addtolength\textwidth{15mm}
-\addtolength\textheight{15mm}
+\addtolength\textwidth{20mm}
+\addtolength\textheight{20mm}
 \addtolength\voffset{-5mm}
 %\addtolength\oddsidemargin{10mm}
 \addtolength\evensidemargin{-20mm}
