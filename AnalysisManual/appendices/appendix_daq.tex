@@ -1,0 +1,41 @@
+\chapter{Daq information}
+\label{app:three}
+
+This chapter summarizes the minimum information from the DAQ needed for the analysis.
+
+\section{DAQ}
+
+\subsection{Header information}
+This section provides the information regarding user interface to the event, AMC13 and rider header information. All the information are stored in the art/ROOT files and standalone ROOT files with the TBranch structures in the following sections.
+
+\subsection{Header and trailer formats}
+
+This section compiles all the available header data formats. Please refer to \url{http://gm2-docdb.fnal.gov:8080/cgi-bin/ShowDocument?docid=3409} for more details.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[trim=0cm 6cm 0cm 6cm ,width=0.95\textwidth]{pics/AMC13Header}
+\caption{AMC13 to DAQ data format.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[trim=0cm 9.5cm 0cm 9.5cm ,width=0.95\textwidth]{pics/RiderToAMC13Header}
+\caption{Rider to AMC13 data format.}
+\end{figure}
+
+%trim left bottom right top
+\begin{figure}[htbp]
+\centering
+%\fbox{\includegraphics[trim=0cm 5.5cm 0cm 5.5cm ,width=0.9\textwidth]{pics/RiderChannelHeader}} guide line for trimming
+\includegraphics[trim=0cm 5.5cm 0cm 5.5cm ,width=0.95\textwidth]{pics/RiderChannelHeader}
+\caption{Rider Channel data format.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{pics/AllHeaders}
+\caption{Per event data format}
+\end{figure}
+
+
