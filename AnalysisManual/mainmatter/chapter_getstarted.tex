@@ -85,22 +85,23 @@ and build both \verb+midas+ and \verb+rome+:
 %
 \begin{Verbatim}[frame=single]
 cd midas
-MIDASSYS=`pwd`
-MIDASSYS=`pwd` >> ~/.bash_profile
+export MIDASSYS=`pwd`
+echo "export MIDASSYS=`pwd`" >> ~/.bash_profile
 make; make install
 cd ../rome
-ROMESYS=`pwd`
-ROMESYS=`pwd` >> ~/.bash_profile
-make; make install
+export ROMESYS=`pwd`
+echo "export ROMESYS=`pwd`" >> ~/.bash_profile
+make clean; make
 \end{Verbatim}
 %
+Please refer to \url{https://cdcvs.fnal.gov/redmine/projects/gm2midas/wiki} for more detail.
 Then go to \verb+gm2midastoart+ to build the midas file library provided by ROME,
 %
 \begin{Verbatim}[frame=single]
 cd ../../gm2midastoart
 git flow feature track SLAC2016
 cd rome
-make; make install
+make
 \end{Verbatim}
 %
 For the packages \verb+gm2unpackers+, \verb+gm2calo+ and \verb+gm2dataproducts+
@@ -140,7 +141,7 @@ INFO: Stage build successful.
 ------------------------------------
 \end{Verbatim}
 %
-Now set an alias for the ninja (because it is fast! Not for the first build though.) build and put it in your \verb+.bash_profile+
+Now set an alias for the ninja (because it is fast! except the first build though) build and put it in your \verb+.bash_profile+
 %
 \begin{Verbatim}[frame=single]
 alias ninja='pushd $MRB_BUILDDIR; ninja; popd'
