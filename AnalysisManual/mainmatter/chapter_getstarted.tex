@@ -1,4 +1,4 @@
-\chapter{Get started}
+\chapter{Getting started}
 \label{chap:getstarted}
 
 \section{Installation}
@@ -152,8 +152,8 @@ Now you are ready to unpack the data, reconstruct the data and analyze the data.
 \subsection{Data unpacking and reconstruction}
 
 The \verb+fcl+ files for the data unpacking are location in the \verb+gm2unpackers/fcl/+ folder,
-whereas the \verb+fcl+ files for the data unpacking are location in the \verb+gm2calo/fcl/+ folder.
-The script running  data unpacking and reconstruction are combined into a main \verb+fcl+ file named \verb+unpackFitConstants.fcl+.
+whereas the \verb+fcl+ files for the data reconstruction are location in the \verb+gm2calo/fcl/+ folder.
+The script running both data unpacking and reconstruction are combined into a main \verb+fcl+ file named \verb+unpackFitConstants.fcl+.
 Since we have several run periods based on their own calibration constants,
 choose the nearest constant file which is below the run number of the file you want to analyze. For example, for run 1800, the nearest
 constant file is \verb+constants1751.fcl+. However, \verb+unpackFitConstants1751.fcl+ is available so you do not have to worry about creating one yourself.
