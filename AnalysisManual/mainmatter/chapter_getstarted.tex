@@ -95,7 +95,7 @@ make clean; make
 \end{Verbatim}
 %
 Please refer to \url{https://cdcvs.fnal.gov/redmine/projects/gm2midas/wiki} for more detail.
-Then go to \verb+gm2midastoart+ to build the midas file library provided by ROME,
+Upon installing \verb+midas+ and \verb+rome+, go to \verb+gm2midastoart+ to build the midas file library provided by ROME,
 %
 \begin{Verbatim}[frame=single]
 cd ../../gm2midastoart
@@ -149,10 +149,27 @@ alias ninja='pushd $MRB_BUILDDIR; ninja; popd'
 %
 Now you are ready to unpack the data, reconstruct the data and analyze the data.
 
-\subsection{Data unpacking}
+\subsection{Data unpacking and reconstruction}
 
-\verb+fcl+ files for the data unpacking are location in the \verb+gm2unpackers/fcl/+ folder.
-
-\subsection{Reconstruction}
-
-\verb+fcl+ files for the data unpacking are location in the \verb+gm2calo/fcl/+ folder.
+The \verb+fcl+ files for the data unpacking are location in the \verb+gm2unpackers/fcl/+ folder,
+whereas the \verb+fcl+ files for the data unpacking are location in the \verb+gm2calo/fcl/+ folder.
+The script running  data unpacking and reconstruction are combined into a main \verb+fcl+ file named \verb+unpackFitConstants.fcl+.
+Since we have several run periods based on their own calibration constants,
+choose the nearest constant file which is below the run number of the file you want to analyze. For example, for run 1800, the nearest
+constant file is \verb+constants1751.fcl+. However, \verb+unpackFitConstants1751.fcl+ is available so you do not have to worry about creating one yourself.
+To analyze any midas file you like, simply
+%
+\begin{Verbatim}[frame=single]
+gm2 -c unpackFitConstants1751.fcl -s run01800.mid -o gm2slac_run01800.art
+-T gm2slac_run01800.root
+\end{Verbatim}
+%
+where \verb+-o+ is followed by the location of the \textit{art} file and \verb+-T+ is followed by the location of the root file you want store.
+Even better, an automation script, \verb+auto_unpack_fit.sh+, where the calibration period is taken care of, is also available. Simply run this script with the
+following command:
+%
+\begin{Verbatim}[frame=single]
+./auto_unpack_fit.sh startRunNum endRunNum
+\end{Verbatim}
+%
+provided you have set the paths in the bash script like \verb+midas_dir+, \verb+art_dir+ and \verb+root_dir+ correctly.
