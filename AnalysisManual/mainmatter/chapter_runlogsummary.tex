@@ -1,7 +1,23 @@
-\chapter{Runlog and Elog}
+\chapter{Data period and logs}
 \label{chap:runlog}
 
-This chapter summarizes the run log in the mysql database written out by the \ac{midas} DAQ and the \verb+ELOG+ for the SLAC run.
+Data period is defined according to the filter wheel calibration period. We have mainly 7 periods and they are labeled from A to G.  The number might changed once we get more insights from the data analysis. This chapter also summarizes the run log in the mysql database written out by the \ac{midas} DAQ and the \verb+ELOG+ for the SLAC run.
+
+\section{Data period}
+
+\begin{longtable}{|c|c|c|} \hline
+Data period &  Run numbers & Datetime range \\ \hline
+A & 3-1450 & 2016/05/31 23:38:30 - 2016/06/02 19:10:56 \\ \hline
+B & 1451-1750 & 2016/06/02 19:11:43  - 2016/06/03 18:39:08 \\ \hline
+C & 1751-2083 & 2016/06/03 18:39:40 - 2016/06/05 10:23:53 \\ \hline
+D & 2084-2100 & 2016/06/05 10:29:14 - 2016/06/05 12:23:57 \\ \hline
+E & 2101-2132 & 2016/06/05 12:24:05 - 2016/06/05 15:15:11 \\ \hline
+F & 2133-2893 & 2016/06/05 15:15:38 - 2016/06/09 16:28:16 \\ \hline
+G & 2894-3634 & 2016/06/09 16:28:29 - 2016/06/15 02:32:28 \\ \hline
+\end{longtable}
+
+Each of these data periods has its own calibration constants and SiPM and PIN laser response baselines.
+(See~\cref{chap:artframework:} for more details.)
 
 \section{Runlog}
 
