@@ -27,12 +27,15 @@ and give them contexts based on the header information stored within the \verb+v
 \subsection{Data Acquisition}
 Explain the DAQ flow here roughly (from machine trigger to FC7, from FC7 fanout to AMC13 of all the crates, then from AMC13 to AMCs in a crate).
 
-
 \subsection{Data Unpacking}
 The task of unpacking the raw midas data is divided into several \textit{art} modules. First, the Midas banks are converted into TBranches as vectors in the source input module under the repository gm2midastoart.
 Then the header information stored in the \verb+CB+ banks is unpacked by the module \verb+HeaderUnpacker+, 
 the raw waveforms stored in the \verb+CR+ banks in the calorimeter (fc7, laser) crate is unpacked by the RawUnpacker (LaserRawUnpacker, FC7Unpacker), the chopped islands stored in the \verb+CT+ banks
 is unpacked by the IslandUnpacker (LaserUnpacker) and so on. Fhicl file configuration will be explained in the next section.
+
+Unpacking the slow control data like the temperature readout from SCS3000 requires some modification to the gm2midastoart's \verb+MidasBankInput+ module.
+The \verb+event id+ for the fast control events is assigned as 1 by the MIDAS DAQ whereas for the slow control it is 11 (\verb+0x000b+ in hex representation).
+The bank name for the SLAC2016 setup is \verb+INPT+ and the bank data type is \verb+float+.
 
 \subsection{Reconstruction}
 The data reconstruction chain is consisted of 5 modules in series: pulse fitter, energy calibrator, gain corrector, time corrector and hit cluster. Fhicl file configuration will be explained in the next section.
