@@ -1,5 +1,5 @@
 \chapter{Data analysis framework}
-\label{chap:artframework}
+\label{chap:analysisframework}
 
 \section{Offline framework for the SLAC test beam}
 
@@ -18,13 +18,21 @@ This is handled using \textit{art} framework's modules and is doing nothing more
 and give them contexts based on the header information stored within the \verb+vectors+. At this step, all the information are stored as data products you are probably familiar with: \verb+RiderArtRecord+,
 \verb+IslandArtRecord+, etc. Then reconstruction algorithms are ran through these data products and at the end of the chain each physics objects are reconstructed as clusters.
 
-
-
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{pics/offline_slac_framework}
 \caption{Offline framework for the SLAC experimental data.}
 \end{figure}
 
+\subsection{Data Acquisition}
+Explain the DAQ flow here roughly (from machine trigger to FC7, from FC7 fanout to AMC13 of all the crates, then from AMC13 to AMCs in a crate).
 
 
+\subsection{Data Unpacking}
+The task of unpacking the raw midas data is divided into several \textit{art} modules. First, the Midas banks are converted into TBranches as vectors in the source input module under the repository gm2midastoart.
+Then the header information stored in the \verb+CB+ banks is unpacked by the module \verb+HeaderUnpacker+, 
+the raw waveforms stored in the \verb+CR+ banks in the calorimeter (fc7, laser) crate is unpacked by the RawUnpacker (LaserRawUnpacker, FC7Unpacker), the chopped islands stored in the \verb+CT+ banks
+is unpacked by the IslandUnpacker (LaserUnpacker) and so on. Fhicl file configuration will be explained in the next section.
+
+\subsection{Reconstruction}
+The data reconstruction chain is consisted of 5 modules in series: pulse fitter, energy calibrator, gain corrector, time corrector and hit cluster. Fhicl file configuration will be explained in the next section.

@@ -5,6 +5,7 @@ Data period is defined according to the filter wheel calibration period. We have
 
 \section{Data period}
 
+\begin{table}[htbp]
 \begin{longtable}{|c|c|c|} \hline
 Data period &  Run numbers & Datetime range \\ \hline
 A & 3-1450 & 2016/05/31 23:38:30 - 2016/06/02 19:10:56 \\ \hline
@@ -15,9 +16,10 @@ E & 2101-2132 & 2016/06/05 12:24:05 - 2016/06/05 15:15:11 \\ \hline
 F & 2133-2893 & 2016/06/05 15:15:38 - 2016/06/09 16:28:16 \\ \hline
 G & 2894-3634 & 2016/06/09 16:28:29 - 2016/06/15 02:32:28 \\ \hline
 \end{longtable}
+\end{table}
 
 Each of these data periods has its own calibration constants and SiPM and PIN laser response baselines.
-(See~\cref{chap:artframework:} for more details.)
+(See~\cref{chap:analysisframework} for more details.)
 
 \section{Runlog}
 
@@ -50,7 +52,7 @@ Variables defined for each run are
 The full elog is hosted at \url{https://muon.npl.washington.edu/elog/g2/SLAC+Test+Beam+2016/}.
 Some of the milestones achieved during the SLAC run and interesting plots are summarized here.
 
-\begin{longtable}{|p{2.5cm}|p{8cm}|p{4cm}|} \hline
+\begin{longtable}{|p{1.5cm}|p{9.5cm}|p{4cm}|} \hline
 Elog number &  Comments & Run number \newline (if applicable)\\ \hline
 16 & first filter wheel calibration & \\ \hline
 17 & p.e vs xtalNum, gain vs xtalNum and p.e. vs gain & 900 \\ \hline
