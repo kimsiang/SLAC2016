@@ -87,7 +87,7 @@ and build both \verb+midas+ and \verb+rome+:
 cd midas
 export MIDASSYS=`pwd`
 echo "export MIDASSYS=`pwd`" >> ~/.bash_profile
-make; make install
+make NO_MYSQL=1
 cd ../rome
 export ROMESYS=`pwd`
 echo "export ROMESYS=`pwd`" >> ~/.bash_profile
