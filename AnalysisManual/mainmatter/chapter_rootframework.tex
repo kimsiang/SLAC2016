@@ -1,10 +1,31 @@
 \chapter{Standalone C++ Analysis framework}
 \label{chap:rootframework}
 
-The package \verb+SLAC2016Ana+ contains an example \verb+C+++ framework to help you getting started. You can get it from the github.com by \verb+git clone https://github.com/kimsiang/SLAC2016+. You can build your additional analysis code on top of this example or write a new one based on it. The example is already running but it's not doing much yet. You can compile the analysis code by first sourcing your ROOT environment (e.g. \verb+source thisroot.sh+) and then followed by executing the command \verb+make+.
-
+The package \verb+SLAC2016Ana+ contains an example \verb+C+++ framework to help you getting started. You can get it from the github.com by using the following command:
+%
+\begin{Verbatim}[frame=single]
+git clone https://github.com/kimsiang/SLAC2016+. 
+\end{Verbatim}
+%
+You can build your additional analysis code on top of this example or write a new one based on it. The example is already running but it's not doing much yet. You can compile the analysis code by first sourcing your ROOT environment
+%
+\begin{Verbatim}[frame=single]
+source thisroot.sh
+\end{Verbatim}
+%
+and then followed by executing the command
+\begin{Verbatim}[frame=single]
+make
+\end{Verbatim}
+%
 This will read the necessary ingredients for compilation from the \verb+Makefile+ in the same directory. Don't have to worry much about this file at the moment unless you want to add in more classes to the analysis code.
-The point is that it creates an executable named \verb+ana+. You can then execute the program by the command \verb+./ana input.script+ where \verb+input.script+ includes a path to the root file that you want to analyze (e.g. \verb+./test.root+). 
+The point is that it creates an executable named \verb+ana+. You can then execute the program by the command 
+%
+\begin{Verbatim}[frame=single]
+./ana input.script
+\end{Verbatim}
+%
+where \verb+input.script+ includes a path to the root file that you want to analyze (e.g. \verb+./test.root+). 
 
 A description of the individual components of the example are given in the following list. Indicated are also the places where you should start adding your own code:
 
