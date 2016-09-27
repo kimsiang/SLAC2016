@@ -1,7 +1,21 @@
 \chapter{Fiber harp}
 \label{chap:fiberharp}
 
-In this chapter, the information related to the fiber harp analysis will be explained.
+This chapter covers the fiber harp unpacking and analysis software used during the 2016 SLAC test beam.
+
+\section{Overview}
+
+In addition to the calorimeter, the scintillating fiber harp detector was also tested during the SLAC 2016 test beam. A single fiber harp with 7 fibers was used, and data runs were taken with the harp orientated in both the in standard (transverse to beam) and calibrate (longitudinal in beam) positions. 
+
+As well as testing the fiber harp, a t0 counter scinitllator detector was also installed for later runs and tested simultaneously with the fiber harp.
+
+A laser sync pulse from the calorimeter laser calibration system was used in one rider channel for synchronisation purposes.
+
+Two support detectors from SLAC were also used simultaneously; a downstream SciFi detector and an upstream ePix silicon detector. 
+
+The offline code described below includes data from the fiber harp, t0 counter, sync pulse and SciFi. The ePix detector was stored separately in a different data stream, and is not considered here. 
+
+The fiber harp readout was performed using a modified version of the calorimeter DAQ. This used a single AMC13 with 3 Riders. GPU island chopping was used, but with the GPUs only triggering from the sync pulse and SciFi waveforms. A trigger in either of these channels results in a waveform being recorded in all channels. Since the SciFi detects all primary beam particles, waveforms triggered by the SciFi are beam events, meaning that signals may be expected in the fiber harp and t0 counter. Waveforms triggered by the sync pulse are outside of the beam window, and hence the waveforms in the fiber harp and t0 counter for these islands should be consistent with pedestal.
 
 \section{Installation}
 
@@ -24,4 +38,38 @@ mrb g -b feature/SLAC2016 gm2aux
 mrb b --generator ninja
 \end{Verbatim}
 %
+
+\section{Unpacking the data}
+
+The fiber harp data is unpacked directly from MIDAS files. Run the unpacker as follows:
+%
+\begin{Verbatim}[frame=single]
+gm2 -c $MRB_SOURCE/gm2aux/fcl/unpackFiberHarp.fcl -s <.mid file(s)>
+\end{Verbatim}
+%
+
+The output will be the file \verb+unpackFiberHarp.art+, which contains a \verb+gm2aux::FredinoArtRecordCollection+ data product with module label \verb+fiberHarpProcessor+ and instance name \verb+harp+ which contains the unpacked data. This data product is filled once per island per fill. There are typically two islands per fill, one triggered by the sync pulse and the other by the beam. The fill and island numbers in each entry are given by the \verb+fillNum+ and \verb+islandNum+ variables in the data product.
+Also within the data product are containers of "hits" in the island for each detector type in the system, where a "hit" is the waveform in a given channel in the island, including some processed information usch as time of peak, pedestal, waveform area, etc.
+
+\begin{itemize}
+\item \verb+harpHits+: Fiber harp island waveforms
+\item \verb+syncLineHits+: Sync pulse island waveforms
+\item \verb+sciFiHits+: SciFi island waveforms
+\item \verb+t0CounterHits+: t0 counter island waveforms
+\end{itemize}
+
+Each "hit" in the container contains member date. The most commonly used members are listed below:
+
+\begin{itemize}
+\item \verb+time+: Time of waveform peak from start of fill $[ADC samples]$
+\item \verb+pedestal+: Pedestal ADC value $[ADC counts]$
+\item \verb+amplitude+: Height of peak above pedestal in ADC samples $[ADC counts]$
+\item \verb+area+: Total size area under waveform above pedestal $[ADC counts \times ADC samples]$
+\end{itemize}
+
+An example \verb+art analyze+ for plotting fiber harp data can be found in \verb+gm2aux/analyses/FiberHarpSanityPlots_module.cc+.
+
+
+
+
 
