@@ -2,3 +2,26 @@
 \label{chap:fiberharp}
 
 In this chapter, the information related to the fiber harp analysis will be explained.
+
+\section{Installation}
+
+The fiber harp unpacking and reconstruction software overlaps heavily with the calorimeter, but with one additional package \verb+gm2aux+.
+
+\vspace{4mm}\par\noindent  Follow the guide in section \ref{settinguptheenvironment} to set up the environment.
+
+\vspace{4mm}\par\noindent  Follow the guide in section \ref{checkingoutunpackingandreconstructionpackages} to check out all required unpacking and reconstruction packages, but in addition checkout the package \verb+gm2aux+.
+%
+\begin{Verbatim}[frame=single]
+cd $MRB_SOURCE
+mrb g -b feature/SLAC2016 gm2aux
+\end{Verbatim}
+%
+
+\noindent After check out this additional package, re-build the code using \verb+mrb b+ (not \verb+ninja+):
+
+%
+\begin{Verbatim}[frame=single]
+mrb b --generator ninja
+\end{Verbatim}
+%
+
