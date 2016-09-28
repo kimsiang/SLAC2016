@@ -48,7 +48,13 @@ gm2 -c $MRB_SOURCE/gm2aux/fcl/unpackFiberHarp.fcl -s <.mid file(s)>
 \end{Verbatim}
 %
 
-The output will be the file \verb+gm2slac2016_unpackFiberHarp.art+, which contains a \verb+gm2aux::FredinoArtRecordCollection+ data product with module label \verb+fiberHarpProcessor+ and instance name \verb+harp+ which contains the unpacked data. This data product is filled once per island per fill. There are typically two islands per fill, one triggered by the sync pulse and the other by the beam. The fill and island numbers in each entry are given by the \verb+fillNum+ and \verb+islandNum+ variables in the data product.
+The output will be the file \verb+gm2slac2016_unpackFiberHarp.art+, which contains the data product
+%
+\begin{Verbatim}[frame=single]
+gm2aux::FredinoArtRecordCollection
+\end{Verbatim}
+%
+with module label \verb+fiberHarpProcessor+ and instance name \verb+harp+ which contains the unpacked data. This data product is filled once per island per fill. There are typically two islands per fill, one triggered by the sync pulse and the other by the beam. The fill and island numbers in each entry are given by the \verb+fillNum+ and \verb+islandNum+ variables in the data product.
 Also within the data product are containers of "hits" in the island for each detector type in the system, where a "hit" is the waveform in a given channel in the island, including some processed information usch as time of peak, pedestal, waveform area, etc.
 
 \begin{itemize}
@@ -68,10 +74,17 @@ Each "hit" in the container contains member date. The most commonly used members
 \item \verb+area+: Total size area under waveform above pedestal $[ADC \times samples]$
 \end{itemize}
 
-An example \verb+art analyzer+ for plotting fiber harp data can be found in \verb+gm2aux/analyses/FiberHarpSanityPlots_module.cc+. Run it using:
+An example \verb+art analyzer+ for plotting fiber harp data can be found in :
 %
 \begin{Verbatim}[frame=single]
-gm2 -c $MRB_SOURCE/gm2aux/fcl/fiberHarpSanityPlots.fcl -s <unpacked art file>
+gm2aux/analyses/FiberHarpSanityPlots_module.cc
+\end{Verbatim}
+%
+Run it using:
+%
+\begin{Verbatim}[frame=single]
+gm2 -c $MRB_SOURCE/gm2aux/fcl/fiberHarpSanityPlots.fcl 
+-s <unpacked art file>
 \end{Verbatim}
 %
 
@@ -79,7 +92,8 @@ e.g.
 
 %
 \begin{Verbatim}[frame=single]
-gm2 -c $MRB_SOURCE/gm2aux/fcl/fiberHarpSanityPlots.fcl -s gm2slac2016_unpackFiberHarp.art
+gm2 -c $MRB_SOURCE/gm2aux/fcl/fiberHarpSanityPlots.fcl 
+-s gm2slac2016_unpackFiberHarp.art
 \end{Verbatim}
 %
 
