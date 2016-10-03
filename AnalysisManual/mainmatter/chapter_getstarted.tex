@@ -175,3 +175,26 @@ following command:
 \end{Verbatim}
 %
 provided you have set the paths in the bash script like \verb+midas_dir+, \verb+art_dir+ and \verb+root_dir+ correctly.
+
+\subsection{Running the simulation}
+
+If you are intereted in running the simulation for the SLAC test run, you can download the package \verb+gm2ringsim+ and checkout the SLAC2016 feature branch.
+\begin{Verbatim}[frame=single]
+cd srcs/
+mrb g gm2ringsim
+cd gm2ringsim
+git flow feature track SLAC2016
+\end{Verbatim}
+
+To run the simulation, run the following fhicl file in the gm2ringsim/fcl folder:
+\begin{Verbatim}[frame=single]
+gm2 -c slacTestBeam.fcl -o slacTestBeam.root
+\end{Verbatim}
+
+To reconstruct and analyze the simulated data, run the following fhicl file in the gm2calo/fcl folder:
+\begin{Verbatim}[frame=single]
+gm2 -c slacTestBeamRecon.fcl -s slacTestBeam.root \\
+-o slacTestBeam_recon.root -T slacTestBeam_ana.root
+\end{Verbatim}
+%
+You can specify the name of the art output (after -o option) and TFile root output (after -T option) by yourself.
