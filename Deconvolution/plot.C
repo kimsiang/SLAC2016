@@ -17,7 +17,7 @@ void plot(){
     TCanvas *c1 = new TCanvas("c1","c1",1200,800);
     c1->Divide(2,2);
 
-    // Photon distribution
+    // Photon distribution from gm2ringsim
     TFile *distFile = new TFile("photonDistribution.root");
     TH1D *photon = (TH1D*)distFile->Get("h2");
     photon->Scale(50./photon->GetEntries());
@@ -29,7 +29,7 @@ void plot(){
         resp[i]=photon->GetBinContent(i+1);
     }
 
-    // Laser on SiPM
+    // Laser on SiPM, pulse shape in the gm2ringsim
     TFile *laserSFile = new TFile("pulseShape.root");
     TSpline *tSplineLaserS =(TSpline3*)laserSFile->Get("masterSpline");
 
@@ -42,7 +42,7 @@ void plot(){
     outputLaserOnSiPM->SetLineColor(4);
     outputLaserOnSiPM->SetLineStyle(7);
 
-    // Fit Template
+    // Fit Template, beam pulse shape in the gm2ringsim
     TFile *fitTFile = new TFile("fitTemplate.root");
     TSpline *tSplineFitT =(TSpline3*)fitTFile->Get("masterSpline");
 
@@ -55,7 +55,7 @@ void plot(){
     outputBeamSim->SetLineColor(3);
     outputBeamSim->SetLineStyle(7);
 
-    // Laser Template
+    // Laser Template from SLAC
     TFile *laserFile = new TFile("laserTemplates/laserTemplateFile44.root");
     TSpline *tSplineLaser =(TSpline3*)laserFile->Get("masterSpline");
 
@@ -67,7 +67,7 @@ void plot(){
     //   outputLaser->Draw("same");
     outputLaser->SetLineColor(4);
 
-    // Beam Template
+    // Beam Template from SLAC
     TFile *sourceFile = new TFile("beamTemplates/beamTemplateFile33.root");
     TSpline *tSpline =(TSpline3*)sourceFile->Get("masterSpline");
 
