@@ -1,0 +1,407 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  28 SEP 2016 01:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**cover.tex
+(./cover.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+
+! LaTeX Error: Environment titlepage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{titlepage}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.2 \pagecolor
+              {white}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \pagecolor{w
+                hite}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--3
+[] 
+ []
+
+! Undefined control sequence.
+l.4 \BgThispage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 \color
+          {white}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \color{w
+            hite}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.7 \hspace*{3.5 cm}{\huge
+                           \textbf{Physics Analysis User Guide}} \\[1.5em]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 \hspace*{9.9 cm}{\large
+                            \textit{for the SLAC 2016 testbeam}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--9
+[]
+ []
+
+
+Overfull \hbox (136.96219pt too wide) in paragraph at lines 5--9
+| \OT1/cmr/bx/n/10 Physics
+ []
+
+
+Overfull \hbox (27.70122pt too wide) in paragraph at lines 5--9
+\OT1/cmr/bx/n/10 Anal-
+ []
+
+
+Overfull \hbox (9.90273pt too wide) in paragraph at lines 5--9
+\OT1/cmr/bx/n/10 y-
+ []
+
+
+Overfull \hbox (12.26657pt too wide) in paragraph at lines 5--9
+\OT1/cmr/bx/n/10 sis
+ []
+
+
+Overfull \hbox (23.39015pt too wide) in paragraph at lines 5--9
+\OT1/cmr/bx/n/10 User
+ []
+
+
+Overfull \hbox (30.28456pt too wide) in paragraph at lines 5--9
+\OT1/cmr/bx/n/10 Guide 
+ []
+
+
+Overfull \hbox (294.07646pt too wide) in paragraph at lines 5--9
+| \OT1/cmr/m/it/10 for
+ []
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 5--9
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (26.22758pt too wide) in paragraph at lines 5--9
+\OT1/cmr/m/it/10 SLAC
+ []
+
+
+Overfull \hbox (20.44434pt too wide) in paragraph at lines 5--9
+\OT1/cmr/m/it/10 2016
+ []
+
+
+Overfull \hbox (18.91095pt too wide) in paragraph at lines 5--9
+\OT1/cmr/m/it/10 test-
+ []
+
+
+Overfull \hbox (22.23363pt too wide) in paragraph at lines 5--9
+\OT1/cmr/m/it/10 beam 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \noindent
+              
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \noindent
+              
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \noindent
+              
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 }
+      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 24--25
+[]
+ []
+
+
+Overfull \hbox (49.98314pt too wide) in paragraph at lines 24--25
+|  \OT1/cmr/m/sc/10 Kim
+ []
+
+
+Overfull \hbox (27.81094pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Siang
+ []
+
+
+Overfull \hbox (31.35815pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Khaw,
+ []
+
+
+Overfull \hbox (21.07207pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Uni-
+ []
+
+
+Overfull \hbox (21.511pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 ver-
+ []
+
+
+Overfull \hbox (19.64435pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 sity
+ []
+
+
+Overfull \hbox (11.71107pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 of
+ []
+
+
+Overfull \hbox (30.51091pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Wash-
+ []
+
+
+Overfull \hbox (19.34433pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 ing-
+ []
+
+
+Overfull \hbox (18.39992pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 ton 
+ []
+
+
+Overfull \hbox (52.33195pt too wide) in paragraph at lines 24--25
+|  \OT1/cmr/m/sc/10 Ja-
+ []
+
+
+Overfull \hbox (17.0666pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 son
+ []
+
+
+Overfull \hbox (30.53867pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Hemp-
+ []
+
+
+Overfull \hbox (31.63872pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 stead,
+ []
+
+
+Overfull \hbox (21.07207pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Uni-
+ []
+
+
+Overfull \hbox (21.511pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 ver-
+ []
+
+
+Overfull \hbox (19.64435pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 sity
+ []
+
+
+Overfull \hbox (11.71107pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 of
+ []
+
+
+Overfull \hbox (30.51091pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Wash-
+ []
+
+
+Overfull \hbox (19.34433pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 ing-
+ []
+
+
+Overfull \hbox (18.39992pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 ton 
+ []
+
+
+Overfull \hbox (75.28189pt too wide) in paragraph at lines 24--25
+|  \OT1/cmr/m/sc/10 Thomas
+ []
+
+
+Overfull \hbox (27.84424pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Stut-
+ []
+
+
+Overfull \hbox (26.83873pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 tard,
+ []
+
+
+Overfull \hbox (21.07207pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Uni-
+ []
+
+
+Overfull \hbox (21.511pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 ver-
+ []
+
+
+Overfull \hbox (19.64435pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 sity
+ []
+
+
+Overfull \hbox (23.12761pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Col-
+ []
+
+
+Overfull \hbox (22.69986pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 lege
+ []
+
+
+Overfull \hbox (23.09985pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 Lon-
+ []
+
+
+Overfull \hbox (18.73328pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/sc/10 don
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{titlepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \end{titlepage}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> cover.tex
+             
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 14 strings out of 493117
+ 208 string characters out of 6135433
+ 53909 words of memory out of 5000000
+ 3574 multiletter control sequences out of 15000+600000
+ 4595 words of font info for 17 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 13i,1n,10p,98b,86s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
