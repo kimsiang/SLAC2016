@@ -1,0 +1,89 @@
+\chapter{Job submission in Fermigrid}
+\label{app:grid}
+
+To submit a job to the grid, the following two files are needed.
+
+\begin{Verbatim}
+#!/bin/sh
+# Usage: gridSetupAndSubmit-local.sh [FCL filename] [RUNNUM]
+
+#[ ! -r $PWD/submit-localrelease.sh ] \
+	&& echo "Unable to access submit-localrelease.sh at $PWD !" \
+	&& exit
+
+setup jobsub_client
+
+NOW=$(date +"%F-%H-%M-%S")
+SCRATCH_DIR=/pnfs/GM2/scratch/users/${USER}/slac2016_grid
+
+echo "Scratch directory: ${SCRATCH_DIR}"
+
+# only needed for the first time
+mkdir ${SCRATCH_DIR}
+mkdir ${SCRATCH_DIR}/logs
+mkdir ${SCRATCH_DIR}/art
+mkdir ${SCRATCH_DIR}/root
+chmod -R g+w ${SCRATCH_DIR}
+
+#enter the FHiCL file you want to use for the submission
+MAINFCLNAME=${1:-ProductionMuPlusMuonGasGun}
+echo "Main FCL: ${MAINFCLNAME}.fcl"
+
+RUN=$2
+
+#This submits the job to the grid using local release:
+jobsub_submit -G gm2 -M --OS=SL6  \
+	--resource-provides=usage_model=DEDICATED,OPPORTUNISTIC \
+	--role=Analysis file://$PWD/submit-localrelease.sh \
+	${MAINFCLNAME} ${RUN} ${SCRATCH_DIR}
+\end{Verbatim}
+
+\begin{Verbatim}
+#!/bin/sh
+# Usage: submit-localrelease.sh [FCL filename] [RUNNUM] [OUTPUTDIR]
+
+MYDIR=/gm2/app/users/kkhaw/Work/slac2016/dev
+localsetup=${MYDIR}/localProducts_gm2_v6_04_00_prof/setup
+[ ! -f $localsetup -o ! -r $localsetup ] \
+    && echo -e "\nUnable to access local setup file $localsetup\n" \
+    && exit
+
+source /cvmfs/fermilab.opensciencegrid.org/products/common/etc/setups
+source /cvmfs/fermilab.opensciencegrid.org/products/larsoft/setup
+setup ifdhc v1_6_2 -z /cvmfs/fermilab.opensciencegrid.org/products/common/db
+
+#Set MIDAS and ROME environments
+export MIDASSYS="${MYDIR}/srcs/gm2midas/midas"
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${MYDIR}/srcs/gm2midas/midas/linux/lib
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${MYDIR}/srcs/gm2midas/rome/
+export ROMESYS="/${MYDIR}/srcs/gm2midas/rome"
+#Set MIDAS event size (must match size the MIDAS file was created with)
+export MIDAS_MAX_EVENT_SIZE=0x10000000
+
+echo "Your environment in this job: " > job_output_${CLUSTER}.${PROCESS}.log
+env >> job_output_${CLUSTER}.${PROCESS}.log
+
+if [ "${PROCESS}" == "0" ]; then
+    echo ${JOBSUBJOBID} > ${JOBSUBJOBID}
+    ifdh cp -D ${JOBSUBJOBID} $3
+fi
+
+source /cvmfs/gm2.opensciencegrid.org/prod/g-2/setup
+source $localsetup
+
+#need to setup local products before running
+. mrb slp
+
+printf -v RUNNUM "%05g" $2
+
+MIDASFILE=run${RUNNUM}.mid
+ifdh cp /pnfs/GM2/slac2016/midas/${MIDASFILE} .
+
+gm2 -c $1.fcl -s ${MIDASFILE} \
+	-o gm2slac_run${RUNNUM}.art -T gm2slac_run${RUNNUM}.root
+
+ifdh cp -D job_output_${CLUSTER}.${PROCESS}.log $3/logs
+ifdh cp -D gm2slac_run${RUNNUM}.art $3/art
+ifdh cp -D gm2slac_run${RUNNUM}.root $3/root
+rm ${MIDASFILE}
+\end{Verbatim}

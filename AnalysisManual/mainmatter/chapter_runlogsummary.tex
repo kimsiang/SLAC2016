@@ -1,0 +1,100 @@
+\chapter{Data period and logs}
+\label{chap:runlog}
+
+Data period is defined according to the filter wheel calibration period. We have mainly 7 periods and they are labeled from A to G.  The number might changed once we get more insights from the data analysis. This chapter also summarizes the run log in the mysql database written out by the \ac{midas} DAQ and the \verb+ELOG+ for the SLAC run.
+
+\section{Data period}
+
+\begin{table}[htbp]
+\caption{Summary of the data period. Included are the range of the run numbers and the date-time.}
+\begin{longtable}{|c|c|c|} \hline
+Data period &  Run numbers & Datetime range \\ \hline
+A & 3-1450 & 2016/05/31 23:38:30 - 2016/06/02 19:10:56 \\ \hline
+B & 1451-1750 & 2016/06/02 19:11:43  - 2016/06/03 18:39:08 \\ \hline
+C & 1751-2083 & 2016/06/03 18:39:40 - 2016/06/05 10:23:53 \\ \hline
+D & 2084-2100 & 2016/06/05 10:29:14 - 2016/06/05 12:23:57 \\ \hline
+E & 2101-2132 & 2016/06/05 12:24:05 - 2016/06/05 15:15:11 \\ \hline
+F & 2133-2893 & 2016/06/05 15:15:38 - 2016/06/09 16:28:16 \\ \hline
+G & 2894-3634 & 2016/06/09 16:28:29 - 2016/06/15 02:32:28 \\ \hline
+\end{longtable}
+\end{table}
+
+Each of these data periods has its own calibration constants and SiPM and PIN laser response baselines.
+(See~\cref{chap:analysisframework} for more details.)
+
+\section{Runlog}
+
+The full runlog is documented in the \verb+docdb+ under \url{http://gm2-docdb.fnal.gov:8080/cgi-bin/ShowDocument?docid=3964}.
+A better organized runlog can be found under \url{http://gm2-docdb.fnal.gov:8080/cgi-bin/RetrieveFile?docid=3964&filename=CondensedRunLog.xlsx&version=5}.
+
+Variables defined for each run are
+
+\begin{itemize}
+\item \verb+runNum+ : number of this run
+\item \verb+startTime+ : start time of the run
+\item \verb+comment+ : comment about this run 
+\item \verb+quality+ : quality of this run (N, T, Y, C)
+\item \verb+crew+ : crew(s) on shift 
+\item \verb+beamE+ : electron beam energy 
+\item \verb+tableX+ : table x-coordinate
+\item \verb+tableY+ : table y-coordinate
+\item \verb+angle+ : angle of the calorimeter w.r.t. the normal placement
+\item \verb+filterWheel+ : filter wheel setting
+\item \verb+bv1+ : bias voltage 1
+\item \verb+bv2+ : bias voltage 2 
+\item \verb+bv3+ : bias voltage 3 
+\item \verb+bv4+ : bias voltage 4 
+\item \verb+stopTime+ : stop time of the run
+\item \verb+nEvents+ : number of events in this run
+\item \verb+fileSize+ : midas file size
+\item \verb+rate+ : event rate
+\end{itemize}
+
+\section{Elog}
+
+The full elog is hosted at \url{https://muon.npl.washington.edu/elog/g2/SLAC+Test+Beam+2016/}.
+Some of the milestones achieved during the SLAC run and interesting plots are summarized here.
+
+\begin{longtable}{|p{1.5cm}|p{9.5cm}|p{4cm}|} \hline
+Elog number &  Comments & Run number \newline (if applicable)\\ \hline
+16 & first filter wheel calibration & \\ \hline
+17 & p.e vs xtalNum, gain vs xtalNum and p.e. vs gain & 900 \\ \hline
+26 & calibration results after trying to equalize gains & 1451- \\ \hline
+27 & xtal hit map (E-weighted) & 1398 \\ \hline
+34 & rider odd-even sample difference & \\ \hline
+35 & laser template variation & \\ \hline
+37 & first double pulse spotted & 1676 (xtal24, event 898, islandNum 4) \\ \hline
+38 & black wrapping $e^{-}$ beam template vs laser template & 1673-1680 \\ \hline
+45 & number of p.e. versus position & \\ \hline
+56 & deltaT from laser pulses & \\ \hline
+58 & intrinsic noise of the whole calo chain and pedestal & 1800 \\ \hline
+59 & xtal14 temperature over 30 hours & \\ \hline
+82 & laser calibration at 100 kHz & 2133- \\ \hline
+87 & timing resolution versus laser pulse amplitude & 2133-2139 \\ \hline
+88 & Napoli DAQ analysis & 3-5 Jun \\ \hline
+97 & trends for Jun 5 position and edge scan \newline cluster energy, laser energy, avg. SiPM temp. & 2122-2171 \\ \hline
+99 & exponential plot of the flight simulator, 64 laser per fill & 2187 \\ \hline
+101 & linearity of the calorimeter (p.e. versus beam energy) & 2352,2270,2282, \newline 2308,2320,2344 \\ \hline
+103 & fine scan in x position & \\ \hline
+104 & odd/even pedestal vs run number & \\ \hline
+105 & laser monitor stability (PMT, pin1/pin2 vs FC7 time) & \\ \hline
+110 & accelerator in 2-bunch mode ($\Delta T = 4.55$~ns) & 2411-2425 \\ \hline
+111 & template fit 2-bunch mode pulses  ($\Delta T = 4.55$~ns) & 2412 \\ \hline
+112 & template fit 2-bunch mode pulses  ($\Delta T = 9.8$~ns) & 2436 \\ \hline
+117 & deltaT from electron beam and laser pulses & \\ \hline
+119 & comparison of calibration constants (Jun 5 vs Jun 9) & \\ \hline
+130 & fitting 15 deg pulse with 0 deg pulse template & 3034 and 3036 \\ \hline
+131 & flight simulator runs, pedestal versus time & 3109 and 3111 \\ \hline
+136 & position reconstruction (logarithmic weight, W = 3.5) & 1930-1936 \\ \hline
+137 & laser response (loaded vs unloaded), FW = 5 & 3175-3191 \\ \hline
+140 & laser response (loaded vs unloaded), FW = 1 & 3202 \\ \hline
+150 & beam template overlay xtal14 and xtal24 & \\ \hline
+163 & beam energy versus time (decreases at calo sides) & \\ \hline
+166 & energy spread across crystals & \\ \hline
+169 & low QE mode (electron comb) & 3379-3380 \\ \hline
+172 & per fill gain correction &  \\ \hline
+187 & hit time distribution of neighboring xtals & 1929-1936 \\ \hline
+217 & laser energy versus pulse number & 3003-3014 and 2401-2412 \\ \hline
+240 & laser energy versus pin1+pin2 & \\ \hline
+244 & applying gain corrections to runs from which the gain correction baselines are extracted & 3308 and 3315 \\ \hline
+\end{longtable}

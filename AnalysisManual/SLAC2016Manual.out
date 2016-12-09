@@ -1,0 +1,24 @@
+\BOOKMARK [0][-]{section*.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Contents}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{List of Figures}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{List of Tables}{}% 4
+\BOOKMARK [0][-]{chapter*.5}{Acronyms}{}% 5
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 6
+\BOOKMARK [0][-]{chapter.2}{2 T-536 program}{}% 7
+\BOOKMARK [0][-]{chapter.3}{3 Runlog}{}% 8
+\BOOKMARK [0][-]{chapter.4}{4 Data analysis framework}{}% 9
+\BOOKMARK [1][-]{section.4.1}{4.1 Offline framework for the SLAC test beam}{chapter.4}% 10
+\BOOKMARK [1][-]{section.4.2}{4.2 Header information}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.3}{4.3 Header and trailer formats}{chapter.4}% 12
+\BOOKMARK [0][-]{chapter.5}{5 Get started}{}% 13
+\BOOKMARK [1][-]{section.5.1}{5.1 Installation}{chapter.5}% 14
+\BOOKMARK [0][-]{chapter.6}{6 Standalone C++ Analysis framework}{}% 15
+\BOOKMARK [1][-]{section.6.1}{6.1 Data format and structure for the ROOT tree}{chapter.6}% 16
+\BOOKMARK [0][-]{chapter.7}{7 ROOT-based offline event display}{}% 17
+\BOOKMARK [0][-]{chapter.8}{8 Napoli DAQ}{}% 18
+\BOOKMARK [0][-]{chapter.9}{9 Fiber harp}{}% 19
+\BOOKMARK [0][-]{appendix.A}{A Data location}{}% 20
+\BOOKMARK [1][-]{section.A.1}{A.1 Data samples}{appendix.A}% 21
+\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 File naming}{section.A.1}% 22
+\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 Location of the files}{section.A.1}% 23
+\BOOKMARK [0][-]{appendix*.19}{Bibliography}{}% 24

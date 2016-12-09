@@ -1,0 +1,200 @@
+\chapter{Getting started}
+\label{chap:getstarted}
+
+\section{Installation}
+
+This section is based on the official Offline Computing and Software Manual \url{http://gm2-docdb.fnal.gov:8080/cgi-bin/ShowDocument?docid=1825}.
+Only important steps are reproduced here.
+
+\subsection{Setting up the environment}
+\label{settinguptheenvironment}
+
+First of all you need to login to the Fermilab virtual machine (\verb+gm2gpvm02-04+).
+Once you have logged in, you need to choose a release for the Muon g-2 softwares (libraries, executables)
+every time you login or you can put it in your \verb+.profile+ on \verb+gm2gpvm+. Do the following:
+%
+\begin{Verbatim}[frame=single]
+source /grid/fermiapp/gm2/setup
+\end{Verbatim}
+%
+Alternatively if you want to run codes on your laptop, you can use cvmfs as mentioned in the documentation.
+%
+\begin{Verbatim}[frame=single]
+source /cvmfs/gm2.opensciencegrid.org/prod/g-2/setup
+\end{Verbatim}
+%
+If successful, you will get
+%
+\begin{Verbatim}[frame=single]
+Using g-2 release repository at /cvmfs/gm2.opensciencegrid.org
+g-2 software
+
+--> To list gm2 releases, type
+ups list -aK+ gm2
+
+--> To use the latest release, do
+setup gm2 v6_04_00 -q prof
+
+For more information, see
+https://cdcvs.fnal.gov/redmine/projects/g-2/wiki/ReleaseInformation.
+\end{Verbatim}
+%
+Then follow the instruction and use the latest release of \verb+gm2+ (\verb+v6_04_00+ at the moment of writing this user guide).
+Next to do is to go to a folder of your choice (usually \verb+~/work+) and then create a new development place.
+%
+\begin{Verbatim}[frame=single]
+cd ~/work
+mkdir SLACDev
+\end{Verbatim}
+%
+Now go into the newly created folder \verb+SLACDev+ and initialize it as a new development area
+%
+\begin{Verbatim}[frame=single]
+cd SLACDev/
+mrb newDev
+\end{Verbatim}
+%
+Follow the instruction to source the localproducts settings
+%
+\begin{Verbatim}[frame=single]
+source localProducts_gm2_v6_04_00_prof/setup
+\end{Verbatim}
+%
+Now we are ready to install new packages.
+
+\subsection{Checking out unpacking and reconstruction packages}
+\label{checkingoutunpackingandreconstructionpackages}
+First we need to go into the \verb+srcs/+ folder to checkout the unpacking and reconstruction packages. 
+Packages related to the data unpacking are \verb+gm2midas+, \verb+gm2midastoart+ and \verb+gm2unpackers+ whereas those related to the reconstruction are
+\verb+gmcalo+. \verb+gm2dataproducts+ holds all the data structures for both.
+
+Checkout (\verb+git+) \verb+gm2calo+ package using simplified command \verb+mrb g+.
+%
+\begin{Verbatim}[frame=single]
+cd srcs/
+mrb g gm2midas; mrb g gm2midastoart; mrb g gm2unpackers;
+mrb g gm2calo; mrb g gm2dataproducts
+\end{Verbatim}
+%
+For the package \verb+gm2midas+, you need to use the master branch,
+%
+\begin{Verbatim}[frame=single]
+cd gm2midas
+git checkout master
+\end{Verbatim}
+%
+and build both \verb+midas+ and \verb+rome+:
+%
+\begin{Verbatim}[frame=single]
+cd midas
+export MIDASSYS=`pwd`
+echo "export MIDASSYS=`pwd`" >> ~/.bash_profile
+make NO_MYSQL=1
+cd ../rome
+export ROMESYS=`pwd`
+echo "export ROMESYS=`pwd`" >> ~/.bash_profile
+make clean; make
+\end{Verbatim}
+%
+Please refer to \url{https://cdcvs.fnal.gov/redmine/projects/gm2midas/wiki} for more detail.
+Upon installing \verb+midas+ and \verb+rome+, go to \verb+gm2midastoart+ to build the midas file library provided by ROME,
+%
+\begin{Verbatim}[frame=single]
+cd ../../gm2midastoart
+git flow feature track SLAC2016
+cd rome
+make
+\end{Verbatim}
+%
+For the packages \verb+gm2unpackers+, \verb+gm2calo+ and \verb+gm2dataproducts+
+you need to use the SLAC2016 feature branch (you will be checking out develop branch if you do nothing)
+%
+\begin{Verbatim}[frame=single]
+cd ../../gm2calo (gm2unpackers, gm2dataproducts)
+git flow feature track SLAC2016
+cd ..
+\end{Verbatim}
+%
+Execute \verb+'mrb uc’+ to update the CMakeLists to include all the packages:
+%
+\begin{Verbatim}[frame=single]
+mrb uc
+\end{Verbatim}
+%
+Setup \verb+ninja+ (a small build system with focus on speed) with
+%
+\begin{Verbatim}[frame=single]
+setup ninja v1_5_3a
+\end{Verbatim}
+%
+Read more about it at \url{https://ninja-build.org/}.
+Then start to build the packages with
+%
+\begin{Verbatim}[frame=single]
+. mrb s
+mrb b --generator ninja
+\end{Verbatim}
+%
+If the build was successful (it takes about 5 minutes), you will see the following:
+%
+\begin{Verbatim}[frame=single]
+------------------------------------
+INFO: Stage build successful.
+------------------------------------
+\end{Verbatim}
+%
+Now set an alias for the ninja (because it is fast! except the first build though) build and put it in your \verb+.bash_profile+
+%
+\begin{Verbatim}[frame=single]
+alias ninja='pushd $MRB_BUILDDIR; ninja; popd'
+\end{Verbatim}
+%
+Now you are ready to unpack the data, reconstruct the data and analyze the data.
+
+\subsection{Data unpacking and reconstruction}
+
+The \verb+fcl+ files for the data unpacking are location in the \verb+gm2unpackers/fcl/+ folder,
+whereas the \verb+fcl+ files for the data reconstruction are location in the \verb+gm2calo/fcl/+ folder.
+The script running both data unpacking and reconstruction are combined into a main \verb+fcl+ file named \verb+unpackFitConstants.fcl+.
+Since we have several run periods based on their own calibration constants,
+choose the nearest constant file which is below the run number of the file you want to analyze. For example, for run 1800, the nearest
+constant file is \verb+constants1751.fcl+. However, \verb+unpackFitConstants1751.fcl+ is available so you do not have to worry about creating one yourself.
+To analyze any midas file you like, simply
+%
+\begin{Verbatim}[frame=single]
+gm2 -c unpackFitConstants1751.fcl -s run01800.mid -o gm2slac_run01800.art
+-T gm2slac_run01800.root
+\end{Verbatim}
+%
+where \verb+-o+ is followed by the location of the \textit{art} file and \verb+-T+ is followed by the location of the root file you want store.
+Even better, an automation script, \verb+auto_unpack_fit.sh+, where the calibration period is taken care of, is also available. Simply run this script with the
+following command:
+%
+\begin{Verbatim}[frame=single]
+./auto_unpack_fit.sh startRunNum endRunNum
+\end{Verbatim}
+%
+provided you have set the paths in the bash script like \verb+midas_dir+, \verb+art_dir+ and \verb+root_dir+ correctly.
+
+\subsection{Running the simulation}
+
+If you are intereted in running the simulation for the SLAC test run, you can download the package \verb+gm2ringsim+ and checkout the SLAC2016 feature branch.
+\begin{Verbatim}[frame=single]
+cd srcs/
+mrb g gm2ringsim
+cd gm2ringsim
+git flow feature track SLAC2016
+\end{Verbatim}
+
+To run the simulation, run the following fhicl file in the gm2ringsim/fcl folder:
+\begin{Verbatim}[frame=single]
+gm2 -c slacTestBeam.fcl -o slacTestBeam.root
+\end{Verbatim}
+
+To reconstruct and analyze the simulated data, run the following fhicl file in the gm2calo/fcl folder:
+\begin{Verbatim}[frame=single]
+gm2 -c slacTestBeamRecon.fcl -s slacTestBeam.root \\
+-o slacTestBeam_recon.root -T slacTestBeam_ana.root
+\end{Verbatim}
+%
+You can specify the name of the art output (after -o option) and TFile root output (after -T option) by yourself.

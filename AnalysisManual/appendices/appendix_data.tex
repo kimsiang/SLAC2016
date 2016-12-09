@@ -1,0 +1,58 @@
+\chapter{Data location}
+\label{app:data}
+
+This chapter summarizes the location of the files.
+
+\section{Data samples}
+
+This section explains the naming and the locations of the data files (Local location will be obsolete once we move everything
+to the PNFS disk at FNAL).
+
+\subsection{File naming}
+
+All the created art/ROOT and ROOT files will have the same run number as the MIDAS they are extracted from.
+
+\begin{table}[htbp]
+\centering
+\caption{Data samples and descriptions. The ROOT full data includes raw waveforms, chopped islands and processed data like fit results and crystal hits. The ROOT analysis data has only processed data.}
+\begin{tabular}{|c|c|} \hline 
+filename & type \\ \hline 
+gm2slac\_run0xxxx.art & data ready for art-based analysis \\ \hline 
+gm2slac\_run0xxxx\_raw.root & full data for standalone C++ analysis \\ \hline 
+gm2slac\_run0xxxx.root & analysis data for standalone C++ analysis \\ \hline 
+\end{tabular} \label{tab:datasamples}
+\end{table}
+
+\subsection{Location of the files (During SLAC test runs)}
+
+For the following steps, you have to be connected to the local Wifi network \verb+T536-local+.
+All the art/ROOT and ROOT files are stored in the $2\times3$TB HDD in the \verb+g2analysis+ machine.
+Use the following command to copy over the data files that you want to analyze: 
+%
+\begin{lstlisting}[frame=single, basicstyle=\ttfamily\footnotesize]
+scp -r g2muon@g2analysis:/data1/slac2016/analysis/gm2slac_run0xxxx.root . 
+scp -r g2muon@g2analysis:/data2/slac2016/art/gm2slac_run0xxxx.art .
+\end{lstlisting}
+%
+Or you can use \verb+rsync+ if you have enough space in your hard drive:
+%
+\begin{lstlisting}[frame=single, basicstyle=\ttfamily\footnotesize]
+rsync -avurt g2muon@g2analysis:/data1/slac2016/analysis/ YOUR_LOCAL_DISK/
+rsync -avurt g2muon@g2analysis:/data2/slac2016/art/ YOUR_LOCAL_DISK/
+\end{lstlisting}
+%
+Or a better way is to use \verb+sshfs+ to mount the disk onto your laptop:
+\begin{lstlisting}[frame=single, basicstyle=\ttfamily\footnotesize]
+sshfs g2muon@g2analysis:/data1/slac2016/analysis YOUR_LOCAL_DISK
+sshfs g2muon@g2analysis:/data2/slac2016/art YOUR_LOCAL_DISK
+\end{lstlisting}
+
+\subsection{Location of the files (Fermilab storage)}
+
+The final locations of the files are as the following:
+
+\begin{lstlisting}[frame=single, basicstyle=\ttfamily\footnotesize]
+RAW = /pnfs/GM2/slac2016/midas
+ART = /pnfs/GM2/scratch/users/kkhaw/slac2016_grid/art
+ROOT = /pnfs/GM2/scratch/users/kkhaw/slac2016_grid/root
+\end{lstlisting}
