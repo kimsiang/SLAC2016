@@ -43,7 +43,7 @@ void SLAC2016Ana::execute(){
     vector<double> xtalTime(0);
     vector<double> islandNum(0);
     vector<double> laserIslandNum(0);
-    vector<double> nonLaserIslandNum(0);
+//   vector<double> nonLaserIslandNum(0);
 
     cout<<"#####################################################################"<<endl;
     cout<<"--> Run: "<<RunNum<<", EventNum: "<<EventNum+1<<endl;
@@ -51,7 +51,7 @@ void SLAC2016Ana::execute(){
     for(size_t i=0; i<Cluster_Energy->size();i++){
 	if(Cluster_Time->at(i)>2000 && Cluster_Energy->at(i)<15000 && Cluster_Energy->at(i)> 50) {
 	    nNonLaser++;
-	    nonLaserIslandNum.push_back(Cluster_IslandNum->at(i));  
+//    nonLaserIslandNum.push_back(Cluster_IslandNum->at(i));  
 	    cout<<"Cluster IslandNum: "<<Cluster_IslandNum->at(i)<<", Time: "<<Cluster_Time->at(i)<<", Energy: "<<Cluster_Energy->at(i)<<endl;
 	}
 
