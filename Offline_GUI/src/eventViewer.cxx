@@ -232,7 +232,7 @@ void displayResults(const gm2calo::FitResultArtRecordCollection& frr,
     std::iota(sampleTimes.begin(), sampleTimes.end(),
 	    islandRecord.firstSampleNum);
 
-    std::string title = "run 2159 event " + std::to_string(islandRecord.fillNum) + //" calo " + std::to_string(islandRecord.caloNum) +
+    std::string title = "run 3019 event " + std::to_string(islandRecord.fillNum) + //" calo " + std::to_string(islandRecord.caloNum) +
 	" xtal " + std::to_string(islandRecord.xtalNum) +
 	" island " + std::to_string(islandRecord.islandNum);
 
