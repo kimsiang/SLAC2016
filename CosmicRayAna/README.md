@@ -7,7 +7,7 @@ Candidate selection is done in several steps.
 
 * Cluster energy and time
 
-A list of clusters belonging to the beam and the laser is stored (list A).
+A list of clusters' islandNum belonging to the beam and the laser is stored (list A).
 
 * Crystal hit energy and time
 
@@ -35,6 +35,7 @@ Candidate number | Run number | Event number | Island number
 9 | 2994 | 2363 | 64
 10 | 3019 | 293 | 57
 11 | 3071 | 937 | 33
+12 | 3085 | 2210 | 24
 
 # Plots
 
