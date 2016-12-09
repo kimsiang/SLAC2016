@@ -1,6 +1,24 @@
 # Introduction 
 This is the source code for the SLAC cosmic ray analysis.
 
+# Candidate selection
+
+Candidate selection is done in several steps.
+
+## Cluster energy and time
+
+A list of clusters belonging to the beam and the laser is stored (list A).
+A list of clusters belonging to non-beam and non-laser cluster is also stored (list B).
+
+## Crystal hit energy and time
+
+Crystal hits that belong to the list A are skipped.
+Crystal hits with energy between 20 to 500 pe are stored and the number of hits is stored (nCandidateHits).
+
+## nCandidateHits
+
+If nCandidateHits is betwen 4 and 30, dump information about this event.
+
 # Candidates
 
 Candidate number | Run number | Event number | Island number
