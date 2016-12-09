@@ -35,7 +35,7 @@ void SLAC2016Ana::initialize(string &filename){
 
 void SLAC2016Ana::execute(){
 
-    int nCandidate=0;
+    int nCandidateHits=0;
     int nNonLaser=0;
 
     vector<double> xtalE(0);
@@ -79,7 +79,7 @@ void SLAC2016Ana::execute(){
 	if(XtalHit_Time->at(i) < 2000 ) continue; // skip xtalhits from sync pulse and beam pulse
 
 	if(XtalHit_Energy->at(i)<500 && XtalHit_Energy->at(i) > 20){
-	    nCandidate++;
+	    nCandidateHits++;
 	    xtalE.push_back(XtalHit_Energy->at(i));
 	    xtalNum.push_back(XtalHit_XtalNum->at(i));
 	    xtalTime.push_back(XtalHit_Time->at(i));
@@ -88,8 +88,8 @@ void SLAC2016Ana::execute(){
 
     }
 
-    if(nCandidate>4 && nCandidate < 30){
-	cout<<"--> Run: "<<RunNum<<", EventNum: "<<EventNum+1<<", nCandidate: "<<nCandidate<<endl;
+    if(nCandidateHits>4 && nCandidateHits < 30){
+	cout<<"--> Run: "<<RunNum<<", EventNum: "<<EventNum+1<<", nCandidateHits: "<<nCandidateHits<<endl;
 
 
 	cout<<"IslandNums"<<" ";
