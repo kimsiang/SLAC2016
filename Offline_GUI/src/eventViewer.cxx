@@ -28,6 +28,20 @@
 using namespace std;
 
 bool drawing = true;
+int runNumber = 0;
+
+int getRunNumber(const char* path){
+
+    string s = path;
+    int n = s.rfind ("/"); // find the position in string of the last "/"
+    s.erase (0, n + 1);	// erase substring in front of it including itself
+
+    n = s.rfind ("run0"); // find the position in string of the last "/"
+    s.erase (0, n + 4);	// erase substring in front of it including itself
+
+    return stoi(s.erase (4, 8));	// erase substring in front of it including itself
+
+}
 
 void displayIslands(const gm2calo::IslandArtRecord& islandRecord);
 void displayResults(const gm2calo::FitResultArtRecordCollection& frr,
@@ -77,6 +91,8 @@ int main(int argc, char const* argv[]) {
     }
 
     TFile infile(argv[1]);
+    runNumber = getRunNumber(argv[1]);
+
     unique_ptr<TTree> tIsland((TTree*)infile.Get("slacAnalyzer/islandTree"));
     unique_ptr<TTree> tFitresult((TTree*)infile.Get("slacAnalyzer/eventTree"));
 
@@ -178,8 +194,8 @@ void displayIslands(const gm2calo::IslandArtRecord& islandRecord){
 	    islandRecord.firstSampleNum);
 
     std::string title = "event " + std::to_string(islandRecord.fillNum) + " calo " + std::to_string(islandRecord.caloNum) +
-	" xtal " + std::to_string(islandRecord.xtalNum) +
-	" island " + std::to_string(islandRecord.islandNum);
+	" island " + std::to_string(islandRecord.islandNum) +
+	" xtal " + std::to_string(islandRecord.xtalNum) ;
 
     TFile lastCanvas("lastCanvas.root", "recreate");
     // make plot
@@ -232,13 +248,15 @@ void displayResults(const gm2calo::FitResultArtRecordCollection& frr,
     std::iota(sampleTimes.begin(), sampleTimes.end(),
 	    islandRecord.firstSampleNum);
 
-    std::string title = "run 3019 event " + std::to_string(islandRecord.fillNum) + //" calo " + std::to_string(islandRecord.caloNum) +
-	" xtal " + std::to_string(islandRecord.xtalNum) +
-	" island " + std::to_string(islandRecord.islandNum);
+    std::string title = "run "+ std::to_string(runNumber) + " event " + std::to_string(islandRecord.fillNum) +
+	//" calo " + std::to_string(islandRecord.caloNum) +
+	" island " + std::to_string(islandRecord.islandNum) +
+	" xtal " + std::to_string(islandRecord.xtalNum) ;
 
-    std::string filename =  "event" + std::to_string(islandRecord.fillNum) + //"_calo" + std::to_string(islandRecord.caloNum) +
-	"_xtal" + std::to_string(islandRecord.xtalNum) +
-	"_island" + std::to_string(islandRecord.islandNum) + ".root";
+    std::string filename =  "run"+ std::to_string(runNumber) + "_event" + std::to_string(islandRecord.fillNum) +
+       //"_calo" + std::to_string(islandRecord.caloNum) +
+	"_island" + std::to_string(islandRecord.islandNum) + 
+	"_xtal" + std::to_string(islandRecord.xtalNum) + ".root";
 
 
     TFile lastCanvas("lastCanvas.root", "recreate");
@@ -341,6 +359,6 @@ void displayResults(const gm2calo::FitResultArtRecordCollection& frr,
     lastCanvas.Write();
     lastCanvas.Close();
 
- //  std::cout << title << " displayed. Any key to move on" << std::endl;
-//   std::cin.ignore();
+    //  std::cout << title << " displayed. Any key to move on" << std::endl;
+    //   std::cin.ignore();
 }

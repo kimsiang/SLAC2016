@@ -12,7 +12,7 @@ void plotFullCaloView(){
 
     for(int i=0;i<54;i++){
 
-	file[i] = new TFile(Form("event1411_xtal%d_island58.root",i));
+	file[i] = new TFile(Form("run2167_event1411_xtal%d_island58.root",i));
 	canvas[i] = (TCanvas*)file[i]->Get("c");
 	c1->cd(54-i);
 	canvas[i]->DrawClonePad();
