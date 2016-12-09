@@ -16,7 +16,6 @@ void plotFullCaloView(){
 	canvas[i] = (TCanvas*)file[i]->Get("c");
 	c1->cd(54-i);
 	canvas[i]->DrawClonePad();
-	canvas[i]->SetTitle(Form("run2167,event1411,island58,xtal%d",i));
 
     }
 
