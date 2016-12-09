@@ -4,7 +4,7 @@ This is the source code for the SLAC cosmic ray analysis
 # Candidates
 
 Candidate number | Run number | Event number | Island number
-- | - | - | -
+---------------- | ---------- | ------------ | -------------
 1 | 1792 | 1049 | 4
 2 | 2159 | 1212 | 13
 3 | 2167 | 656 | 0
