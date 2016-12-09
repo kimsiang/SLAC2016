@@ -45,14 +45,14 @@ void SLAC2016Ana::execute(){
     vector<double> laserIslandNum(0);
     vector<double> nonLaserIslandNum(0);
 
-	cout<<"#####################################################################"<<endl;
-	cout<<"--> Run: "<<RunNum<<", EventNum: "<<EventNum+1<<endl;
+    cout<<"#####################################################################"<<endl;
+    cout<<"--> Run: "<<RunNum<<", EventNum: "<<EventNum+1<<endl;
 
-    for(int i=0; i<Cluster_Energy->size();i++){
+    for(size_t i=0; i<Cluster_Energy->size();i++){
 	if(Cluster_Time->at(i)>2000 && Cluster_Energy->at(i)<15000 && Cluster_Energy->at(i)> 50) {
 	    nNonLaser++;
 	    nonLaserIslandNum.push_back(Cluster_IslandNum->at(i));  
-	cout<<"Cluster IslandNum: "<<Cluster_IslandNum->at(i)<<", Time: "<<Cluster_Time->at(i)<<", Energy: "<<Cluster_Energy->at(i)<<endl;
+	    cout<<"Cluster IslandNum: "<<Cluster_IslandNum->at(i)<<", Time: "<<Cluster_Time->at(i)<<", Energy: "<<Cluster_Energy->at(i)<<endl;
 	}
 
 	else laserIslandNum.push_back(Cluster_IslandNum->at(i));  
@@ -62,21 +62,21 @@ void SLAC2016Ana::execute(){
 	cout<<"--> Run: "<<RunNum<<", EventNum: "<<EventNum+1<<", nNonLaser: "<<nNonLaser<<endl;
     }
 
-    else return;
+    else return; // return if there is no cosmic candidate based on cluster information
 
 
-    for(int i=0; i<XtalHit_Energy->size();i++){
+    for(size_t i=0; i<XtalHit_Energy->size();i++){
 
 	bool isLaser=false;
 
-	for(int j=0;j<laserIslandNum.size();j++){
+	for(size_t j=0;j<laserIslandNum.size();j++){
 	    if(XtalHit_IslandNum->at(i) == laserIslandNum[j]){
 		isLaser=true;
 	    }
 	}
 
-	if(isLaser==true) continue;
-	if(XtalHit_Time->at(i) < 2000 ) continue;
+	if(isLaser==true) continue; // skip xtalhits from laser
+	if(XtalHit_Time->at(i) < 2000 ) continue; // skip xtalhits from sync pulse and beam pulse
 
 	if(XtalHit_Energy->at(i)<500 && XtalHit_Energy->at(i) > 20){
 	    nCandidate++;
@@ -93,56 +93,45 @@ void SLAC2016Ana::execute(){
 
 
 	cout<<"IslandNums"<<" ";
-	for(int i=0;i<islandNum.size();i++){
+	for(size_t i=0;i<islandNum.size();i++){
 	    cout<<islandNum[i]<<" ";
 	}
 	cout<<endl;
 
 	cout<<"XtalNums"<<" ";
-	for(int i=0;i<xtalNum.size();i++){
+	for(size_t i=0;i<xtalNum.size();i++){
 	    cout<<xtalNum[i]<<" ";
 	}
 	cout<<endl;
 
 	cout<<"XtalEnergies"<<" ";
-	for(int i=0;i<xtalE.size();i++){
+	for(size_t i=0;i<xtalE.size();i++){
 	    cout<<xtalE[i]<<" ";
 	}
 	cout<<endl;
 
 	cout<<"XtalTimes"<<" ";
-	for(int i=0;i<xtalTime.size();i++){
+	for(size_t i=0;i<xtalTime.size();i++){
 	    cout<<xtalTime[i]<<" ";
 	}
 	cout<<endl;
 
 	vector<std::string> text(54);
 
-	for(int i=0;i<54;i++){
+	for(size_t i=0;i<54;i++){
 	    text[i]=" ";
 	}
 
-	for(int i=0;i<xtalNum.size();i++){
+	for(size_t i=0;i<xtalNum.size();i++){
 	    text[xtalNum[i]]="X";
 	}
 
-	for(int i=0;i<54;i++){
+	for(size_t i=0;i<54;i++){
 	    cout<<"|"<<text[53-i];
 	    if((53-i)%9==0) cout<<"|"<<endl;
 	}
 
-
-	for(int i=0; i<XtalHit_Energy->size();i++){
-	    //    cout<<"IslandNum: "<<XtalHit_IslandNum->at(i)<<", Beam XtalHit["<<XtalHit_XtalNum->at(i)<< "], Time: "<<XtalHit_Time->at(i)<<", Energy: "<<XtalHit_Energy->at(i)<<endl;
-	}
-
-	for(int i=0; i<FitResult_Energy->size();i++){
-	    //    cout<<"IslandNum: "<<FitResult_IslandNum->at(i)<<", Beam FitResult["<<FitResult_XtalNum->at(i)<< "], Time: "<<FitResult_Time->at(i)<<", Energy: "<<FitResult_Energy->at(i)<<endl;
-	}
-
-
-
-        std::cin.ignore();
+	std::cin.ignore(); // for inspection purpose
     }
 
 
