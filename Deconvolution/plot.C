@@ -68,7 +68,7 @@ void plot(){
     outputLaser->SetLineColor(4);
 
     // Beam Template from SLAC
-    TFile *sourceFile = new TFile("beamTemplates/beamTemplateFile33.root");
+    TFile *sourceFile = new TFile("beamTemplates/beamTemplateFile10.root");
     TSpline *tSpline =(TSpline3*)sourceFile->Get("masterSpline");
 
     for(int i=0;i<nbin;i++){
@@ -81,7 +81,7 @@ void plot(){
 
     // Deconvolution here
     TSpectrum *s = new TSpectrum();
-    s->Deconvolution(source,resp,nbin,100,1,1);
+    s->Deconvolution(source,resp,nbin,50,1,1);
 
     // Put the unfolded response back
     for (int i = 0; i < nbin; i++) input->SetBinContent(i + 1,source[i]);
