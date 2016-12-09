@@ -1,5 +1,5 @@
 # Introduction 
-This is the source code for the SLAC cosmic ray analysis
+This is the source code for the SLAC cosmic ray analysis.
 
 # Candidates
 
@@ -16,3 +16,7 @@ Candidate number | Run number | Event number | Island number
 9 | 2994 | 2363 | 64
 10 | 3019 | 293 | 57
 11 | 3071 | 937 | 33
+
+# Plots
+
+Plots corresponding to the candidates in the table above are stored under folder _plots_.
