@@ -20,6 +20,8 @@ If nCandidateHits is betwen 4 and 30, dump information about this event.
 
 # Candidates
 
+** I suspect some of them are out-of-sync beam events by just looking at the large energy
+
 Candidate number | Run number | Event number | Island number
 ---------------- | ---------- | ------------ | -------------
 1 | 1792 | 1049 | 4
