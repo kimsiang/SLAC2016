@@ -8,7 +8,6 @@ Candidate selection is done in several steps.
 * Cluster energy and time
 
 A list of clusters belonging to the beam and the laser is stored (list A).
-A list of clusters belonging to non-beam and non-laser cluster is also stored (list B).
 
 * Crystal hit energy and time
 
