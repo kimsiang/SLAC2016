@@ -66,13 +66,13 @@ int main(int argc, char const* argv[]) {
 
     vector<std::unique_ptr<TSpline3>> splines;
     for (int i = 0; i < 54; ++i) {
-	unique_ptr<TFile> splineF(new TFile(Form("/home/g2muon/Work/art/slac_v6_04_00/srcs/gm2calo/g2RunTimeFiles/laserTemplates/laserTemplateFile%i.root", i)));
+	unique_ptr<TFile> splineF(new TFile(Form("../SLACTemplates/laserTemplates/laserTemplateFile%i.root", i)));
 	splines.emplace_back((TSpline3*)splineF->Get("masterSpline"));
     }
 
     vector<std::unique_ptr<TSpline3>> beamSplines;
     for (int i = 0; i < 54; ++i) {
-	unique_ptr<TFile> splineF(new TFile(Form("/home/g2muon/Work/art/slac_v6_04_00/srcs/gm2calo/g2RunTimeFiles/beamTemplates/beamTemplateFile%i.root", i)));
+	unique_ptr<TFile> splineF(new TFile(Form("../SLACTemplates/beamTemplates/beamTemplateFile%i.root", i)));
 	beamSplines.emplace_back((TSpline3*)splineF->Get("masterSpline"));
     }
 
@@ -113,9 +113,9 @@ int main(int argc, char const* argv[]) {
 
 	tIsland->GetEntry(i);
 
-	if(island.eventNum!=54 ) continue;
+	if(island.eventNum!= atoi(argv[2])) continue;
 	//if(island.xtalNum%9!=3 ) continue;
-	if(island.islandNum!=10 ) continue;
+	if(island.islandNum!= atoi(argv[3]) ) continue;
 
 	gm2calo::IslandArtRecord islandRecord;
 	islandRecord.fillNum = island.eventNum;
@@ -232,7 +232,7 @@ void displayResults(const gm2calo::FitResultArtRecordCollection& frr,
     std::iota(sampleTimes.begin(), sampleTimes.end(),
 	    islandRecord.firstSampleNum);
 
-    std::string title = "run 2167 event " + std::to_string(islandRecord.fillNum) + //" calo " + std::to_string(islandRecord.caloNum) +
+    std::string title = "run 2159 event " + std::to_string(islandRecord.fillNum) + //" calo " + std::to_string(islandRecord.caloNum) +
 	" xtal " + std::to_string(islandRecord.xtalNum) +
 	" island " + std::to_string(islandRecord.islandNum);
 
