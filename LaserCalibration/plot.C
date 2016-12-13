@@ -25,8 +25,8 @@ void plot(){
             TGraph *g = (TGraph*)f[j]->Get(Form("calo0/graphs/calibrationGraph0_%d",i));
             g->Draw("ALP");
             g->SetTitle(Form("run%s-%d, xtal%d",filename[j].substr(22,4).c_str(),stoi(filename[j].substr(22,4).c_str())+7,i));
-            g->GetXaxis()->SetLabelSize(0.05);
-            g->GetYaxis()->SetLabelSize(0.05);
+            g->GetXaxis()->SetLabelSize(0.045);
+            g->GetYaxis()->SetLabelSize(0.045);
         }
 
         c1->Print(Form("run%s-%d.pdf",filename[j].substr(22,4).c_str(),stoi(filename[j].substr(22,4).c_str())+7));
