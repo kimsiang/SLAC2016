@@ -7,7 +7,7 @@ Candidate selection is done in several steps.
 
 * Cluster energy and time
 
-A list of clusters belonging to the beam and the laser is stored (list A).
+A list of clusters' islandNum belonging to the beam and the laser is stored (list A).
 
 * Crystal hit energy and time
 
@@ -19,6 +19,8 @@ Crystal hits with energy between 20 to 500 pe are stored and the number of hits 
 If nCandidateHits is betwen 4 and 30, dump information about this event.
 
 # Candidates
+
+**I suspect some of them are out-of-sync beam events by just looking at the large energy**
 
 Candidate number | Run number | Event number | Island number
 ---------------- | ---------- | ------------ | -------------
@@ -33,6 +35,7 @@ Candidate number | Run number | Event number | Island number
 9 | 2994 | 2363 | 64
 10 | 3019 | 293 | 57
 11 | 3071 | 937 | 33
+12 | 3085 | 2210 | 24
 
 # Plots
 
