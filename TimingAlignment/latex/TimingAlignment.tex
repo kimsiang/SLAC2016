@@ -1,0 +1,105 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\title{Timing alignment for a calorimeter/uTCA crate}
+\author{Kim Siang Khaw}
+
+\begin{document}
+\maketitle
+\abstract{This article summarizes a strategy that can be used to time-align all the 54 rider channels within a calorimeter.
+Two types of signal can be used to time-align the rider channels within a calorimeter.
+First is the laser sync pulse and second is the electron/positron beam. This article is intended to show how they can be utilized to do so.
+}
+
+\section{Basics}
+
+In general, the time extracted from the template fit of a sync pulse for crystal $i$ and fill $f$ can be written as
+%
+\begin{equation}
+t_{sync}(i,f) = t_{diffuser}(f) + \tau_{fiber}(i) + \tau_{rider}(i,f) \label{eq:tsync}
+\end{equation}
+%
+where $t_{laser}(f)$ is the time at which the laser system is triggered relative to the rider crate trigger, $\tau_{fiber}(i)$ the laser propagation time in a fiber $i$ and $\tau_{rider}$ the internal delay of a rider channel and includes the 2 clock tick shift. Likewise, for the electron/positron beam,
+%
+\begin{equation}
+t_{beam}(i,f) = t_{calohit}(f)  + \tau_{shower}(i,f) + \tau_{rider}(i,f)\label{eq:tbeam}
+\end{equation}
+%
+where $t_{calohit}(f)$ is the hit time of the beam on the front face of the calorimeter relative to the rider crate trigger, $\tau_{shower}(i,f)$ is the EM shower plus the mean Cherenkov light propagation time to the SiPM $i$.
+
+\subsection*{Alignment using sync pulse}
+During the SLAC test run, we have done some analyses using the sync pulse for timing alignment.
+This means the synced time for the beam event is
+%
+\begin{align}
+t_{beam,synced}(i,f) &=  t_{beam}(i,f) - t_{sync}(i,f) \\
+                               &= t_{calohit}(f) - t_{laser}(f) + \tau_{shower}(i,f) - \tau_{fiber}(i)\label{eq:tbeamsync}
+\end{align}
+
+The timing difference $\delta t$ between 2 crystals ($i$ and $j$) in fill $f$ is thus given by
+%
+\begin{align}
+\delta t_{beam,synced}(i,j,f) &=   t_{beam,synced}(i,f) - t_{beam,synced}(j,f) \\
+                               &= \delta\tau_{shower}(i,j,f) - \delta\tau_{fiber}(i,j) \label{eq:dtbeamsync}
+\end{align}
+%
+since $t_{calohit}(f) - t_{laser}(f)$ does not depend on the crystal. 
+%
+It is obvious from Eq.~\ref{eq:dtbeamsync} that due to inhomogeneous fiber lengths, sync pulses alone are not enough for the timing alignment.
+Hence we need to find a way to extract the propagation time in the fiber, $t_{fiber}$, for all 54 fibers. Bad news is, it is not trivia to measure each fiber's propagation time up to 100~ps precision. Good news is, we just need to measure the relative difference within a calorimeter. For historical reason,
+we have selected the crystal 24's rider channel as the reference point.
+
+\subsection*{Alignment using sync pulse and beam pulse}
+
+Aligning all the timing information w.r.t to the crystal 24, we have
+
+\begin{align}
+\delta t_{sync}(i,24,f)   &= t_{sync}(i,f) - t_{sync}(24,f)  \\
+                         &= \left[\tau_{fiber}(i) -  \tau_{fiber}(24) \right]+ \left[\tau_{rider}(i,f) -  \tau_{rider}(24,f) \right] \\
+                         &= \delta \tau_{fiber}(i,24) + \delta \tau_{rider}(i,24,f) \label{eq:tsync24}
+\end{align}
+%
+and
+%
+\begin{align}
+\delta t_{beam}(i,24,f)  &= t_{beam}(i,f) - t_{beam}(24,f)  \\
+                         &= \left[ \tau_{shower}(i,f) -  \tau_{shower}(24,f)  \right] + \left[ \tau_{rider}(i,f) -  \tau_{rider}(24,f) \right] \\
+                         &= \delta \tau_{shower}(i,24,f) + \delta \tau_{rider}(i,24,f)~.\label{eq:tbeam24}
+\end{align}
+
+If we choose all the events such that the shower propagation time in the crystal is the same w.r.t. to the crystal 24, i.e. $\delta \tau_{shower}(i,24,f)=0$ (for example, beam hitting the center of the crystal or hitting at the common border of the crystals),
+then we have
+%
+\begin{equation}
+\delta t_{beam}(i,24,f)   = \delta \tau_{rider}(i,24,f)~.
+\end{equation}
+%
+Since the offset in the rider $\tau_{rider}$ is the same for all the fills within the same run, 
+%
+\begin{equation}
+\delta t_{beam}(i,24)   = \delta \tau_{rider}(i,24)~.
+\end{equation}
+%
+Of course, since the shower is well contained within the $3\times3$ crystals, it is not possible to map out all the $\delta \tau_{rider}$ by just analyzing
+the data w.r.t. to the crystal 24. Hence to have a complete map, we need to look at the $\delta \tau_{rider}$ w.r.t. to the crystals that have the  $\delta \tau_{rider}$ extracted compared to crystal 24. The statistical uncertain will increase but there should be an optimum way of doing it out there.
+%
+Once we have the map of the $\delta \tau_{rider}$, we can solve Eq.~\ref{eq:tsync24} and get $\delta \tau_{fiber}$.
+If we turn things around, since we have all the $\delta \tau$ relative to crystal 24, we can also say that we have all the $\delta \tau$
+relative to each other.
+
+Going back to Eq.~\ref{eq:dtbeamsync}, since we have the $\delta \tau_{fiber}$, we now have a better knowledge 
+regarding $\tau_{shower}$. We can now discriminate more pile up events with this additional information.
+We might also be able to disentangle the position and the angle information.
+
+\section{Datasets}
+
+\section{Analysis}
+
+
+\subsection{How often does the $\delta \tau_{rider}$ changes?}
+
+\end{document}
