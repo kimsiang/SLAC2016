@@ -1,5 +1,5 @@
-#ifndef SLAC2016Ana_h
-#define SLAC2016Ana_h
+#ifndef CosmicRayAna_h
+#define CosmicRayAna_h
 
 #include "EventCollection.h"
 #include <stdio.h>
@@ -12,10 +12,10 @@
 #include <fstream>
 #include <map>
 
-class SLAC2016Ana : public EventCollection {
+class CosmicRayAna : public EventCollection {
     public:
-	SLAC2016Ana(TTree *tree=0):EventCollection(tree){};
-	~SLAC2016Ana() {};
+	CosmicRayAna(TTree *tree=0):EventCollection(tree){};
+	~CosmicRayAna() {};
 	virtual void Loop(string filename);
 	void initialize(string &filename);
 	void execute();
@@ -24,6 +24,7 @@ class SLAC2016Ana : public EventCollection {
 
     private:
 	TFile *file;     
+        TH1D* timeDist;
 
 };
 #endif

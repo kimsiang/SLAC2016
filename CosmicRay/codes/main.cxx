@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 #include "TString.h"
-#include "SLAC2016Ana.h"
+#include "CosmicRayAna.h"
 #include "SLACRunLog.h"
 #include <TCanvas.h>
 #include <cstdlib>
@@ -45,7 +45,7 @@ int main (int argc, char **argv) {
 
 	    if(log.GetRunLog(run)) {
 		//    if(strcmp (log.quality,"T") == 0) continue;	
-		//	    if(strcmp (log.quality,"N") == 0) continue;	
+			    if(strcmp (log.quality,"N") == 0) continue;	
 		    if(log.filterWheel> 5) continue;	
 		cout<<"(log) runNum: "<<log.runNum<<", quality: "<<log.quality<<", FW: "<<log.filterWheel<<endl;
 		chain->Add (TString(fname));
@@ -54,7 +54,7 @@ int main (int argc, char **argv) {
 
     } 
 
-    SLAC2016Ana ana(chain);
+    CosmicRayAna ana(chain);
     ana.Loop(temp2);
 
     return 0;
