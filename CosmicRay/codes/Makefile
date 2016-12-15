@@ -1,6 +1,6 @@
 EXENAME = ana
 
-OBJS = main.o SLAC2016Ana.o EventCollection.o SLACRunLog.o
+OBJS = main.o CosmicRayAna.o EventCollection.o SLACRunLog.o
 
 AR            = g++ -fopenmp
 CXX           = g++ 

@@ -1,9 +1,8 @@
-#include "SLAC2016Ana.h"
+#include "CosmicRayAna.h"
 #include <iostream>
 #include <numeric> 
-#include "omp.h"
 
-void SLAC2016Ana::Loop(string filename){
+void CosmicRayAna::Loop(string filename){
 
     cout<<"In Loop(): "<<filename<<endl;
 
@@ -25,15 +24,18 @@ void SLAC2016Ana::Loop(string filename){
     finalize(filename);
 
 }
-void SLAC2016Ana::initialize(string &filename){
+void CosmicRayAna::initialize(string &filename){
 
     cout << "initialize()" << endl;
 
+    // store the results in a root file
     file = new TFile("test.root","recreate");  
+    timeDist = new TH1D("timeDist","timeDist",24,-3,3);
+    timeDist->GetXaxis()->SetTitle("Time [c.t]");
 
 }
 
-void SLAC2016Ana::execute(){
+void CosmicRayAna::execute(){
 
     int nCandidateHits=0;
     int nNonLaser=0;
@@ -43,15 +45,13 @@ void SLAC2016Ana::execute(){
     vector<double> xtalTime(0);
     vector<double> islandNum(0);
     vector<double> laserIslandNum(0);
-//   vector<double> nonLaserIslandNum(0);
 
     cout<<"#####################################################################"<<endl;
     cout<<"--> Run: "<<RunNum<<", EventNum: "<<EventNum+1<<endl;
 
     for(size_t i=0; i<Cluster_Energy->size();i++){
-	if(Cluster_Time->at(i)>2000 && Cluster_Energy->at(i)<15000 && Cluster_Energy->at(i)> 50) {
+	if(Cluster_Time->at(i)>2000 && Cluster_Energy->at(i)<15000 && Cluster_Energy->at(i)>500) {
 	    nNonLaser++;
-//    nonLaserIslandNum.push_back(Cluster_IslandNum->at(i));  
 	    cout<<"Cluster IslandNum: "<<Cluster_IslandNum->at(i)<<", Time: "<<Cluster_Time->at(i)<<", Energy: "<<Cluster_Energy->at(i)<<endl;
 	}
 
@@ -76,7 +76,7 @@ void SLAC2016Ana::execute(){
 	}
 
 	if(isLaser==true) continue; // skip xtalhits from laser
-	if(XtalHit_Time->at(i) < 2000 ) continue; // skip xtalhits from sync pulse and beam pulse
+	if(XtalHit_Time->at(i) < 3000 ) continue; // skip xtalhits from sync pulse and beam pulse
 
 	if(XtalHit_Energy->at(i)<500 && XtalHit_Energy->at(i) > 20){
 	    nCandidateHits++;
@@ -90,7 +90,6 @@ void SLAC2016Ana::execute(){
 
     if(nCandidateHits>4 && nCandidateHits < 30){
 	cout<<"--> Run: "<<RunNum<<", EventNum: "<<EventNum+1<<", nCandidateHits: "<<nCandidateHits<<endl;
-
 
 	cout<<"IslandNums"<<" ";
 	for(size_t i=0;i<islandNum.size();i++){
@@ -110,9 +109,13 @@ void SLAC2016Ana::execute(){
 	}
 	cout<<endl;
 
+	double sum = (double)std::accumulate(xtalTime.begin(), xtalTime.end(),0);
+	double mean = sum/(double)xtalTime.size();   
+
 	cout<<"XtalTimes"<<" ";
 	for(size_t i=0;i<xtalTime.size();i++){
-	    cout<<xtalTime[i]<<" ";
+	    cout<<setprecision(8)<<xtalTime[i]<<" ";
+	    timeDist->Fill(xtalTime[i]-mean);
 	}
 	cout<<endl;
 
@@ -130,15 +133,11 @@ void SLAC2016Ana::execute(){
 	    cout<<"|"<<text[53-i];
 	    if((53-i)%9==0) cout<<"|"<<endl;
 	}
-
-	std::cin.ignore(); // for inspection purpose
     }
-
-
 
 }
 
-void SLAC2016Ana::finalize(string &filename){
+void CosmicRayAna::finalize(string &filename){
 
     cout << "\tfinalize(): " << filename<< endl;
     file->Write();
