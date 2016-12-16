@@ -12,6 +12,7 @@
 #include "TString.h"
 #include "TAxis.h"
 #include "TF1.h"
+#include "TH2.h"
 #include "TTree.h"
 #include "TColor.h"
 
@@ -26,11 +27,16 @@
 
 using namespace std;
 
-bool isDraw = false;
+bool drawing = false;
 
-double fitWaveform(TemplateFitter& tf, const gm2calo::IslandArtRecord, TSpline3* tSpline);
+gm2calo::FitResultArtRecord fitWaveform(TemplateFitter& tf, const gm2calo::IslandArtRecord, TSpline3* tSpline);
 
 int main(int argc, char const* argv[]) {
+
+    if(argc > 1){
+	cout<<"There should be no argument!!"<<endl;
+	return 1;
+    }
 
     // declare new TApplication
     new TApplication("app", 0, nullptr);
@@ -51,18 +57,31 @@ int main(int argc, char const* argv[]) {
     tf.setTemplate(tSpline.get(), tSpline->GetXmin(), tSpline->GetXmax(), 50000);
     tf.setMaxIterations(200);
 
-
     // generate a waveform from the TSpline
     vector<short> trace;
 
     // Loop through some randomized energies
-    int nTry=100;
+    int nTry=10000;
+
+    // 2D histogram to compare input and output
+    TH2D *compareE = new TH2D("compareE","compareE",100,999,1001,100,999,1001);
+    TH2D *compareT = new TH2D("compareT","compareT",100,9.9,10.1,100,9.9,10.1);
+    compareE->GetXaxis()->SetCanExtend(kTRUE);
+    compareE->GetYaxis()->SetCanExtend(kTRUE);
+    compareT->GetXaxis()->SetCanExtend(kTRUE);
+    compareT->GetYaxis()->SetCanExtend(kTRUE);
+    
 
     for(int iTry=0;iTry<nTry;iTry++){
 
+	// empty trace
 	trace.clear();
+
+	// generate a random time
+	double time = 10 + (gRandom->Rndm() - 0.5);
+
 	for(int i=0;i<40;i++){
-	    trace.push_back(100*tSpline2->Eval(i-10.3));
+	    trace.push_back(1000*tSpline->Eval(i-time));
 	}
 
 	// store the waveform inside an IslandArtRecord
@@ -70,26 +89,41 @@ int main(int argc, char const* argv[]) {
 	thisIsland.trace = trace;
 	thisIsland.firstSampleNum = 0;;
 
-	fitWaveform(tf, thisIsland, tSpline.get());
+	auto fitResults = fitWaveform(tf, thisIsland, tSpline.get()); 
+
+	compareE->Fill(1000,fitResults.energy);
+	compareT->Fill(time,fitResults.time);
     }
+
+    TCanvas c1("c1","c1",1200,600);
+    c1.Divide(2,1);
+    c1.cd(1);
+    compareE->Draw("colz");
+    c1.cd(2);
+    compareT->Draw("colz");
+    c1.Modified();
+    c1.Update();
+    c1.Draw();
+    gSystem->ProcessEvents();
+    cin.ignore();
+
+    return 0;
 }
 
-double fitWaveform(TemplateFitter& newFitter, const gm2calo::IslandArtRecord thisIsland, TSpline3* tSpline){
+gm2calo::FitResultArtRecord fitWaveform(TemplateFitter& newFitter, const gm2calo::IslandArtRecord thisIsland, TSpline3* tSpline){
 
     // make plot
     std::string title = "Test";
 
-    std::unique_ptr<TCanvas> c;
-    if(isDraw){
-	c = new TCanvas("c", (title + "_canvas").c_str(), 1200, 1200);
-    }
+//   std::unique_ptr<TCanvas> c(
+//	    new TCanvas("c", (title + "_canvas").c_str(), 1200, 1200));
 
     std::unique_ptr<TGraph> g(new TGraph(0));
 
     vector<short> trace = thisIsland.trace;
 
     vector<short> sampleTimes;
-    for(int i=0;i<trace.size();i++){
+    for(size_t i=0;i<trace.size();i++){
 	sampleTimes.push_back(i + thisIsland.firstSampleNum);
     }
 
@@ -116,7 +150,7 @@ double fitWaveform(TemplateFitter& newFitter, const gm2calo::IslandArtRecord thi
     func->SetParameters(std::vector<double>(7, 0).data());
 
     g->SetMarkerStyle(20);
-    //   g->Draw("ap");
+//   g->Draw("ap");
     g->GetXaxis()->SetRangeUser(sampleTimes[0], sampleTimes.back());
     g->GetXaxis()->SetTitle("sample number");
     g->GetYaxis()->SetTitle("ADC counts");
@@ -140,17 +174,17 @@ double fitWaveform(TemplateFitter& newFitter, const gm2calo::IslandArtRecord thi
     txtbox->AddText(Form("#chi^{2} / NDF : %.2f", newFitResults[0].chi2));
 
     func->SetNpx(10000);
-    //   func->Draw("same");
+//   func->Draw("same");
     func->SetLineColor(kMagenta + 2);
-    txtbox->Draw("same");
+//    txtbox->Draw("same");
 
-    if(isDraw){
+/*    if(drawing){
 	c->Modified();
 	c->Update();
 	c->Draw();
 	gSystem->ProcessEvents();
-	cin.ignore();
+	//cin.ignore();
     }
-
-    return newFitResults[0].energy;
+*/
+    return newFitResults[0];
 }
