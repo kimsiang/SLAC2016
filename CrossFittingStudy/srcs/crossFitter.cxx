@@ -34,8 +34,8 @@ int main(int argc, char const* argv[]) {
     // declare new TApplication
     new TApplication("app", 0, nullptr);
 
-    TString splinePath = "beamTemplateFile24.root";
-    TString splinePath2 = "beamleakTemplateFile24.root";
+    TString splinePath = "beamTemplateFile37.root";
+    TString splinePath2 = "beamleakTemplateFile37.root";
 
 
     // get TSpline for main shower
@@ -50,7 +50,7 @@ int main(int argc, char const* argv[]) {
     vector<short> trace;
 
     for(int i=0;i<40;i++){
-        trace.push_back(5000*tSpline2->Eval(i-10));
+        trace.push_back(5000*tSpline2->Eval(i-10.3));
     }
 
     // store the waveform inside an IslandArtRecord
@@ -59,7 +59,7 @@ int main(int argc, char const* argv[]) {
     thisIsland.firstSampleNum = 0;;
  
     TemplateFitter tf;
-    tf.setTemplate(tSpline.get(), tSpline->GetXmin(), tSpline->GetXmax(), 10000);
+    tf.setTemplate(tSpline.get(), tSpline->GetXmin(), tSpline->GetXmax(), 50000);
     tf.setMaxIterations(200);
 
     fitWaveform(tf, thisIsland, tSpline.get());
