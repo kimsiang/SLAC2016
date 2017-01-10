@@ -21,7 +21,6 @@ int main (int argc, char **argv) {
 
 
     SLACRunLog log;
-    TChain *chain = new TChain ("slacAnalyzer/eventTree");
 
     string fname;
     ifstream inData (argv[1]); 
@@ -29,7 +28,7 @@ int main (int argc, char **argv) {
     while ( !inData.eof() ) {
 
         getline (inData, fname); //get contents of infile 
-        cout << fname << endl; //output contents of infile   
+//       cout << fname << endl; //output contents of infile   
 
         if(fname!=""){ // if this is not the last file
 
@@ -47,15 +46,16 @@ int main (int argc, char **argv) {
                 //    if(strcmp (log.quality,"T") == 0) continue;	
                 //	    if(strcmp (log.quality,"N") == 0) continue;	
                 //    if(log.filterWheel!=1) continue;	
-                cout<<"(log) runNum: "<<log.runNum<<", quality: "<<log.quality<<", FW: "<<log.filterWheel<<endl;
+    //           cout<<"(log) runNum: "<<log.runNum<<", quality: "<<log.quality<<", FW: "<<log.filterWheel<<endl;
+                TChain *chain = new TChain ("slacAnalyzer/eventTree");
                 chain->Add (TString(fname));
+    TimeStudyAna ana(chain);
+    ana.Loop(temp1);
             }
         }
 
     } 
 
-    TimeStudyAna ana(chain);
-    ana.Loop(temp1);
 
     return 0;
 }
