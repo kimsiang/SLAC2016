@@ -57,7 +57,7 @@ void TimeStudyAna::initialize(string &filename){
 
 void TimeStudyAna::execute(){
 
-//    cout << "--> execute(), EventNum: " << EventNum <<endl;
+    //    cout << "--> execute(), EventNum: " << EventNum <<endl;
 
     double syncT[54]={};
     double syncE[54]={};
@@ -87,6 +87,26 @@ void TimeStudyAna::execute(){
 
 void TimeStudyAna::finalize(string &filename){
 
+    double mean = syncTimeDiff[14][23]->GetMean();
+    double rms = syncTimeDiff[14][23]->GetRMS();
+
+    TF1 *fit = new TF1("fit","gaus(0)",mean-2,mean+2);
+    fit->SetParameters(1000,mean,rms);
+
+    TF1 *fitd = new TF1("fitd","gaus(0)+gaus(3)",mean-2,mean+2);
+    fitd->SetParameters(200,-1,0.05,200,1,0.05);
+
+    fitd->SetParLimits(0,10,800);
+    fitd->SetParLimits(1,-2,0);
+    fitd->SetParLimits(2,0,0.08);
+    fitd->SetParLimits(3,10,800);
+    fitd->SetParLimits(4,0,2);
+    fitd->SetParLimits(5,0,0.08);
+
+    syncTimeDiff[14][23]->Fit("fit","QMER");
+
+
+
     for(int i=0;i<54;i++){
 
         syncTime2D -> Fill (-i%9-0.5, i/9, syncTime[i]->GetMean());
@@ -95,7 +115,7 @@ void TimeStudyAna::finalize(string &filename){
 
 
 
-//   cout << "\tfinalize(): " << filename<< endl;
+    //   cout << "\tfinalize(): " << filename<< endl;
     file->Write();
     file->Close();
 
