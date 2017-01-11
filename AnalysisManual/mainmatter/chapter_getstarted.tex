@@ -155,7 +155,85 @@ Now you are ready to unpack the data, reconstruct the data and analyze the data.
 
 The \verb+fcl+ files for the data unpacking are location in the \verb+gm2unpackers/fcl/+ folder,
 whereas the \verb+fcl+ files for the data reconstruction are location in the \verb+gm2calo/fcl/+ folder.
-The script running both data unpacking and reconstruction are combined into a main \verb+fcl+ file named \verb+unpackFitConstants.fcl+.
+The script running both data unpacking and reconstruction are combined into a main \verb+fcl+ file named \verb+unpackFitConstants.fcl+. Content of this fhicl file is shown below.
+
+\begin{Verbatim}[frame=single]
+physics : {
+    producers: {
+
+    headerUnpacker : {
+      module_type           : HeaderUnpacker
+      unpackerInstanceName  : unpacker
+      inputModuleLabel      : MidasBankInput
+      wordToSkip            : 4096
+      nCalos                : 2
+      verboseLevel          : 0
+	}
+
+    fc7Unpacker : {
+      module_type           : FC7Unpacker
+      unpackerInstanceName  : unpacker
+      inputModuleLabel      : MidasBankInput
+      fc7CrateNum           : 2
+      verboseLevel          : 0
+	}
+    
+    rawUnpacker : {
+      module_type           : RawUnpacker
+      unpackerInstanceName  : unpacker
+      inputModuleLabel      : MidasBankInput
+      nCalos                : 1
+      pedestalLevel         : 0
+      verboseLevel          : 0
+	}
+
+    islandUnpacker : {
+      module_type           : IslandUnpacker
+      unpackerInstanceName  : unpacker
+      inputModuleLabel      : MidasBankInput
+      nCalos                : 1
+      nSegments             : 54
+      verboseLevel          : 0 
+	}
+
+
+    islandFitter : {
+      module_type           : TemplateFit
+      fitterInstanceLabel   : fitter
+      unpackerModuleLabel   : islandUnpacker
+      unpackerInstanceLabel : unpacker
+      peakCutoff            : 1850    
+      residualCutoff        : 50
+      negativePolarity      : true
+	} 
+
+    energyCalibrator : {
+      module_type            : EnergyCalibrator
+      correctorInstanceLabel : calibrator
+      fitterModuleLabel      : islandFitter 
+      fitterInstanceLabel    : fitter
+      readConstants          : true
+      constants              : @local::xtal_constants
+	}
+
+    gainCorrector : {
+      module_type            : GainCorrector
+      correctorInstanceLabel : corrector
+      calibratorerModuleLabel: energyCalibrator 
+      calibratorInstanceLabel: calibrator
+	}
+
+    hitCluster : {
+      module_type            : HitCluster
+      clusterInstanceLabel   : cluster
+      correctorModuleLabel   : gainCorrector
+      correctorInstanceLabel : corrector
+      minEnergy              : 1000000        
+      timeCutoffLow          : 10
+      timeCutoffHigh         : 20
+	}
+\end{Verbatim}
+
 Since we have several run periods based on their own calibration constants,
 choose the nearest constant file which is below the run number of the file you want to analyze. For example, for run 1800, the nearest
 constant file is \verb+constants1751.fcl+. However, \verb+unpackFitConstants1751.fcl+ is available so you do not have to worry about creating one yourself.
@@ -170,7 +248,7 @@ where \verb+-o+ is followed by the location of the \textit{art} file and \verb+-
 Even better, an automation script, \verb+auto_unpack_fit.sh+, where the calibration period is taken care of, is also available. Simply run this script with the
 following command:
 %
-\begin{Verbatim}[frame=single]
+\begin{Verbatim}
 ./auto_unpack_fit.sh startRunNum endRunNum
 \end{Verbatim}
 %
