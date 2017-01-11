@@ -1,9 +1,17 @@
 \chapter{Data analysis framework}
 \label{chap:analysisframework}
 
-\section{Offline framework for the SLAC test beam}
+\section{MIDAS DAQ output in a nutshell}
+The main DAQ framework for the Muon g-2 experiment is based on \ac{midas}~\cite{Midas}. The Midas DAQ system is developed at \ac{psi} and \ac{truimf}.
+MIDAS event structure is as depicted in Fig.~\ref{fig:MIDASEventStructure}.
 
-\ac{midas} DAQ system is developed at \ac{psi} and \ac{truimf}.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{pics/MIDASEventStructure.pdf} 
+\caption{MIDAS event structure. Each event has its header that is followed by the bank header. Then all the banks will appear according the defined order.}\label{fig:MIDASEventStructure}
+\end{figure}
+
+\section{Offline framework for the SLAC test beam}
 
 \begin{figure}[htbp]
 \centering
@@ -17,15 +25,18 @@ As shown in \fref{pic:exp_framework}, data analysis for this test beam has sever
 This is handled using \textit{art} framework's modules and is doing nothing more than storing \verb+16-bit+ or \verb+32-bit+ word into \verb+vectors+. Next we unpack these \verb+vectors+
 and give them contexts based on the header information stored within the \verb+vectors+. At this step, all the information are stored as data products you are probably familiar with: \verb+RiderArtRecord+,
 \verb+IslandArtRecord+, etc. Then reconstruction algorithms are ran through these data products and at the end of the chain each physics objects are reconstructed as clusters.
-
+%
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\textwidth]{pics/offline_slac_framework}
-\caption{Offline framework for the SLAC experimental data.}
+\includegraphics[width=0.7\textwidth]{pics/offline_slac_art_framework}
+\caption{Offline \textit{art} framework for the SLAC experimental data.}
+\label{pic:art_framework}
 \end{figure}
+%
+The final \textit{art} framework used at SLAC is shown in \fref{pic:art_framework}.
 
 \subsection{Data Acquisition}
-Explain the DAQ flow here roughly (from machine trigger to FC7, from FC7 fanout to AMC13 of all the crates, then from AMC13 to AMCs in a crate).
+Explain the DAQ flow here roughly (from machine trigger to FC7, from FC7 fanout to AMC13 of all the \ac{utca} crates, then from the AMC13 to AMCs(WFD5s) in a crate).
 
 \subsection{Data Unpacking}
 The task of unpacking the raw midas data is divided into several \textit{art} modules. First, the Midas banks are converted into TBranches as vectors in the source input module under the repository gm2midastoart.
