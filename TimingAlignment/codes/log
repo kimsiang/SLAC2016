@@ -13,11 +13,7 @@
 (log) runNum: 1763, quality: Y, FW: 1, Analyzing gm2slac_run01763.root, dt_sync(0,9)[c.t.]: -0.290873, sigma: 0.0227094
 (log) runNum: 1764, quality: Y, FW: 1, Analyzing gm2slac_run01764.root, dt_sync(0,9)[c.t.]: -0.291672, sigma: 0.0232519
 (log) runNum: 1765, quality: Y, FW: 1, Analyzing gm2slac_run01765.root, dt_sync(0,9)[c.t.]: -0.292613, sigma: 0.0235729
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1766, quality: N, FW: 1, Analyzing gm2slac_run01766.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1767, quality: N, FW: 1, Analyzing gm2slac_run01767.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1768, quality: Y, FW: 1, Analyzing gm2slac_run01768.root, dt_sync(0,9)[c.t.]: -1.28843, sigma: 0.0210976
 (log) runNum: 1769, quality: Y, FW: 1, Analyzing gm2slac_run01769.root, dt_sync(0,9)[c.t.]: -1.29121, sigma: 0.022535
@@ -27,11 +23,7 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1773, quality: Y, FW: 1, Analyzing gm2slac_run01773.root, dt_sync(0,9)[c.t.]: -1.29189, sigma: 0.0218993
 (log) runNum: 1774, quality: Y, FW: 1, Analyzing gm2slac_run01774.root, dt_sync(0,9)[c.t.]: 0.147268, sigma: 1.67518
 (log) runNum: 1775, quality: Y, FW: 1, Analyzing gm2slac_run01775.root, dt_sync(0,9)[c.t.]: -0.242209, sigma: 1.16403
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1776, quality: C, FW: 1, Analyzing gm2slac_run01776.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1777, quality: C, FW: 2, Analyzing gm2slac_run01777.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1778, quality: C, FW: 3, Analyzing gm2slac_run01778.root, dt_sync(0,9)[c.t.]: 2.61413, sigma: 2.38669
 (log) runNum: 1779, quality: C, FW: 4, Analyzing gm2slac_run01779.root, dt_sync(0,9)[c.t.]: -0.292841, sigma: 0.0278194
@@ -41,11 +33,7 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1783, quality: C, FW: 4, Analyzing gm2slac_run01783.root, dt_sync(0,9)[c.t.]: -0.293416, sigma: 0.0314731
 (log) runNum: 1784, quality: C, FW: 5, Analyzing gm2slac_run01784.root, dt_sync(0,9)[c.t.]: -0.291978, sigma: 0.0379964
 (log) runNum: 1785, quality: C, FW: 6, Analyzing gm2slac_run01785.root, dt_sync(0,9)[c.t.]: -0.292343, sigma: 0.0380544
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1786, quality: C, FW: 7, Analyzing gm2slac_run01786.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1787, quality: C, FW: 1, Analyzing gm2slac_run01787.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1788, quality: C, FW: 1, Analyzing gm2slac_run01788.root, dt_sync(0,9)[c.t.]: -2.291, sigma: 0.0226867
 (log) runNum: 1789, quality: C, FW: 2, Analyzing gm2slac_run01789.root, dt_sync(0,9)[c.t.]: -2.29279, sigma: 0.0253155
@@ -61,30 +49,14 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1799, quality: C, FW: 4, Analyzing gm2slac_run01799.root, dt_sync(0,9)[c.t.]: -2.29267, sigma: 0.0316426
 (log) runNum: 1800, quality: C, FW: 5, Analyzing gm2slac_run01800.root, dt_sync(0,9)[c.t.]: -2.29424, sigma: 0.0388678
 (log) runNum: 1801, quality: T, FW: 5, Analyzing gm2slac_run01801.root, dt_sync(0,9)[c.t.]: -2.29393, sigma: 0.0391521
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1802, quality: C, FW: 5, Analyzing gm2slac_run01802.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1803, quality: C, FW: 2, Analyzing gm2slac_run01803.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1804, quality: C, FW: 1, Analyzing gm2slac_run01804.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1805, quality: C, FW: 1, Analyzing gm2slac_run01805.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1806, quality: C, FW: 2, Analyzing gm2slac_run01806.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1807, quality: C, FW: 1, Analyzing gm2slac_run01807.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1808, quality: C, FW: 1, Analyzing gm2slac_run01808.root, dt_sync(0,9)[c.t.]: -1.29036, sigma: 0.0231621
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1809, quality: C, FW: 2, Analyzing gm2slac_run01809.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1810, quality: C, FW: 1, Analyzing gm2slac_run01810.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1811, quality: C, FW: 1, Analyzing gm2slac_run01811.root, dt_sync(0,9)[c.t.]: -2.29077, sigma: 0.0218979
 (log) runNum: 1812, quality: C, FW: 2, Analyzing gm2slac_run01812.root, dt_sync(0,9)[c.t.]: -2.29274, sigma: 0.0250546
@@ -107,8 +79,6 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1829, quality: C, FW: 3, Analyzing gm2slac_run01829.root, dt_sync(0,9)[c.t.]: -2.2945, sigma: 0.0289823
 (log) runNum: 1830, quality: C, FW: 4, Analyzing gm2slac_run01830.root, dt_sync(0,9)[c.t.]: -2.29521, sigma: 0.0319453
 (log) runNum: 1831, quality: C, FW: 5, Analyzing gm2slac_run01831.root, dt_sync(0,9)[c.t.]: -2.29588, sigma: 0.0381978
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1832, quality: C, FW: 6, Analyzing gm2slac_run01832.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1833, quality: T, FW: 6, Analyzing gm2slac_run01833.root, dt_sync(0,9)[c.t.]: -2.2935, sigma: 0.0446
 (log) runNum: 1834, quality: T, FW: 6, Analyzing gm2slac_run01834.root, dt_sync(0,9)[c.t.]: -2.29472, sigma: 0.0457555
@@ -126,39 +96,25 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1846, quality: C, FW: 1, Analyzing gm2slac_run01846.root, dt_sync(0,9)[c.t.]: -1.29121, sigma: 0.0233594
 (log) runNum: 1847, quality: C, FW: 1, Analyzing gm2slac_run01847.root, dt_sync(0,9)[c.t.]: -1.29201, sigma: 0.0234367
 (log) runNum: 1848, quality: C, FW: 2, Analyzing gm2slac_run01848.root, dt_sync(0,9)[c.t.]: -1.29507, sigma: 0.023612
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1849, quality: C, FW: 3, Analyzing gm2slac_run01849.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1850, quality: Y, FW: 1, Analyzing gm2slac_run01850.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1851, quality: Y, FW: 1, Analyzing gm2slac_run01851.root, dt_sync(0,9)[c.t.]: -1.29189, sigma: 0.0276921
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1852, quality: Y, FW: 1, Analyzing gm2slac_run01852.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1853, quality: Y, FW: 1, Analyzing gm2slac_run01853.root, dt_sync(0,9)[c.t.]: -2.29274, sigma: 0.0268347
 (log) runNum: 1854, quality: Y, FW: 1, Analyzing gm2slac_run01854.root, dt_sync(0,9)[c.t.]: -2.29271, sigma: 0.0290207
 (log) runNum: 1855, quality: C, FW: 1, Analyzing gm2slac_run01855.root, dt_sync(0,9)[c.t.]: -2.29112, sigma: 0.0216368
 (log) runNum: 1856, quality: C, FW: 2, Analyzing gm2slac_run01856.root, dt_sync(0,9)[c.t.]: -2.295, sigma: 0.0275869
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1857, quality: C, FW: 3, Analyzing gm2slac_run01857.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1858, quality: C, FW: 4, Analyzing gm2slac_run01858.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1859, quality: C, FW: 4, Analyzing gm2slac_run01859.root, dt_sync(0,9)[c.t.]: -0.291976, sigma: 0.0424325
 (log) runNum: 1860, quality: C, FW: 5, Analyzing gm2slac_run01860.root, dt_sync(0,9)[c.t.]: -0.29302, sigma: 0.0354722
 (log) runNum: 1861, quality: C, FW: 6, Analyzing gm2slac_run01861.root, dt_sync(0,9)[c.t.]: -0.294278, sigma: 0.0478993
 (log) runNum: 1862, quality: C, FW: 7, Analyzing gm2slac_run01862.root, dt_sync(0,9)[c.t.]: -0.292577, sigma: 0.0530794
 (log) runNum: 1863, quality: C, FW: 1, Analyzing gm2slac_run01863.root, dt_sync(0,9)[c.t.]: -0.288861, sigma: 0.0210829
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1864, quality: Y, FW: 1, Analyzing gm2slac_run01864.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1865, quality: Y, FW: 1, Analyzing gm2slac_run01865.root, dt_sync(0,9)[c.t.]: -0.292522, sigma: 0.0227703
 (log) runNum: 1866, quality: Y, FW: 1, Analyzing gm2slac_run01866.root, dt_sync(0,9)[c.t.]: -0.291591, sigma: 0.0225376
 (log) runNum: 1867, quality: Y, FW: 1, Analyzing gm2slac_run01867.root, dt_sync(0,9)[c.t.]: 0.708319, sigma: 0.0228294
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1868, quality: N, FW: 1, Analyzing gm2slac_run01868.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1869, quality: Y, FW: 1, Analyzing gm2slac_run01869.root, dt_sync(0,9)[c.t.]: -0.29023, sigma: 0.0209473
 (log) runNum: 1870, quality: Y, FW: 1, Analyzing gm2slac_run01870.root, dt_sync(0,9)[c.t.]: -0.292055, sigma: 0.0223484
@@ -170,47 +126,21 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1876, quality: Y, FW: 1, Analyzing gm2slac_run01876.root, dt_sync(0,9)[c.t.]: -0.291418, sigma: 0.0231333
 (log) runNum: 1877, quality: Y, FW: 1, Analyzing gm2slac_run01877.root, dt_sync(0,9)[c.t.]: -0.291697, sigma: 0.0219932
 (log) runNum: 1878, quality: Y, FW: 1, Analyzing gm2slac_run01878.root, dt_sync(0,9)[c.t.]: -0.291273, sigma: 0.022131
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1879, quality: Y, FW: 1, Analyzing gm2slac_run01879.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1880, quality: Y, FW: 1, Analyzing gm2slac_run01880.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1881, quality: Y, FW: 1, Analyzing gm2slac_run01881.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1882, quality: Y, FW: 1, Analyzing gm2slac_run01882.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1883, quality: Y, FW: 1, Analyzing gm2slac_run01883.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1884, quality: Y, FW: 1, Analyzing gm2slac_run01884.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1885, quality: Y, FW: 1, Analyzing gm2slac_run01885.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1886, quality: Y, FW: 1, Analyzing gm2slac_run01886.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1887, quality: Y, FW: 1, Analyzing gm2slac_run01887.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1888, quality: Y, FW: 1, Analyzing gm2slac_run01888.root, dt_sync(0,9)[c.t.]: -2.2929, sigma: 0.0230949
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1889, quality: Y, FW: 1, Analyzing gm2slac_run01889.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1890, quality: Y, FW: 1, Analyzing gm2slac_run01890.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1891, quality: Y, FW: 1, Analyzing gm2slac_run01891.root, dt_sync(0,9)[c.t.]: -1.29077, sigma: 0.023134
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1892, quality: Y, FW: 1, Analyzing gm2slac_run01892.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1893, quality: Y, FW: 1, Analyzing gm2slac_run01893.root, dt_sync(0,9)[c.t.]: -0.291512, sigma: 0.0234319
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1894, quality: C, FW: 1, Analyzing gm2slac_run01894.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1895, quality: C, FW: 1, Analyzing gm2slac_run01895.root, dt_sync(0,9)[c.t.]: -1.25627, sigma: 0.395844
 (log) runNum: 1896, quality: C, FW: 1, Analyzing gm2slac_run01896.root, dt_sync(0,9)[c.t.]: 14.7833, sigma: 9.26408
@@ -219,17 +149,9 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1899, quality: N, FW: 4, Analyzing gm2slac_run01899.root, dt_sync(0,9)[c.t.]: -0.84716, sigma: 1.07188
 (log) runNum: 1900, quality: N, FW: 5, Analyzing gm2slac_run01900.root, dt_sync(0,9)[c.t.]: -0.296283, sigma: 0.0369396
 (log) runNum: 1901, quality: C, FW: 1, Analyzing gm2slac_run01901.root, dt_sync(0,9)[c.t.]: -0.292232, sigma: 0.0233991
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1902, quality: C, FW: 2, Analyzing gm2slac_run01902.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1903, quality: C, FW: 2, Analyzing gm2slac_run01903.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1904, quality: C, FW: 2, Analyzing gm2slac_run01904.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1905, quality: C, FW: 2, Analyzing gm2slac_run01905.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1906, quality: C, FW: 2, Analyzing gm2slac_run01906.root, dt_sync(0,9)[c.t.]: -0.293327, sigma: 0.0254869
 (log) runNum: 1907, quality: C, FW: 2, Analyzing gm2slac_run01907.root, dt_sync(0,9)[c.t.]: -0.292828, sigma: 0.0260154
@@ -241,8 +163,6 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1913, quality: C, FW: 2, Analyzing gm2slac_run01913.root, dt_sync(0,9)[c.t.]: -0.292295, sigma: 0.0249759
 (log) runNum: 1914, quality: C, FW: 3, Analyzing gm2slac_run01914.root, dt_sync(0,9)[c.t.]: -0.292243, sigma: 0.0264949
 (log) runNum: 1915, quality: C, FW: 4, Analyzing gm2slac_run01915.root, dt_sync(0,9)[c.t.]: -0.294047, sigma: 0.0290632
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1916, quality: C, FW: 5, Analyzing gm2slac_run01916.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1917, quality: C, FW: 1, Analyzing gm2slac_run01917.root, dt_sync(0,9)[c.t.]: -1.29147, sigma: 0.0225854
 (log) runNum: 1918, quality: C, FW: 2, Analyzing gm2slac_run01918.root, dt_sync(0,9)[c.t.]: -1.29372, sigma: 0.0260321
@@ -266,29 +186,19 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1936, quality: Y, FW: 1, Analyzing gm2slac_run01936.root, dt_sync(0,9)[c.t.]: -1.29169, sigma: 0.0226801
 (log) runNum: 1937, quality: Y, FW: 1, Analyzing gm2slac_run01937.root, dt_sync(0,9)[c.t.]: -1.292, sigma: 0.0229324
 (log) runNum: 1938, quality: Y, FW: 1, Analyzing gm2slac_run01938.root, dt_sync(0,9)[c.t.]: -1.29207, sigma: 0.0233124
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1939, quality: Y, FW: 1, Analyzing gm2slac_run01939.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1940, quality: Y, FW: 1, Analyzing gm2slac_run01940.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1941, quality: Y, FW: 1, Analyzing gm2slac_run01941.root, dt_sync(0,9)[c.t.]: -0.105339, sigma: 0.55176
 (log) runNum: 1942, quality: Y, FW: 1, Analyzing gm2slac_run01942.root, dt_sync(0,9)[c.t.]: 0.708871, sigma: 0.0227925
 (log) runNum: 1943, quality: Y, FW: 1, Analyzing gm2slac_run01943.root, dt_sync(0,9)[c.t.]: 0.708419, sigma: 0.0230265
 (log) runNum: 1944, quality: C, FW: 1, Analyzing gm2slac_run01944.root, dt_sync(0,9)[c.t.]: 0.709391, sigma: 0.0228066
 (log) runNum: 1945, quality: C, FW: 2, Analyzing gm2slac_run01945.root, dt_sync(0,9)[c.t.]: 0.707188, sigma: 0.0255452
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1946, quality: C, FW: 2, Analyzing gm2slac_run01946.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1947, quality: C, FW: 2, Analyzing gm2slac_run01947.root, dt_sync(0,9)[c.t.]: -1.29269, sigma: 0.0242048
 (log) runNum: 1948, quality: C, FW: 3, Analyzing gm2slac_run01948.root, dt_sync(0,9)[c.t.]: -1.29406, sigma: 0.028556
 (log) runNum: 1949, quality: T, FW: 4, Analyzing gm2slac_run01949.root, dt_sync(0,9)[c.t.]: -1.29552, sigma: 0.0325416
 (log) runNum: 1950, quality: T, FW: 4, Analyzing gm2slac_run01950.root, dt_sync(0,9)[c.t.]: -1.29729, sigma: 0.0326393
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1951, quality: C, FW: 4, Analyzing gm2slac_run01951.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1952, quality: C, FW: 4, Analyzing gm2slac_run01952.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1953, quality: C, FW: 4, Analyzing gm2slac_run01953.root, dt_sync(0,9)[c.t.]: -1.29289, sigma: 0.0288653
 (log) runNum: 1954, quality: C, FW: 5, Analyzing gm2slac_run01954.root, dt_sync(0,9)[c.t.]: -1.29473, sigma: 0.0395371
@@ -297,34 +207,16 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 1957, quality: C, FW: 1, Analyzing gm2slac_run01957.root, dt_sync(0,9)[c.t.]: -1.29135, sigma: 0.0231811
 (log) runNum: 1958, quality: T, FW: 1, Analyzing gm2slac_run01958.root, dt_sync(0,9)[c.t.]: -1.29138, sigma: 0.0221811
 (log) runNum: 1959, quality: T, FW: 1, Analyzing gm2slac_run01959.root, dt_sync(0,9)[c.t.]: -1.29133, sigma: 0.0230954
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1960, quality: T, FW: 1, Analyzing gm2slac_run01960.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1961, quality: T, FW: 1, Analyzing gm2slac_run01961.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1962, quality: T, FW: 1, Analyzing gm2slac_run01962.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1963, quality: T, FW: 1, Analyzing gm2slac_run01963.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1964, quality: T, FW: 1, Analyzing gm2slac_run01964.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1965, quality: T, FW: 1, Analyzing gm2slac_run01965.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1966, quality: T, FW: 1, Analyzing gm2slac_run01966.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1967, quality: T, FW: 1, Analyzing gm2slac_run01967.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1968, quality: T, FW: 1, Analyzing gm2slac_run01968.root, dt_sync(0,9)[c.t.]: -1.28778, sigma: 0.023099
 (log) runNum: 1969, quality: T, FW: 1, Analyzing gm2slac_run01969.root, dt_sync(0,9)[c.t.]: -1.28736, sigma: 0.0233497
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 1970, quality: T, FW: 1, Analyzing gm2slac_run01970.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 1971, quality: T, FW: 1, Analyzing gm2slac_run01971.root, dt_sync(0,9)[c.t.]: -1.28737, sigma: 0.0223861
 (log) runNum: 1972, quality: C, FW: 1, Analyzing gm2slac_run01972.root, dt_sync(0,9)[c.t.]: -1.28755, sigma: 0.0237421
@@ -367,146 +259,52 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2009, quality: C, FW: 6, Analyzing gm2slac_run02009.root, dt_sync(0,9)[c.t.]: -1.30255, sigma: 0.0544927
 (log) runNum: 2010, quality: C, FW: 7, Analyzing gm2slac_run02010.root, dt_sync(0,9)[c.t.]: -1.30223, sigma: 0.0585202
 (log) runNum: 2011, quality: C, FW: 1, Analyzing gm2slac_run02011.root, dt_sync(0,9)[c.t.]: -1.30302, sigma: 0.0247794
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2012, quality: N, FW: 1, Analyzing gm2slac_run02012.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2013, quality: N, FW: 1, Analyzing gm2slac_run02013.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2014, quality: N, FW: 1, Analyzing gm2slac_run02014.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2015, quality: N, FW: 1, Analyzing gm2slac_run02015.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2016, quality: N, FW: 1, Analyzing gm2slac_run02016.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2017, quality: N, FW: 1, Analyzing gm2slac_run02017.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2018, quality: N, FW: 1, Analyzing gm2slac_run02018.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2019, quality: N, FW: 1, Analyzing gm2slac_run02019.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2020, quality: N, FW: 1, Analyzing gm2slac_run02020.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2021, quality: N, FW: 1, Analyzing gm2slac_run02021.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2022, quality: Y, FW: 1, Analyzing gm2slac_run02022.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2023, quality: Y, FW: 1, Analyzing gm2slac_run02023.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2024, quality: Y, FW: 1, Analyzing gm2slac_run02024.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2025, quality: Y, FW: 1, Analyzing gm2slac_run02025.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2026, quality: N, FW: 1, Analyzing gm2slac_run02026.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2027, quality: Y, FW: 1, Analyzing gm2slac_run02027.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2028, quality: Y, FW: 1, Analyzing gm2slac_run02028.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2029, quality: Y, FW: 1, Analyzing gm2slac_run02029.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2030, quality: Y, FW: 1, Analyzing gm2slac_run02030.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2031, quality: Y, FW: 1, Analyzing gm2slac_run02031.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2032, quality: Y, FW: 1, Analyzing gm2slac_run02032.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2033, quality: Y, FW: 1, Analyzing gm2slac_run02033.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2034, quality: Y, FW: 1, Analyzing gm2slac_run02034.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2035, quality: Y, FW: 1, Analyzing gm2slac_run02035.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2036, quality: Y, FW: 1, Analyzing gm2slac_run02036.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2037, quality: Y, FW: 1, Analyzing gm2slac_run02037.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2038, quality: Y, FW: 1, Analyzing gm2slac_run02038.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2039, quality: Y, FW: 1, Analyzing gm2slac_run02039.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2040, quality: Y, FW: 1, Analyzing gm2slac_run02040.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2041, quality: Y, FW: 1, Analyzing gm2slac_run02041.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2042, quality: Y, FW: 1, Analyzing gm2slac_run02042.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2043, quality: Y, FW: 1, Analyzing gm2slac_run02043.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2044, quality: Y, FW: 1, Analyzing gm2slac_run02044.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2045, quality: Y, FW: 1, Analyzing gm2slac_run02045.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2046, quality: Y, FW: 1, Analyzing gm2slac_run02046.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2047, quality: Y, FW: 1, Analyzing gm2slac_run02047.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2048, quality: Y, FW: 1, Analyzing gm2slac_run02048.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2049, quality: Y, FW: 1, Analyzing gm2slac_run02049.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2050, quality: Y, FW: 1, Analyzing gm2slac_run02050.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2051, quality: Y, FW: 1, Analyzing gm2slac_run02051.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2052, quality: Y, FW: 1, Analyzing gm2slac_run02052.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2053, quality: Y, FW: 1, Analyzing gm2slac_run02053.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2054, quality: Y, FW: 1, Analyzing gm2slac_run02054.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2055, quality: N, FW: 1, Analyzing gm2slac_run02055.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2056, quality: N, FW: 1, Analyzing gm2slac_run02056.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2057, quality: N, FW: 1, Analyzing gm2slac_run02057.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2058, quality: N, FW: 1, Analyzing gm2slac_run02058.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2059, quality: N, FW: 1, Analyzing gm2slac_run02059.root, dt_sync(0,9)[c.t.]: -2.304, sigma: 0.0248637
 (log) runNum: 2060, quality: N, FW: 1, Analyzing gm2slac_run02060.root, dt_sync(0,9)[c.t.]: -2.30195, sigma: 0.0242564
@@ -563,8 +361,6 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2160, quality: Y, FW: 1, Analyzing gm2slac_run02160.root, dt_sync(0,9)[c.t.]: -2.29271, sigma: 0.0231417
 (log) runNum: 2161, quality: Y, FW: 1, Analyzing gm2slac_run02161.root, dt_sync(0,9)[c.t.]: -2.29407, sigma: 0.0228409
 (log) runNum: 2162, quality: N, FW: 1, Analyzing gm2slac_run02162.root, dt_sync(0,9)[c.t.]: -2.29386, sigma: 0.0221103
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2163, quality: N, FW: 1, Analyzing gm2slac_run02163.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2164, quality: Y, FW: 1, Analyzing gm2slac_run02164.root, dt_sync(0,9)[c.t.]: -0.292175, sigma: 0.0227271
 (log) runNum: 2165, quality: Y, FW: 1, Analyzing gm2slac_run02165.root, dt_sync(0,9)[c.t.]: -0.293577, sigma: 0.0233276
@@ -573,33 +369,15 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2168, quality: Y, FW: 1, Analyzing gm2slac_run02168.root, dt_sync(0,9)[c.t.]: -0.293827, sigma: 0.0228499
 (log) runNum: 2169, quality: Y, FW: 1, Analyzing gm2slac_run02169.root, dt_sync(0,9)[c.t.]: -0.29331, sigma: 0.0236059
 (log) runNum: 2170, quality: Y, FW: 1, Analyzing gm2slac_run02170.root, dt_sync(0,9)[c.t.]: -0.292469, sigma: 0.0233157
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2171, quality: N, FW: 1, Analyzing gm2slac_run02171.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2172, quality: N, FW: 2, Analyzing gm2slac_run02172.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2173, quality: N, FW: 3, Analyzing gm2slac_run02173.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2174, quality: N, FW: 4, Analyzing gm2slac_run02174.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2175, quality: N, FW: 5, Analyzing gm2slac_run02175.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2176, quality: N, FW: 6, Analyzing gm2slac_run02176.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2177, quality: N, FW: 7, Analyzing gm2slac_run02177.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2178, quality: N, FW: 1, Analyzing gm2slac_run02178.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2179, quality: T, FW: 1, Analyzing gm2slac_run02179.root, dt_sync(0,9)[c.t.]: -0.292767, sigma: 0.0227064
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2180, quality: C, FW: 1, Analyzing gm2slac_run02180.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2181, quality: C, FW: 1, Analyzing gm2slac_run02181.root, dt_sync(0,9)[c.t.]: -0.293446, sigma: 0.0222527
 (log) runNum: 2182, quality: C, FW: 1, Analyzing gm2slac_run02182.root, dt_sync(0,9)[c.t.]: -0.292511, sigma: 0.0228911
@@ -632,99 +410,37 @@ Runlog do not exist!
 (log) runNum: 2209, quality: C, FW: 3, Analyzing gm2slac_run02209.root, dt_sync(0,9)[c.t.]: -0.297655, sigma: 0.0283376
 (log) runNum: 2210, quality: C, FW: 4, Analyzing gm2slac_run02210.root, dt_sync(0,9)[c.t.]: -0.295794, sigma: 0.0321133
 (log) runNum: 2211, quality: C, FW: 5, Analyzing gm2slac_run02211.root, dt_sync(0,9)[c.t.]: -0.299337, sigma: 0.0412417
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2212, quality: C, FW: 6, Analyzing gm2slac_run02212.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2213, quality: N, FW: 6, Analyzing gm2slac_run02213.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2214, quality: N, FW: 6, Analyzing gm2slac_run02214.root, dt_sync(0,9)[c.t.]: -0.30005, sigma: 0.0452389
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2215, quality: Y, FW: 6, Analyzing gm2slac_run02215.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2216, quality: Y, FW: 6, Analyzing gm2slac_run02216.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2217, quality: Y, FW: 6, Analyzing gm2slac_run02217.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2218, quality: Y, FW: 6, Analyzing gm2slac_run02218.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2219, quality: Y, FW: 6, Analyzing gm2slac_run02219.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2220, quality: Y, FW: 6, Analyzing gm2slac_run02220.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2221, quality: Y, FW: 6, Analyzing gm2slac_run02221.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2222, quality: Y, FW: 6, Analyzing gm2slac_run02222.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2223, quality: Y, FW: 6, Analyzing gm2slac_run02223.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2224, quality: Y, FW: 6, Analyzing gm2slac_run02224.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2225, quality: Y, FW: 6, Analyzing gm2slac_run02225.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2226, quality: Y, FW: 6, Analyzing gm2slac_run02226.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2227, quality: N, FW: 6, Analyzing gm2slac_run02227.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2228, quality: N, FW: 6, Analyzing gm2slac_run02228.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2229, quality: N, FW: 6, Analyzing gm2slac_run02229.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2230, quality: N, FW: 6, Analyzing gm2slac_run02230.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2231, quality: N, FW: 6, Analyzing gm2slac_run02231.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2232, quality: N, FW: 6, Analyzing gm2slac_run02232.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2233, quality: N, FW: 6, Analyzing gm2slac_run02233.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2234, quality: N, FW: 6, Analyzing gm2slac_run02234.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2235, quality: N, FW: 6, Analyzing gm2slac_run02235.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2236, quality: N, FW: 6, Analyzing gm2slac_run02236.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2237, quality: N, FW: 6, Analyzing gm2slac_run02237.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2238, quality: N, FW: 6, Analyzing gm2slac_run02238.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2239, quality: N, FW: 6, Analyzing gm2slac_run02239.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2240, quality: N, FW: 6, Analyzing gm2slac_run02240.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2241, quality: N, FW: 6, Analyzing gm2slac_run02241.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2242, quality: N, FW: 6, Analyzing gm2slac_run02242.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2243, quality: N, FW: 6, Analyzing gm2slac_run02243.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2244, quality: N, FW: 6, Analyzing gm2slac_run02244.root, dt_sync(0,9)[c.t.]: -1.29328, sigma: 0.0458071
 (log) runNum: 2245, quality: T, FW: 6, Analyzing gm2slac_run02245.root, dt_sync(0,9)[c.t.]: -1.29349, sigma: 0.0449765
@@ -769,8 +485,6 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2284, quality: Y, FW: 1, Analyzing gm2slac_run02284.root, dt_sync(0,9)[c.t.]: -1.29173, sigma: 0.0230822
 (log) runNum: 2285, quality: Y, FW: 1, Analyzing gm2slac_run02285.root, dt_sync(0,9)[c.t.]: -1.29223, sigma: 0.0230053
 (log) runNum: 2286, quality: Y, FW: 1, Analyzing gm2slac_run02286.root, dt_sync(0,9)[c.t.]: -1.29311, sigma: 0.022627
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2287, quality: N, FW: 1, Analyzing gm2slac_run02287.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2288, quality: Y, FW: 1, Analyzing gm2slac_run02288.root, dt_sync(0,9)[c.t.]: -2.29278, sigma: 0.0224068
 (log) runNum: 2289, quality: Y, FW: 1, Analyzing gm2slac_run02289.root, dt_sync(0,9)[c.t.]: -2.29224, sigma: 0.0215366
@@ -818,8 +532,6 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2331, quality: C, FW: 1, Analyzing gm2slac_run02331.root, dt_sync(0,9)[c.t.]: -2.29331, sigma: 0.0221184
 (log) runNum: 2332, quality: C, FW: 2, Analyzing gm2slac_run02332.root, dt_sync(0,9)[c.t.]: -2.29416, sigma: 0.0263222
 (log) runNum: 2333, quality: C, FW: 3, Analyzing gm2slac_run02333.root, dt_sync(0,9)[c.t.]: -2.29359, sigma: 0.0278179
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2334, quality: C, FW: 4, Analyzing gm2slac_run02334.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2335, quality: C, FW: 4, Analyzing gm2slac_run02335.root, dt_sync(0,9)[c.t.]: -1.2908, sigma: 0.0296215
 (log) runNum: 2336, quality: C, FW: 1, Analyzing gm2slac_run02336.root, dt_sync(0,9)[c.t.]: -1.29174, sigma: 0.0212573
@@ -837,424 +549,146 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2348, quality: Y, FW: 1, Analyzing gm2slac_run02348.root, dt_sync(0,9)[c.t.]: -1.29263, sigma: 0.0227178
 (log) runNum: 2349, quality: Y, FW: 1, Analyzing gm2slac_run02349.root, dt_sync(0,9)[c.t.]: -1.29318, sigma: 0.0229617
 (log) runNum: 2350, quality: Y, FW: 1, Analyzing gm2slac_run02350.root, dt_sync(0,9)[c.t.]: -1.29228, sigma: 0.0226037
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2351, quality: Y, FW: 1, Analyzing gm2slac_run02351.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2352, quality: Y, FW: 1, Analyzing gm2slac_run02352.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2353, quality: T, FW: 1, Analyzing gm2slac_run02353.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2354, quality: T, FW: 1, Analyzing gm2slac_run02354.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2355, quality: C, FW: 1, Analyzing gm2slac_run02355.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2356, quality: C, FW: 2, Analyzing gm2slac_run02356.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2357, quality: C, FW: 3, Analyzing gm2slac_run02357.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2358, quality: C, FW: 4, Analyzing gm2slac_run02358.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2359, quality: C, FW: 5, Analyzing gm2slac_run02359.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2360, quality: C, FW: 6, Analyzing gm2slac_run02360.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2361, quality: C, FW: 7, Analyzing gm2slac_run02361.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2362, quality: C, FW: 1, Analyzing gm2slac_run02362.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2363, quality: C, FW: 1, Analyzing gm2slac_run02363.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2364, quality: C, FW: 1, Analyzing gm2slac_run02364.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2365, quality: C, FW: 2, Analyzing gm2slac_run02365.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2366, quality: C, FW: 3, Analyzing gm2slac_run02366.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2367, quality: C, FW: 4, Analyzing gm2slac_run02367.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2368, quality: C, FW: 5, Analyzing gm2slac_run02368.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2369, quality: C, FW: 6, Analyzing gm2slac_run02369.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2370, quality: C, FW: 7, Analyzing gm2slac_run02370.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2371, quality: C, FW: 1, Analyzing gm2slac_run02371.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2372, quality: C, FW: 1, Analyzing gm2slac_run02372.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2373, quality: C, FW: 1, Analyzing gm2slac_run02373.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2374, quality: C, FW: 2, Analyzing gm2slac_run02374.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2375, quality: C, FW: 3, Analyzing gm2slac_run02375.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2376, quality: C, FW: 4, Analyzing gm2slac_run02376.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2377, quality: C, FW: 5, Analyzing gm2slac_run02377.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2378, quality: C, FW: 5, Analyzing gm2slac_run02378.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2379, quality: C, FW: 6, Analyzing gm2slac_run02379.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2380, quality: C, FW: 7, Analyzing gm2slac_run02380.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2381, quality: C, FW: 1, Analyzing gm2slac_run02381.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2382, quality: C, FW: 1, Analyzing gm2slac_run02382.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2383, quality: C, FW: 1, Analyzing gm2slac_run02383.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2384, quality: C, FW: 2, Analyzing gm2slac_run02384.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2385, quality: C, FW: 3, Analyzing gm2slac_run02385.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2386, quality: C, FW: 4, Analyzing gm2slac_run02386.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2387, quality: C, FW: 5, Analyzing gm2slac_run02387.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2388, quality: C, FW: 6, Analyzing gm2slac_run02388.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2389, quality: C, FW: 7, Analyzing gm2slac_run02389.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2390, quality: C, FW: 1, Analyzing gm2slac_run02390.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2391, quality: C, FW: 1, Analyzing gm2slac_run02391.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2392, quality: C, FW: 1, Analyzing gm2slac_run02392.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2393, quality: C, FW: 2, Analyzing gm2slac_run02393.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2394, quality: C, FW: 3, Analyzing gm2slac_run02394.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2395, quality: C, FW: 4, Analyzing gm2slac_run02395.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2396, quality: C, FW: 5, Analyzing gm2slac_run02396.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2397, quality: C, FW: 6, Analyzing gm2slac_run02397.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2398, quality: C, FW: 7, Analyzing gm2slac_run02398.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2399, quality: C, FW: 1, Analyzing gm2slac_run02399.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2400, quality: Y, FW: 1, Analyzing gm2slac_run02400.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2401, quality: Y, FW: 1, Analyzing gm2slac_run02401.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2402, quality: Y, FW: 1, Analyzing gm2slac_run02402.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2403, quality: Y, FW: 1, Analyzing gm2slac_run02403.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2404, quality: Y, FW: 1, Analyzing gm2slac_run02404.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2405, quality: N, FW: 1, Analyzing gm2slac_run02405.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2406, quality: N, FW: 1, Analyzing gm2slac_run02406.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2407, quality: Y, FW: 1, Analyzing gm2slac_run02407.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2408, quality: Y, FW: 1, Analyzing gm2slac_run02408.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2409, quality: Y, FW: 1, Analyzing gm2slac_run02409.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2410, quality: Y, FW: 1, Analyzing gm2slac_run02410.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2411, quality: Y, FW: 1, Analyzing gm2slac_run02411.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2412, quality: Y, FW: 1, Analyzing gm2slac_run02412.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2413, quality: Y, FW: 1, Analyzing gm2slac_run02413.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2414, quality: N, FW: 1, Analyzing gm2slac_run02414.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2415, quality: N, FW: 1, Analyzing gm2slac_run02415.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2416, quality: Y, FW: 1, Analyzing gm2slac_run02416.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2417, quality: Y, FW: 1, Analyzing gm2slac_run02417.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2418, quality: Y, FW: 1, Analyzing gm2slac_run02418.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2419, quality: Y, FW: 1, Analyzing gm2slac_run02419.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2420, quality: Y, FW: 1, Analyzing gm2slac_run02420.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2421, quality: Y, FW: 1, Analyzing gm2slac_run02421.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2422, quality: Y, FW: 1, Analyzing gm2slac_run02422.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2423, quality: Y, FW: 1, Analyzing gm2slac_run02423.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2424, quality: Y, FW: 1, Analyzing gm2slac_run02424.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2425, quality: Y, FW: 1, Analyzing gm2slac_run02425.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2426, quality: Y, FW: 1, Analyzing gm2slac_run02426.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2427, quality: Y, FW: 1, Analyzing gm2slac_run02427.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2428, quality: Y, FW: 1, Analyzing gm2slac_run02428.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2429, quality: Y, FW: 1, Analyzing gm2slac_run02429.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2430, quality: Y, FW: 1, Analyzing gm2slac_run02430.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2431, quality: Y, FW: 1, Analyzing gm2slac_run02431.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2432, quality: Y, FW: 1, Analyzing gm2slac_run02432.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2433, quality: Y, FW: 1, Analyzing gm2slac_run02433.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2434, quality: Y, FW: 1, Analyzing gm2slac_run02434.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2435, quality: Y, FW: 1, Analyzing gm2slac_run02435.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2436, quality: Y, FW: 1, Analyzing gm2slac_run02436.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2437, quality: Y, FW: 1, Analyzing gm2slac_run02437.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2438, quality: Y, FW: 1, Analyzing gm2slac_run02438.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2439, quality: T  , FW: 1, Analyzing gm2slac_run02439.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2440, quality: T  , FW: 1, Analyzing gm2slac_run02440.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2441, quality: T  , FW: 1, Analyzing gm2slac_run02441.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2442, quality: T  , FW: 1, Analyzing gm2slac_run02442.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2443, quality: T  , FW: 1, Analyzing gm2slac_run02443.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2444, quality: T  , FW: 1, Analyzing gm2slac_run02444.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2445, quality: T  , FW: 1, Analyzing gm2slac_run02445.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2446, quality: T  , FW: 1, Analyzing gm2slac_run02446.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2447, quality: T  , FW: 1, Analyzing gm2slac_run02447.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2448, quality: T  , FW: 1, Analyzing gm2slac_run02448.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2449, quality: T  , FW: 1, Analyzing gm2slac_run02449.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2450, quality: T  , FW: 1, Analyzing gm2slac_run02450.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2451, quality: T  , FW: 1, Analyzing gm2slac_run02451.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2452, quality: T  , FW: 1, Analyzing gm2slac_run02452.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2453, quality: T  , FW: 1, Analyzing gm2slac_run02453.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2454, quality: T  , FW: 1, Analyzing gm2slac_run02454.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2455, quality: T  , FW: 1, Analyzing gm2slac_run02455.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2456, quality: T  , FW: 1, Analyzing gm2slac_run02456.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2457, quality: T  , FW: 1, Analyzing gm2slac_run02457.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2458, quality: T  , FW: 1, Analyzing gm2slac_run02458.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2459, quality: T  , FW: 1, Analyzing gm2slac_run02459.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2460, quality: T  , FW: 1, Analyzing gm2slac_run02460.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2461, quality: T  , FW: 1, Analyzing gm2slac_run02461.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2462, quality: T  , FW: 1, Analyzing gm2slac_run02462.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2463, quality: T  , FW: 1, Analyzing gm2slac_run02463.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2464, quality: T  , FW: 1, Analyzing gm2slac_run02464.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2465, quality: T  , FW: 1, Analyzing gm2slac_run02465.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2466, quality: T  , FW: 1, Analyzing gm2slac_run02466.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2467, quality: T  , FW: 1, Analyzing gm2slac_run02467.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2468, quality: T  , FW: 1, Analyzing gm2slac_run02468.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2469, quality: T  , FW: 1, Analyzing gm2slac_run02469.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2470, quality: T  , FW: 1, Analyzing gm2slac_run02470.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2471, quality: T  , FW: 1, Analyzing gm2slac_run02471.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2472, quality: T  , FW: 1, Analyzing gm2slac_run02472.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2473, quality: T  , FW: 1, Analyzing gm2slac_run02473.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2474, quality: T  , FW: 1, Analyzing gm2slac_run02474.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2475, quality: T  , FW: 1, Analyzing gm2slac_run02475.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2476, quality: T  , FW: 1, Analyzing gm2slac_run02476.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2477, quality: T  , FW: 1, Analyzing gm2slac_run02477.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2478, quality: T  , FW: 1, Analyzing gm2slac_run02478.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2479, quality: T  , FW: 1, Analyzing gm2slac_run02479.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2480, quality: T  , FW: 1, Analyzing gm2slac_run02480.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2481, quality: T  , FW: 1, Analyzing gm2slac_run02481.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
-(log) runNum: 2482, quality: T  , FW: 1, Analyzing gm2slac_run02482.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
+(log) runNum: 2439, quality: T, FW: 1, Analyzing gm2slac_run02439.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2440, quality: T, FW: 1, Analyzing gm2slac_run02440.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2441, quality: T, FW: 1, Analyzing gm2slac_run02441.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2442, quality: T, FW: 1, Analyzing gm2slac_run02442.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2443, quality: T, FW: 1, Analyzing gm2slac_run02443.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2444, quality: T, FW: 1, Analyzing gm2slac_run02444.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2445, quality: T, FW: 1, Analyzing gm2slac_run02445.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2446, quality: T, FW: 1, Analyzing gm2slac_run02446.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2447, quality: T, FW: 1, Analyzing gm2slac_run02447.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2448, quality: T, FW: 1, Analyzing gm2slac_run02448.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2449, quality: T, FW: 1, Analyzing gm2slac_run02449.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2450, quality: T, FW: 1, Analyzing gm2slac_run02450.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2451, quality: T, FW: 1, Analyzing gm2slac_run02451.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2452, quality: T, FW: 1, Analyzing gm2slac_run02452.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2453, quality: T, FW: 1, Analyzing gm2slac_run02453.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2454, quality: T, FW: 1, Analyzing gm2slac_run02454.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2455, quality: T, FW: 1, Analyzing gm2slac_run02455.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2456, quality: T, FW: 1, Analyzing gm2slac_run02456.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2457, quality: T, FW: 1, Analyzing gm2slac_run02457.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2458, quality: T, FW: 1, Analyzing gm2slac_run02458.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2459, quality: T, FW: 1, Analyzing gm2slac_run02459.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2460, quality: T, FW: 1, Analyzing gm2slac_run02460.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2461, quality: T, FW: 1, Analyzing gm2slac_run02461.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2462, quality: T, FW: 1, Analyzing gm2slac_run02462.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2463, quality: T, FW: 1, Analyzing gm2slac_run02463.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2464, quality: T, FW: 1, Analyzing gm2slac_run02464.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2465, quality: T, FW: 1, Analyzing gm2slac_run02465.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2466, quality: T, FW: 1, Analyzing gm2slac_run02466.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2467, quality: T, FW: 1, Analyzing gm2slac_run02467.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2468, quality: T, FW: 1, Analyzing gm2slac_run02468.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2469, quality: T, FW: 1, Analyzing gm2slac_run02469.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2470, quality: T, FW: 1, Analyzing gm2slac_run02470.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2471, quality: T, FW: 1, Analyzing gm2slac_run02471.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2472, quality: T, FW: 1, Analyzing gm2slac_run02472.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2473, quality: T, FW: 1, Analyzing gm2slac_run02473.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2474, quality: T, FW: 1, Analyzing gm2slac_run02474.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2475, quality: T, FW: 1, Analyzing gm2slac_run02475.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2476, quality: T, FW: 1, Analyzing gm2slac_run02476.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2477, quality: T, FW: 1, Analyzing gm2slac_run02477.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2478, quality: T, FW: 1, Analyzing gm2slac_run02478.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2479, quality: T, FW: 1, Analyzing gm2slac_run02479.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2480, quality: T, FW: 1, Analyzing gm2slac_run02480.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2481, quality: T, FW: 1, Analyzing gm2slac_run02481.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
+(log) runNum: 2482, quality: T, FW: 1, Analyzing gm2slac_run02482.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2483, quality: C, FW: 1, Analyzing gm2slac_run02483.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2484, quality: C, FW: 1, Analyzing gm2slac_run02484.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2485, quality: C, FW: 1, Analyzing gm2slac_run02485.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2486, quality: C, FW: 1, Analyzing gm2slac_run02486.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2487, quality: C, FW: 1, Analyzing gm2slac_run02487.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2488, quality: C, FW: 1, Analyzing gm2slac_run02488.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2489, quality: C, FW: 1, Analyzing gm2slac_run02489.root, dt_sync(0,9)[c.t.]: -2.29528, sigma: 0.0251608
 (log) runNum: 2490, quality: C, FW: 1, Analyzing gm2slac_run02490.root, dt_sync(0,9)[c.t.]: -2.29304, sigma: 0.0227198
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2491, quality: C, FW: 2, Analyzing gm2slac_run02491.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2492, quality: T, FW: 2, Analyzing gm2slac_run02492.root, dt_sync(0,9)[c.t.]: -1.29219, sigma: 0.0258581
 (log) runNum: 2493, quality: T, FW: 2, Analyzing gm2slac_run02493.root, dt_sync(0,9)[c.t.]: -1.29256, sigma: 0.0257825
@@ -1273,167 +707,61 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2506, quality: T, FW: 1, Analyzing gm2slac_run02506.root, dt_sync(0,9)[c.t.]: -2.29015, sigma: 0.0224648
 (log) runNum: 2507, quality: T, FW: 1, Analyzing gm2slac_run02507.root, dt_sync(0,9)[c.t.]: -2.29294, sigma: 0.0199899
 (log) runNum: 2508, quality: N, FW: 1, Analyzing gm2slac_run02508.root, dt_sync(0,9)[c.t.]: -2.29137, sigma: 0.023766
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2509, quality: N, FW: 1, Analyzing gm2slac_run02509.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2510, quality: N, FW: 1, Analyzing gm2slac_run02510.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2511, quality: N, FW: 1, Analyzing gm2slac_run02511.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2512, quality: N, FW: 1, Analyzing gm2slac_run02512.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2513, quality: N, FW: 1, Analyzing gm2slac_run02513.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2514, quality: N, FW: 1, Analyzing gm2slac_run02514.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2515, quality: N, FW: 1, Analyzing gm2slac_run02515.root, dt_sync(0,9)[c.t.]: -2.29104, sigma: 0.0215631
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2516, quality: N, FW: 1, Analyzing gm2slac_run02516.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2517, quality: N, FW: 1, Analyzing gm2slac_run02517.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2518, quality: N, FW: 1, Analyzing gm2slac_run02518.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2519, quality: N, FW: 1, Analyzing gm2slac_run02519.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2520, quality: N, FW: 1, Analyzing gm2slac_run02520.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2521, quality: N, FW: 1, Analyzing gm2slac_run02521.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2522, quality: N, FW: 1, Analyzing gm2slac_run02522.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2523, quality: N, FW: 1, Analyzing gm2slac_run02523.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2524, quality: N, FW: 1, Analyzing gm2slac_run02524.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2525, quality: N, FW: 1, Analyzing gm2slac_run02525.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2526, quality: N, FW: 1, Analyzing gm2slac_run02526.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2527, quality: N, FW: 1, Analyzing gm2slac_run02527.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2528, quality: N, FW: 1, Analyzing gm2slac_run02528.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2529, quality: N, FW: 1, Analyzing gm2slac_run02529.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2530, quality: N, FW: 1, Analyzing gm2slac_run02530.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2531, quality: N, FW: 1, Analyzing gm2slac_run02531.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2532, quality: N, FW: 1, Analyzing gm2slac_run02532.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2533, quality: N, FW: 1, Analyzing gm2slac_run02533.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2534, quality: N, FW: 1, Analyzing gm2slac_run02534.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2535, quality: N, FW: 1, Analyzing gm2slac_run02535.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2536, quality: N, FW: 1, Analyzing gm2slac_run02536.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2537, quality: N, FW: 1, Analyzing gm2slac_run02537.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2538, quality: N, FW: 1, Analyzing gm2slac_run02538.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2539, quality: N, FW: 1, Analyzing gm2slac_run02539.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2540, quality: N, FW: 1, Analyzing gm2slac_run02540.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2541, quality: N, FW: 1, Analyzing gm2slac_run02541.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2542, quality: N, FW: 1, Analyzing gm2slac_run02542.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2543, quality: N, FW: 1, Analyzing gm2slac_run02543.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2544, quality: N, FW: 1, Analyzing gm2slac_run02544.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2545, quality: N, FW: 1, Analyzing gm2slac_run02545.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2546, quality: N, FW: 1, Analyzing gm2slac_run02546.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2547, quality: N, FW: 1, Analyzing gm2slac_run02547.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2548, quality: N, FW: 1, Analyzing gm2slac_run02548.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2549, quality: N, FW: 1, Analyzing gm2slac_run02549.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2550, quality: N, FW: 1, Analyzing gm2slac_run02550.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2551, quality: N, FW: 1, Analyzing gm2slac_run02551.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2552, quality: N, FW: 1, Analyzing gm2slac_run02552.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2553, quality: N, FW: 1, Analyzing gm2slac_run02553.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2554, quality: N, FW: 1, Analyzing gm2slac_run02554.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2555, quality: N, FW: 1, Analyzing gm2slac_run02555.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2556, quality: N, FW: 1, Analyzing gm2slac_run02556.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2557, quality: N, FW: 1, Analyzing gm2slac_run02557.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2558, quality: N, FW: 1, Analyzing gm2slac_run02558.root, dt_sync(0,9)[c.t.]: -0.149641, sigma: 0.395025
 (log) runNum: 2559, quality: N, FW: 1, Analyzing gm2slac_run02559.root, dt_sync(0,9)[c.t.]: 4.35349, sigma: 3.34805
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2560, quality: N, FW: 1, Analyzing gm2slac_run02560.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2561, quality: N, FW: 1, Analyzing gm2slac_run02561.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2562, quality: N, FW: 1, Analyzing gm2slac_run02562.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2563, quality: N, FW: 1, Analyzing gm2slac_run02563.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2564, quality: N, FW: 1, Analyzing gm2slac_run02564.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2565, quality: N, FW: 1, Analyzing gm2slac_run02565.root, dt_sync(0,9)[c.t.]: -1.29102, sigma: 0.0227514
 (log) runNum: 2566, quality: N, FW: 1, Analyzing gm2slac_run02566.root, dt_sync(0,9)[c.t.]: -1.29154, sigma: 0.0228943
@@ -1444,62 +772,24 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2571, quality: N, FW: 1, Analyzing gm2slac_run02571.root, dt_sync(0,9)[c.t.]: -1.29146, sigma: 0.0227417
 (log) runNum: 2572, quality: N, FW: 1, Analyzing gm2slac_run02572.root, dt_sync(0,9)[c.t.]: -1.29127, sigma: 0.0226187
 (log) runNum: 2573, quality: N, FW: 1, Analyzing gm2slac_run02573.root, dt_sync(0,9)[c.t.]: -1.29154, sigma: 0.0226122
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2574, quality: N, FW: 1, Analyzing gm2slac_run02574.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2575, quality: N, FW: 1, Analyzing gm2slac_run02575.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2576, quality: N, FW: 1, Analyzing gm2slac_run02576.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2577, quality: N, FW: 1, Analyzing gm2slac_run02577.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2578, quality: N, FW: 1, Analyzing gm2slac_run02578.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2579, quality: N, FW: 1, Analyzing gm2slac_run02579.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2580, quality: N, FW: 1, Analyzing gm2slac_run02580.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2581, quality: N, FW: 1, Analyzing gm2slac_run02581.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2582, quality: N, FW: 1, Analyzing gm2slac_run02582.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2583, quality: N, FW: 1, Analyzing gm2slac_run02583.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2584, quality: N, FW: 1, Analyzing gm2slac_run02584.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2585, quality: N, FW: 1, Analyzing gm2slac_run02585.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2586, quality: N, FW: 1, Analyzing gm2slac_run02586.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2587, quality: N, FW: 1, Analyzing gm2slac_run02587.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2588, quality: N, FW: 1, Analyzing gm2slac_run02588.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2589, quality: N, FW: 1, Analyzing gm2slac_run02589.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2590, quality: N, FW: 1, Analyzing gm2slac_run02590.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2591, quality: N, FW: 1, Analyzing gm2slac_run02591.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2592, quality: N, FW: 1, Analyzing gm2slac_run02592.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2593, quality: N, FW: 1, Analyzing gm2slac_run02593.root, dt_sync(0,9)[c.t.]: 0.708425, sigma: 0.0220768
 (log) runNum: 2594, quality: N, FW: 1, Analyzing gm2slac_run02594.root, dt_sync(0,9)[c.t.]: 0.709051, sigma: 0.0229152
@@ -1510,7 +800,6 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2599, quality: C, FW: 5, Analyzing gm2slac_run02599.root, dt_sync(0,9)[c.t.]: 0.705122, sigma: 0.0400496
 (log) runNum: 2600, quality: C, FW: 6, Analyzing gm2slac_run02600.root, dt_sync(0,9)[c.t.]: 0.704458, sigma: 0.0435974
 (log) runNum: 2601, quality: C, FW: 7, Analyzing gm2slac_run02601.root, dt_sync(0,9)[c.t.]: 0.705388, sigma: 0.0505083
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2602, quality: C, FW: 1, Analyzing gm2slac_run02602.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2603, quality: C, FW: 1, Analyzing gm2slac_run02603.root, dt_sync(0,9)[c.t.]: 0.706914, sigma: 0.0224764
 (log) runNum: 2604, quality: C, FW: 2, Analyzing gm2slac_run02604.root, dt_sync(0,9)[c.t.]: 0.70697, sigma: 0.0261756
@@ -1573,38 +862,16 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2661, quality: C, FW: 3, Analyzing gm2slac_run02661.root, dt_sync(0,9)[c.t.]: 0.701804, sigma: 0.030471
 (log) runNum: 2662, quality: C, FW: 4, Analyzing gm2slac_run02662.root, dt_sync(0,9)[c.t.]: 0.693718, sigma: 0.0337308
 (log) runNum: 2663, quality: C, FW: 5, Analyzing gm2slac_run02663.root, dt_sync(0,9)[c.t.]: 0.691986, sigma: 0.0419527
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2664, quality: C, FW: 6, Analyzing gm2slac_run02664.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2665, quality: C, FW: 7, Analyzing gm2slac_run02665.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2666, quality: C, FW: 1, Analyzing gm2slac_run02666.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2667, quality: C, FW: 1, Analyzing gm2slac_run02667.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2668, quality: C, FW: 2, Analyzing gm2slac_run02668.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2669, quality: C, FW: 3, Analyzing gm2slac_run02669.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2670, quality: C, FW: 4, Analyzing gm2slac_run02670.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2671, quality: C, FW: 5, Analyzing gm2slac_run02671.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2672, quality: C, FW: 6, Analyzing gm2slac_run02672.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2673, quality: C, FW: 7, Analyzing gm2slac_run02673.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2674, quality: C, FW: 1, Analyzing gm2slac_run02674.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2675, quality: C, FW: 1, Analyzing gm2slac_run02675.root, dt_sync(0,9)[c.t.]: -0.291808, sigma: 0.022351
 (log) runNum: 2676, quality: C, FW: 2, Analyzing gm2slac_run02676.root, dt_sync(0,9)[c.t.]: -0.29245, sigma: 0.0260425
@@ -1612,17 +879,9 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2678, quality: C, FW: 4, Analyzing gm2slac_run02678.root, dt_sync(0,9)[c.t.]: -0.292229, sigma: 0.0299788
 (log) runNum: 2679, quality: C, FW: 5, Analyzing gm2slac_run02679.root, dt_sync(0,9)[c.t.]: -0.292996, sigma: 0.0401404
 (log) runNum: 2680, quality: C, FW: 6, Analyzing gm2slac_run02680.root, dt_sync(0,9)[c.t.]: -0.290274, sigma: 0.0420128
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2681, quality: C, FW: 7, Analyzing gm2slac_run02681.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2682, quality: C, FW: 1, Analyzing gm2slac_run02682.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2683, quality: C, FW: 1, Analyzing gm2slac_run02683.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2684, quality: T, FW: 1, Analyzing gm2slac_run02684.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2685, quality: C, FW: 1, Analyzing gm2slac_run02685.root, dt_sync(0,9)[c.t.]: -1.29419, sigma: 0.0223184
 (log) runNum: 2686, quality: C, FW: 1, Analyzing gm2slac_run02686.root, dt_sync(0,9)[c.t.]: -1.2933, sigma: 0.0229863
@@ -1661,26 +920,12 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2719, quality: C, FW: 1, Analyzing gm2slac_run02719.root, dt_sync(0,9)[c.t.]: -1.29197, sigma: 0.022885
 (log) runNum: 2720, quality: C, FW: 2, Analyzing gm2slac_run02720.root, dt_sync(0,9)[c.t.]: -1.29382, sigma: 0.0252543
 (log) runNum: 2721, quality: , FW: 3, Analyzing gm2slac_run02721.root, dt_sync(0,9)[c.t.]: -1.29424, sigma: 0.0280713
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2722, quality: C, FW: 4, Analyzing gm2slac_run02722.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2723, quality: C, FW: 5, Analyzing gm2slac_run02723.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2724, quality: C, FW: 6, Analyzing gm2slac_run02724.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2725, quality: C, FW: 7, Analyzing gm2slac_run02725.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2726, quality: C, FW: 1, Analyzing gm2slac_run02726.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2727, quality: C, FW: 1, Analyzing gm2slac_run02727.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2728, quality: C, FW: 2, Analyzing gm2slac_run02728.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2729, quality: C, FW: 2, Analyzing gm2slac_run02729.root, dt_sync(0,9)[c.t.]: -0.293727, sigma: 0.0236841
 (log) runNum: 2730, quality: C, FW: 2, Analyzing gm2slac_run02730.root, dt_sync(0,9)[c.t.]: -0.292905, sigma: 0.0253845
@@ -1694,239 +939,83 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2738, quality: C, FW: 2, Analyzing gm2slac_run02738.root, dt_sync(0,9)[c.t.]: -0.294635, sigma: 0.0255272
 (log) runNum: 2739, quality: C, FW: 3, Analyzing gm2slac_run02739.root, dt_sync(0,9)[c.t.]: -0.296311, sigma: 0.0285168
 (log) runNum: 2740, quality: C, FW: 4, Analyzing gm2slac_run02740.root, dt_sync(0,9)[c.t.]: -0.294623, sigma: 0.0311616
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2741, quality: C, FW: 5, Analyzing gm2slac_run02741.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2742, quality: C, FW: 6, Analyzing gm2slac_run02742.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2743, quality: C, FW: 7, Analyzing gm2slac_run02743.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2744, quality: C, FW: 1, Analyzing gm2slac_run02744.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2745, quality: C, FW: 1, Analyzing gm2slac_run02745.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2746, quality: C, FW: 2, Analyzing gm2slac_run02746.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2747, quality: C, FW: 3, Analyzing gm2slac_run02747.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2748, quality: C, FW: 4, Analyzing gm2slac_run02748.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2749, quality: C, FW: 5, Analyzing gm2slac_run02749.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2750, quality: C, FW: 6, Analyzing gm2slac_run02750.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2751, quality: C, FW: 7, Analyzing gm2slac_run02751.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2752, quality: C, FW: 1, Analyzing gm2slac_run02752.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2753, quality: C, FW: 1, Analyzing gm2slac_run02753.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2754, quality: C, FW: 2, Analyzing gm2slac_run02754.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2755, quality: C, FW: 3, Analyzing gm2slac_run02755.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2756, quality: C, FW: 4, Analyzing gm2slac_run02756.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2757, quality: C, FW: 5, Analyzing gm2slac_run02757.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2758, quality: C, FW: 6, Analyzing gm2slac_run02758.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2759, quality: C, FW: 7, Analyzing gm2slac_run02759.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2760, quality: C, FW: 1, Analyzing gm2slac_run02760.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2761, quality: C, FW: 1, Analyzing gm2slac_run02761.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2762, quality: C, FW: 2, Analyzing gm2slac_run02762.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2763, quality: C, FW: 3, Analyzing gm2slac_run02763.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2764, quality: C, FW: 4, Analyzing gm2slac_run02764.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2765, quality: C, FW: 5, Analyzing gm2slac_run02765.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2766, quality: C, FW: 6, Analyzing gm2slac_run02766.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2767, quality: C, FW: 7, Analyzing gm2slac_run02767.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2768, quality: C, FW: 1, Analyzing gm2slac_run02768.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2769, quality: C, FW: 1, Analyzing gm2slac_run02769.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2770, quality: C, FW: 2, Analyzing gm2slac_run02770.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2771, quality: C, FW: 3, Analyzing gm2slac_run02771.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2772, quality: C, FW: 4, Analyzing gm2slac_run02772.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2773, quality: C, FW: 5, Analyzing gm2slac_run02773.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2774, quality: C, FW: 6, Analyzing gm2slac_run02774.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2775, quality: C, FW: 7, Analyzing gm2slac_run02775.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2776, quality: C, FW: 1, Analyzing gm2slac_run02776.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2777, quality: C, FW: 1, Analyzing gm2slac_run02777.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2778, quality: C, FW: 2, Analyzing gm2slac_run02778.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2779, quality: C, FW: 3, Analyzing gm2slac_run02779.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2780, quality: C, FW: 4, Analyzing gm2slac_run02780.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2781, quality: C, FW: 5, Analyzing gm2slac_run02781.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2782, quality: C, FW: 6, Analyzing gm2slac_run02782.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2783, quality: C, FW: 7, Analyzing gm2slac_run02783.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2784, quality: C, FW: 1, Analyzing gm2slac_run02784.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2785, quality: C, FW: 1, Analyzing gm2slac_run02785.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2786, quality: C, FW: 2, Analyzing gm2slac_run02786.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2787, quality: C, FW: 3, Analyzing gm2slac_run02787.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2788, quality: C, FW: 4, Analyzing gm2slac_run02788.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2789, quality: C, FW: 5, Analyzing gm2slac_run02789.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2790, quality: C, FW: 6, Analyzing gm2slac_run02790.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2791, quality: C, FW: 7, Analyzing gm2slac_run02791.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2792, quality: C, FW: 1, Analyzing gm2slac_run02792.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2793, quality: C, FW: 1, Analyzing gm2slac_run02793.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2794, quality: C, FW: 2, Analyzing gm2slac_run02794.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2795, quality: C, FW: 3, Analyzing gm2slac_run02795.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2796, quality: C, FW: 4, Analyzing gm2slac_run02796.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2797, quality: C, FW: 5, Analyzing gm2slac_run02797.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2798, quality: C, FW: 6, Analyzing gm2slac_run02798.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2799, quality: C, FW: 7, Analyzing gm2slac_run02799.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2800, quality: C, FW: 1, Analyzing gm2slac_run02800.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2801, quality: C, FW: 1, Analyzing gm2slac_run02801.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2802, quality: C, FW: 2, Analyzing gm2slac_run02802.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2803, quality: C, FW: 3, Analyzing gm2slac_run02803.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2804, quality: C, FW: 4, Analyzing gm2slac_run02804.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2805, quality: C, FW: 5, Analyzing gm2slac_run02805.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2806, quality: C, FW: 6, Analyzing gm2slac_run02806.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2807, quality: C, FW: 7, Analyzing gm2slac_run02807.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2808, quality: C, FW: 1, Analyzing gm2slac_run02808.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2809, quality: C, FW: 1, Analyzing gm2slac_run02809.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2810, quality: C, FW: 2, Analyzing gm2slac_run02810.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2811, quality: C, FW: 3, Analyzing gm2slac_run02811.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2812, quality: C, FW: 4, Analyzing gm2slac_run02812.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2813, quality: C, FW: 5, Analyzing gm2slac_run02813.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2814, quality: C, FW: 6, Analyzing gm2slac_run02814.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2815, quality: C, FW: 7, Analyzing gm2slac_run02815.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2816, quality: C, FW: 1, Analyzing gm2slac_run02816.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2817, quality: C, FW: 1, Analyzing gm2slac_run02817.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
-Warning in <Fit>: Fit data is empty 
-Warning in <Fit>: Fit data is empty 
 (log) runNum: 2818, quality: C, FW: 2, Analyzing gm2slac_run02818.root, dt_sync(0,9)[c.t.]: 0, sigma: 0
 (log) runNum: 2819, quality: T, FW: 2, Analyzing gm2slac_run02819.root, dt_sync(0,9)[c.t.]: -0.292789, sigma: 0.02551
 (log) runNum: 2820, quality: C, FW: 1, Analyzing gm2slac_run02820.root, dt_sync(0,9)[c.t.]: -0.292498, sigma: 0.0232449
@@ -1945,9 +1034,9 @@ Warning in <Fit>: Fit data is empty
 (log) runNum: 2833, quality: C, FW: 6, Analyzing gm2slac_run02833.root, dt_sync(0,9)[c.t.]: -0.293791, sigma: 0.0436131
 (log) runNum: 2834, quality: C, FW: 7, Analyzing gm2slac_run02834.root, dt_sync(0,9)[c.t.]: -0.292933, sigma: 0.0494911
 (log) runNum: 2835, quality: C, FW: 1, Analyzing gm2slac_run02835.root, dt_sync(0,9)[c.t.]: -0.292527, sigma: 0.0230894
-(log) runNum: 2836, quality: T  , FW: 1, Analyzing gm2slac_run02836.root, dt_sync(0,9)[c.t.]: -0.292562, sigma: 0.0225049
-(log) runNum: 2837, quality: T  , FW: 1, Analyzing gm2slac_run02837.root, dt_sync(0,9)[c.t.]: -0.290873, sigma: 0.022843
-(log) runNum: 2838, quality: T  , FW: 1, Analyzing gm2slac_run02838.root, dt_sync(0,9)[c.t.]: -0.292591, sigma: 0.0234713
+(log) runNum: 2836, quality: T, FW: 1, Analyzing gm2slac_run02836.root, dt_sync(0,9)[c.t.]: -0.292562, sigma: 0.0225049
+(log) runNum: 2837, quality: T, FW: 1, Analyzing gm2slac_run02837.root, dt_sync(0,9)[c.t.]: -0.290873, sigma: 0.022843
+(log) runNum: 2838, quality: T, FW: 1, Analyzing gm2slac_run02838.root, dt_sync(0,9)[c.t.]: -0.292591, sigma: 0.0234713
 (log) runNum: 2839, quality: Y, FW: 1, Analyzing gm2slac_run02839.root, dt_sync(0,9)[c.t.]: -0.291108, sigma: 0.0231115
 (log) runNum: 2840, quality: Y, FW: 1, Analyzing gm2slac_run02840.root, dt_sync(0,9)[c.t.]: -0.291092, sigma: 0.022931
 (log) runNum: 2841, quality: Y, FW: 1, Analyzing gm2slac_run02841.root, dt_sync(0,9)[c.t.]: -0.291826, sigma: 0.0231504
