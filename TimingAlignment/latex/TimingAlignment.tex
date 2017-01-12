@@ -207,6 +207,20 @@ regarding $\tau_{shower}$. We can now discriminate more pile up events with this
 We might also be able to disentangle the position and the angle information.
 
 
+\section{Time offset between WFD5 channels}
+
+If we look again at the Eq.~\ref{eq:dtsync} -- $dt_{sync}(f,i,j) = d\tau_{\rm{offset,channel}}(f,i,j) + d\tau_{\rm{fiber}}(i,j)$, since the $d\tau_{\rm{fiber}}(i,j)$ is a constant, any drift in the $dt_{\rm{sync}}(i,j)$ can be attributed to a drift in $d\tau_{\rm{offset,channel}}(i,j)$. Shown in Fig.~\ref{fig:dtsyncDist} are the $dt_{sync}(i,j)$ distributions as a function of run number.
+It is very clear from Fig.~\ref{fig:dtsyncDist}(left) that the quantization is about 1 c.t.(1.25 ns) and from Fig.~\ref{fig:dtsyncDist}(right) it is about 0.33 c.t.(0.4125 ns).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.49\textwidth]{pics/dt_sync_0009VsRunNumber.pdf} 
+\includegraphics[width=0.49\textwidth]{pics/dt_sync_0001VsRunNumber.pdf} 
+\caption{Distribution of (left) $dt_{\rm{sync}}(0,9)$, these 2 channels are from the same WFD5, and (left) $dt_{\rm{sync}}(0,1)$, these 2 channels are from different  WFD5s.}\label{fig:dtsyncDist}
+\end{figure}
+
+
+
 
 \section{Datasets}
 
