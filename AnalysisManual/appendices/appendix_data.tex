@@ -30,14 +30,14 @@ All the art/ROOT and ROOT files are stored in the $2\times3$TB HDD in the \verb+
 Use the following command to copy over the data files that you want to analyze: 
 %
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily\footnotesize]
-scp -r g2muon@g2analysis:/data1/slac2016/analysis/gm2slac_run0xxxx.root . 
+scp -r g2muon@g2analysis:/data1/slac2016/root/gm2slac_run0xxxx.root . 
 scp -r g2muon@g2analysis:/data2/slac2016/art/gm2slac_run0xxxx.art .
 \end{lstlisting}
 %
 Or you can use \verb+rsync+ if you have enough space in your hard drive:
 %
 \begin{lstlisting}[frame=single, basicstyle=\ttfamily\footnotesize]
-rsync -avurt g2muon@g2analysis:/data1/slac2016/analysis/ YOUR_LOCAL_DISK/
+rsync -avurt g2muon@g2analysis:/data1/slac2016/root/ YOUR_LOCAL_DISK/
 rsync -avurt g2muon@g2analysis:/data2/slac2016/art/ YOUR_LOCAL_DISK/
 \end{lstlisting}
 %
