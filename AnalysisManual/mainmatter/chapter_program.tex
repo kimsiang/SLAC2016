@@ -1,7 +1,53 @@
 \chapter{T-536 program}
 \label{chap:program}
 
-This chapter summarizes the program we have planned during the SLAC run. For full program, please refer to \aref{app:program}.
+\section{Experimental setup}
+
+An overview of the experiment setup is shown in figure~\ref{fig:overview}.
+%
+The calorimeter system is located inside the tunnel,
+the laser system is located just outside of it and 
+the DAQ backend and analysis machines are located in the control room
+several floors above the tunnel.
+%
+Detailed description of each sub-system is given in the subsequent sections. 
+%
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.85\textwidth]{pics/SLACoverview}
+\caption{Overview of the experimental setup at SLAC. 
+Electron beam from the ESTB beamline is moving from
+the left to right before hitting the calorimeter.
+The SiPM pulses resulting from the EM shower are digitized and
+then processed by the frontend and backend machines to be ready for data analysis.
+}\label{fig:overview}
+\end{figure}
+
+\section{Event topology}
+
+Understanding the event topology is a crucial step in the data analysis.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.8\textwidth]{pics/eventtopology}
+\caption{\label{fig:eventtopology} Event topology at SLAC.}
+\end{figure}
+
+\begin{table}[htbp]
+\caption{Typical time and energy of sync, beam and laser pulses.}
+\begin{longtable}{|c|c|c|c|} \hline
+Pulse type & Time [c.t.] & Crystal hit E [p.e.] & Cluster E [p.e.] \\
+\hline
+Sync pulse	& $\approx$ 860, 0 (before, after corr.) &	1000-2000 &	60000-80000 \\
+\hline
+Beam pulse & $\approx$ 2500, $\approx$ 1600 (before, after corr.)	 & 0-2500 & 2500-3000 \\
+\hline
+Laser pulse	& $>$ 2860 c.t., $>$ 2000 c.t. (before, after corr.) & 1000-2000 & 60000-80000 \\
+\hline
+\end{longtable}
+\end{table}
+
+This chapter summarizes the program we have carried out during the SLAC run. For full program, please refer to \aref{app:program}.
 
 \begin{itemize}
 \item Vertical Sweep 
