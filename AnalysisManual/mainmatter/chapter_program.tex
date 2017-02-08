@@ -23,9 +23,24 @@ then processed by the frontend and backend machines to be ready for data analysi
 }\label{fig:overview}
 \end{figure}
 
+\section{Mapping of the Calorimeter and the Waveform digitizer WFD5}
+
+For data analyses related to the timing resolution extraction from timing difference, it is very important to know if both channels are coming from the same or different WFD5. In Fig.~\ref{fig:calowfd5map},
+the calorimeter crystal number is given at the right bottom corner and the WFD5's AMC slot number in a $\mu$TCA crate is given in R$N$ where $N$ is the slot number.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.7\textwidth]{pics/CaloWFD5Map}
+\caption{\label{fig:calowfd5map}A mapping between calorimeter crystal number and the WFD5 AMC slot number.}
+\end{figure}
+
 \section{Event topology}
 
-Understanding the event topology is a crucial step in the data analysis.
+Understanding the SLAC event topology is a crucial step in the data analysis.
+At the beginning of each fill, a sync laser pulsed is fired for timing alignment purpose. This pulse shows up at around 1~$\mu$s ($\approx$ 800 c.t.) in the digitizer.
+Then the electron beam will arrive at about 3~$\mu$s ($\approx$ 2400 c.t.).
+For the rest of the time until 700 $\mu$s, laser pulses for laser calibration and SiPM gain monitoring purpose will be firing at either 10 kHz or 100 kHz depending on the runs.
+A typical recorded waveform is shown in Fig.~\ref{fig:eventtopology}.
 
 \begin{figure}[htbp]
 \centering
