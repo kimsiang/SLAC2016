@@ -113,16 +113,16 @@ void GeneralAnalysis::execute(){
   double fitE[54]={};
 
   // Collect everything for the sync pulses before correction (aka raw Fit Result)
-  for(size_t iFit =0;iFit<FitResult_EventNum->size();iFit++){  
-    if(FitResult_Time->at(iFit) < 1000) {
+  for(size_t iFit=0;iFit<FitResult_EventNum->size();iFit++){  
+    if(FitResult_Time->at(iFit)<1000) {
       fittedSyncTime[FitResult_XtalNum->at(iFit)]->Fill(FitResult_Time->at(iFit));
       syncT[FitResult_XtalNum->at(iFit)] = FitResult_Time->at(iFit); 
     }
   }
 
   // Collect everything for the sync pulses after correction (aka calibration xtal hit)
-  for(size_t iF =0;iF<XtalHit_EventNum->size();iF++){  
-    if(XtalHit_Time->at(iF) < 1000) {
+  for(size_t iF=0;iF<XtalHit_EventNum->size();iF++){  
+    if(XtalHit_Time->at(iF)<1000) {
       syncE[XtalHit_XtalNum->at(iF)] = XtalHit_Energy->at(iF); 
       syncTime[XtalHit_XtalNum->at(iF)]->Fill(XtalHit_Time->at(iF));
       syncEnergy[XtalHit_XtalNum->at(iF)]->Fill(XtalHit_Energy->at(iF));
@@ -139,10 +139,10 @@ void GeneralAnalysis::execute(){
   } 
 
   // Collect single electron events only for the beam pulses
-  bool isSingleElec = false;
-  int islandNum = 0;
-  for(size_t iC =0;iC<Cluster_EventNum->size();iC++){  
-    if(Cluster_Energy->at(iC) < 3000 && Cluster_Energy->at(iC) > 1000 && Cluster_Time->at(iC)<2000 ) {
+  bool isSingleElec=false;
+  int islandNum=0;
+  for(size_t iC=0;iC<Cluster_EventNum->size();iC++){  
+    if(Cluster_Energy->at(iC)<3000 && Cluster_Energy->at(iC)>1000 && Cluster_Time->at(iC)<2000 ) {
       isSingleElec = true; 
       islandNum = Cluster_IslandNum->at(iC); // store the islandNum here, loop through xtal with this islandNum
       cout<<"\tCluster Energy: "<<Cluster_Energy->at(iC)<<", Time: "<<Cluster_Time->at(iC)<<endl;
@@ -152,11 +152,11 @@ void GeneralAnalysis::execute(){
   // Only store the information if it is a single electron event
   if(isSingleElec) {
 
-    for(size_t iFit =0;iFit<FitResult_EventNum->size();iFit++){  
+    for(size_t iFit=0;iFit<FitResult_EventNum->size();iFit++){  
       // continue if this fit result does not belong to the interested cluster
       if(FitResult_IslandNum->at(iFit) != islandNum) continue;
 
-      if(FitResult_Time->at(iFit) > 2000 && FitResult_Time->at(iFit)<3000) {
+      if(FitResult_Time->at(iFit)>2000 && FitResult_Time->at(iFit)<3000) {
         fittedBeamTime[FitResult_XtalNum->at(iFit)]->Fill(FitResult_Time->at(iFit));
         fitT[FitResult_XtalNum->at(iFit)] = FitResult_Time->at(iFit); 
         fitE[FitResult_XtalNum->at(iFit)] = FitResult_Energy->at(iFit); 
@@ -165,12 +165,12 @@ void GeneralAnalysis::execute(){
       }
     }
 
-    for(size_t iF =0;iF<XtalHit_EventNum->size();iF++){  
+    for(size_t iF=0;iF<XtalHit_EventNum->size();iF++){  
 
       // continue if this xtal hit does not belong to the interested cluster
       if(XtalHit_IslandNum->at(iF) != islandNum) continue;
 
-      if(XtalHit_Time->at(iF) > 1000 && XtalHit_Time->at(iF)<2000) {
+      if(XtalHit_Time->at(iF)>1000 && XtalHit_Time->at(iF)<2000) {
         beamT[XtalHit_XtalNum->at(iF)] = XtalHit_Time->at(iF); 
         beamE[XtalHit_XtalNum->at(iF)] = XtalHit_Energy->at(iF); 
         beamTime[XtalHit_XtalNum->at(iF)]->Fill(XtalHit_Time->at(iF));
