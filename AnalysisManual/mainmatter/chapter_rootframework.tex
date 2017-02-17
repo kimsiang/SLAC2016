@@ -56,8 +56,23 @@ The data samples for this tutorial are stored in ROOT trees. The tree contains a
 
 \subsection*{For studies using higher level objects}
 
-\begin{itemize}
+Bear in mind that all the vectors that will be explained below are not filled in the same loop unless they have the same prefix like \verb+FitResult+, \verb+XtalHit+. In principle you should use the same prefix in the same loop like
 
+\begin{Verbatim}[frame=single]
+for(size_t iC=0; iC<Cluster_EventNum->size();iC++){
+  std::cout<<Cluster_Energy->at(iC)<<std::endl;
+}
+\end{Verbatim}
+%
+but {\color{red} not the following}
+\begin{Verbatim}[frame=single]
+for(size_t iC=0; iC<Cluster_EventNum->size();iC++){
+  std::cout<<XtalHit_Energy->at(iC)<<std::endl;
+}
+\end{Verbatim}
+
+\subsubsection*{FitResult}
+\begin{itemize}
 \item \verb+FitResult_EventNum+ (\verb+vector<int>+): event number of this fit result
 \item \verb+FitResult_CaloNum+ (\verb+vector<int>+): calorimeter number of this fit result
 \item \verb+FitResult_XtalNum+ (\verb+vector<int>+): crystal number of this fit result
@@ -69,7 +84,10 @@ The data samples for this tutorial are stored in ROOT trees. The tree contains a
 \item \verb+FitResult_Pedestal+ (\verb+vector<double>+): pedestal of this fit result
 \item \verb+FitResult_Chi2+ (\verb+vector<double>+): Chi squared of this fit result
 \item \verb+FitResult_ClockCounter+ (\verb+vector<long long>+): time stamp (clock tick of 40 MHz) of this fit result from Rider header information
+\end{itemize}
 
+\subsubsection*{XtalHit}
+\begin{itemize}
 \item \verb+XtalHit_EventNum+ (\verb+vector<int>+): event number of this crystal hit
 \item \verb+XtalHit_CaloNum+ (\verb+vector<int>+): calorimeter number of this crystal hit
 \item \verb+XtalHit_XtalNum+ (\verb+vector<int>+): crystal number of this crystal hit
@@ -79,7 +97,11 @@ The data samples for this tutorial are stored in ROOT trees. The tree contains a
 \item \verb+XtalHit_Energy+ (\verb+vector<double>+): energy (number of photons) of this crystal hit
 \item \verb+XtalHit_Time+ (\verb+vector<double>+): time (clock tick of 800 MHz) of this crystal hit within the fill/event
 \item \verb+XtalHit_ClockCounter+ (\verb+vector<long long>+): time stamp (clock tick of 40 MHz) of this crystal hit from Rider header information
+\end{itemize}
 
+
+\subsubsection*{Cluster}
+\begin{itemize}
 \item \verb+Cluster_EventNum+ (\verb+vector<int>+): event number of this cluster 
 \item \verb+Cluster_CaloNum+ (\verb+vector<int>+): calorimeter number of this cluster
 \item \verb+Cluster_IslandNum+ (\verb+vector<int>+): island number of this cluster
@@ -87,7 +109,10 @@ The data samples for this tutorial are stored in ROOT trees. The tree contains a
 \item \verb+Cluster_Time+ (\verb+vector<double>+): time (clock tick) of this cluster 
 \item \verb+Cluster_X+ (\verb+vector<double>+): local x-position of this cluster (logarithmic-weighted)
 \item \verb+Cluster_Y+ (\verb+vector<double>+): local x-position of this cluster (logarithmic-weighted)
+\end{itemize}
 
+\subsubsection*{Italiano (Laser crate data)}
+\begin{itemize}
 \item \verb+Italiano_EventNum+ (\verb+vector<int>+): event number of this analyzed laser crate waveform
 \item \verb+Italiano_CaloNum+ (\verb+vector<int>+): calorimeter number of this analyzed laser crate waveform
 \item \verb+Italiano_XtalNum+ (\verb+vector<int>+): crystal number of this analyzed laser crate waveform
@@ -102,7 +127,8 @@ The data samples for this tutorial are stored in ROOT trees. The tree contains a
 \end{itemize}
 
 \subsection*{For studies using lower level objects}
-Blow are the Tleaves of the \verb+islandTree+.
+
+\subsubsection*{Tleaves of the islandTree}
 
 \begin{itemize}
 \item \verb+RunNum+ (\verb+int+): run number of this island
