@@ -254,7 +254,7 @@ void displayResults(const gm2calo::FitResultArtRecordCollection& frr,
 	" xtal " + std::to_string(islandRecord.xtalNum) ;
 
     std::string filename =  "run"+ std::to_string(runNumber) + "_event" + std::to_string(islandRecord.fillNum) +
-       //"_calo" + std::to_string(islandRecord.caloNum) +
+	//"_calo" + std::to_string(islandRecord.caloNum) +
 	"_island" + std::to_string(islandRecord.islandNum) + 
 	"_xtal" + std::to_string(islandRecord.xtalNum) + ".root";
 
@@ -307,15 +307,22 @@ void displayResults(const gm2calo::FitResultArtRecordCollection& frr,
     g->GetXaxis()->SetRangeUser(sampleTimes[0], sampleTimes.back());
     g->GetXaxis()->SetTitle("sample number");
     g->GetYaxis()->SetTitle("ADC counts");
+    g->GetXaxis()->SetLabelSize(0.04);
+    g->GetYaxis()->SetLabelSize(0.04);
     g->GetYaxis()->SetTitleOffset(1.5);
 
-    double yMin = g->GetYaxis()->GetXmin();
+    double yMin = g->GetYaxis()->GetXmin()-15;
     double yMax = g->GetYaxis()->GetXmax();
+
+    g->GetYaxis()->SetRangeUser(yMin,yMax);
+
+    std::cout <<"yMin: "<<yMin<<", yMax: "<<yMax<<std::endl;
+
     double xRangeMin = sampleTimes[0];
     double xRangeMax = sampleTimes.back();
     std::unique_ptr<TPaveText> txtbox(new TPaveText(
-		xRangeMin + (xRangeMax - xRangeMin) * 0.6, yMin + (yMax - yMin) * 0.6,
-		xRangeMin + (xRangeMax - xRangeMin) * 0.9, yMin + (yMax - yMin) * 0.35));
+		xRangeMin + (xRangeMax - xRangeMin) * 0.5, yMin + (yMax - yMin) * 0.45,
+		xRangeMin + (xRangeMax - xRangeMin) * 0.95, yMin + (yMax - yMin) * 0.05));
     txtbox->SetFillColor(kWhite);
     func->SetParameter(6, frr[0].pedestal);
     for (int i = 0; i < nPulses; ++i) {
