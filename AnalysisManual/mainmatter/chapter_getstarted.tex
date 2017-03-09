@@ -263,6 +263,13 @@ mrb g gm2ringsim
 cd gm2ringsim
 git flow feature track SLAC2016
 \end{Verbatim}
+%
+Then re-compile the code by
+\begin{Verbatim}[frame=single]
+. mrb s
+mrb b --generator ninja
+\end{Verbatim}
+Note that you have to use \verb+mrb b --generator ninja+ instead of \verb+ninja+ because of the need to create a new ninja make file \verb+build.ninja+ to incorporate \verb+gm2ringsim+ into the build.
 
 To run the simulation, run the following fhicl file in the gm2ringsim/fcl folder:
 \begin{Verbatim}[frame=single]
