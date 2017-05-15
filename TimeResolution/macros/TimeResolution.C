@@ -44,10 +44,8 @@ bool isSameWFD5(int ch1, int ch2){
 
 void TimeResolution(){
 
-ROOT::EnableThreadSafety();
-
-// set important const variables here 
-  int startRun = 2133; // 1751 or 2133 for now
+  // set important const variables here 
+  int startRun = 1751; // 1751 or 2133 for now
   const int nRun = 8;
   const int nXtal = 54;
 
@@ -55,13 +53,13 @@ ROOT::EnableThreadSafety();
   TFile *f[nRun];
 
   for(int i=0;i<nRun;i++){
-    f[i] = new TFile(Form("gm2slac_run0%d.root.root",startRun+i)); 
+    f[i] = new TFile(Form("../data/gm2slac_run0%d.root.root",startRun+i)); 
   }
 
   // define all variables and TObjects 
-  double sigma[nXtal][nXtal][nRun];
   double energy[nXtal][nRun];
   double effEnergy[nXtal][nXtal][nRun];
+  double resolution[nXtal][nXtal][nRun];
   TH1D *syncE[nXtal][nRun];
   TH1D *syncTimeDiff[nXtal][nXtal][nRun];
 
@@ -71,36 +69,43 @@ ROOT::EnableThreadSafety();
   // loop for each run
   for(int i=0;i<nRun;i++){
 
-      cout<<"Run: "<<i+startRun<<endl;
+    cout<<"File["<<i+1<<"/"<<nRun<<"] Run: "<<i+startRun<<endl;
     // c[i] = new TCanvas(Form("c%d",i),Form("c%d",i),1200,900);
-    // c[i]->Divide(9,6);
+    //  c[i]->Divide(9,6);
 
     // loop for each crystal
     for(int j=0;j<nXtal;j++){
 
-      // c[i]->cd(54-j);
+      //   c[i]->cd(54-j);
       f[i]->GetObject(Form("syncEnergy%02d",j), syncE[j][i]);
 
       // get initial parameters for the energy fit
+      double amp = syncE[j][i]->GetMaximum();
       double mean = syncE[j][i]->GetBinCenter(syncE[j][i]->GetMaximumBin());
-      double rms = syncE[j][i]->GetRMS();
-      
-      TF1 fit("fit","gaus(0)",mean-3*rms,mean+3*rms);
-      fit.SetParameters(500,mean,rms);
+      double sigma = syncE[j][i]->GetRMS();
+
+      // now fit energy distribution, 1st fit
+      TF1 fit("fit","gaus(0)",mean-3*sigma,mean+3*sigma);
+      fit.SetParameters(amp,mean,sigma);
       syncE[j][i]->Fit("fit","QMERN");
-     
+      amp = fit.GetParameter(0);
       mean = fit.GetParameter(1);
-      rms = fit.GetParameter(2);
-      fit.SetParameters(500,mean,rms);
+      sigma = fit.GetParameter(2);
+
+      // now fit energy distribution, 2nd fit
+      fit.SetParameters(amp,mean,sigma);
       syncE[j][i]->Fit("fit","QMERN");
-      
       mean = fit.GetParameter(1);
-      rms = fit.GetParameter(2);
-      
+      sigma = fit.GetParameter(2);
+
+      // adjust range for better plotting
+      // syncE[j][i]->GetXaxis()->SetRangeUser(mean-5*sigma, mean+5*sigma);
+
       // get pixel saturation corrected energy
       energy[j][i] = eReal(mean);
 
-      cout<<"  Xtal: "<<j<<", E: "<<mean<<" (Chi2/NDF: "<<fit.GetChisquare()<<"/"<<fit.GetNDF()<<")"<<endl;
+      cout<<"file["<<i+1<<"/"<<nRun<<"]   xtal: "<<j<<", ene: "<<mean<<", sigma: "<<sigma
+        <<" (chi2/NDF: "<<fit.GetChisquare()<<"/"<<fit.GetNDF()<<")"<<endl;
 
       // loop for each crystal to compare with
       for(int k=0;k<nXtal;k++){
@@ -111,38 +116,34 @@ ROOT::EnableThreadSafety();
         f[i]->GetObject(Form("syncTimeDiff%02d%02d",j,k),syncTimeDiff[k][j][i]);
         syncTimeDiff[k][j][i]->SetTitle(Form("Run%dTimeDiff%02d%02d",i+startRun,j,k));
 
-        // get initial parameters for the dt fit, assume rms = 0.03
+        // get initial parameters for the dt fit, assume sigma = 0.03
         mean = syncTimeDiff[k][j][i]->GetBinCenter(syncTimeDiff[k][j][i]->GetMaximumBin());
-        rms = 0.03;
+        sigma = 0.03;
 
-        // now fit dt, 1st trial
-        TF1 fit("fit","gaus(0)",mean-3*rms,mean+3*rms);
+        // now fit dt, 1st fit
+        TF1 fit("fit","gaus(0)",mean-3*sigma,mean+3*sigma);
         fit.SetParameters(200,mean,0.1);
         syncTimeDiff[k][j][i]->Fit("fit","QMERN");
         mean = fit.GetParameter(1);
-        rms = fit.GetParameter(2);
-        
-        fit.SetParameters(200,mean,rms);
+        sigma = fit.GetParameter(2);
+
+        // now fit dt, 2nd fit
+        fit.SetParameters(200,mean,sigma);
         syncTimeDiff[k][j][i]->Fit("fit","QMERN");
         mean = fit.GetParameter(1);
-        rms = fit.GetParameter(2);
+        sigma = fit.GetParameter(2);
 
-        fit.SetParameters(200,mean,rms);
-        syncTimeDiff[k][j][i]->Fit("fit","QMERN");
-        mean = fit.GetParameter(1);
-        rms = fit.GetParameter(2);
-        
-        cout<<"    dT("<<j<<","<<k<<"): "<<mean<<" (Chi2/NDF: "<<fit.GetChisquare()<<"/"<<fit.GetNDF()<<")"<<endl;
+        cout<<"file["<<i+1<<"/"<<nRun<<"]     dT("<<j<<","<<k<<"): "<<mean
+          <<", sigma: "<<sigma<<" (chi2/NDF: "<<fit.GetChisquare()<<"/"<<fit.GetNDF()<<")"<<endl;
 
-        sigma[k][j][i]=rms;
+        resolution[k][j][i]=sigma;
         effEnergy[k][j][i]=eff(energy[k][i],energy[j][i]);
-      
+
         delete syncTimeDiff[k][j][i];
       }
-    
       delete syncE[j][i];  
     }
-
+    // c[i]->Print(Form("syncE_run%d.pdf",startRun+i));
     delete f[i];
   }
 
@@ -164,31 +165,33 @@ ROOT::EnableThreadSafety();
   }
 
   // histograms for fitted C and S terms for same and diff WFD5
-  TH1D *h_C1 = new TH1D("C_term_same", "C_term_same",100,0,0.04); 
-  TH1D *h_C2 = new TH1D("C_term_diff", "C_term_diff",100,0,0.04); 
-  TH1D *h_S1 = new TH1D("S_term_same", "S_term_same",100,0.3,0.6); 
-  TH1D *h_S2 = new TH1D("S_term_diff", "S_term_diff",100,0.3,0.6); 
+  TH1D *h_C1 = new TH1D("C_term_same", "C_term_same",200,0,0.04); 
+  TH1D *h_C2 = new TH1D("C_term_diff", "C_term_diff",200,0,0.04); 
+  TH1D *h_S1 = new TH1D("S_term_same", "S_term_same",200,0.3,0.6); 
+  TH1D *h_S2 = new TH1D("S_term_diff", "S_term_diff",200,0.3,0.6); 
 
   // define TGraphs and later store them in a TMultiGraph
   TGraph *g[sipmPair.size()];
   TMultiGraph *mg = new TMultiGraph();
 
   for(int i=0;i<sipmPair.size();i++){
-    
-    g[i] = new TGraph(nRun,effEnergy[sipmPair.at(i).first][sipmPair.at(i).second],
-        sigma[sipmPair.at(i).first][sipmPair.at(i).second]);
+
+    int ch1 = sipmPair.at(i).first;
+    int ch2 = sipmPair.at(i).second;
+
+    g[i] = new TGraph(nRun,effEnergy[ch1][ch2], resolution[ch1][ch2]);
     g[i]->SetMarkerStyle(20);
 
-    bool sameWFD5 = isSameWFD5(sipmPair.at(i).first,sipmPair.at(i).second);
+    bool sameWFD5 = isSameWFD5(ch1,ch2);
 
     if(sameWFD5){
-      g[i]->SetMarkerColor(kAzure-sipmPair.at(i).first%9+4);
-      myfit->SetLineColor(kAzure-sipmPair.at(i).first%9+4);
+      g[i]->SetMarkerColor(kAzure-ch1%9+4);
+      myfit->SetLineColor(kAzure-ch1%9+4);
     }
 
     else{
-      g[i]->SetMarkerColor(kPink-sipmPair.at(i).first%9+4);
-      myfit->SetLineColor(kPink-sipmPair.at(i).first%9+4);
+      g[i]->SetMarkerColor(kPink-ch1%9+4);
+      myfit->SetLineColor(kPink-ch1%9+4);
     }
 
     /// Reinitialize fit parameters for each fit 
@@ -220,8 +223,8 @@ ROOT::EnableThreadSafety();
   TCanvas *c1 = new TCanvas("c1","c1",1000,600);
   c1->cd();
 
-  mg->Draw("AP");
   mg->SetTitle(Form("dt(i,j) vs E_{eff}"));
+  mg->Draw("AP");
   mg->GetYaxis()->SetRangeUser(0.01,0.1);
   mg->GetXaxis()->SetLimits(0,1800);
 
@@ -233,14 +236,14 @@ ROOT::EnableThreadSafety();
 
   c2->Divide(2,1);
   c2->cd(1);
-  h_C2->SetLineColor(4);
+  h_C2->SetLineColor(2);
   h_C2->SetLineWidth(2);
   h_C2->Draw();
   h_C2->GetYaxis()->SetRangeUser(0,1.2*h_C2->GetBinContent(h_C2->GetMaximumBin()));
   h_C2->GetXaxis()->SetTitle("C [c.t.]");
   h_C2->GetYaxis()->SetTitle("count/0.0004 c.t.");
   h_C2->SetTitle("");
-  h_C1->SetLineColor(2);
+  h_C1->SetLineColor(4);
   h_C1->SetLineWidth(2);
   h_C1->Draw("same");
 
@@ -251,14 +254,14 @@ ROOT::EnableThreadSafety();
   legC->Draw();
 
   c2->cd(2);
-  h_S2->SetLineColor(4);
+  h_S2->SetLineColor(2);
   h_S2->SetLineWidth(2);
   h_S2->Draw();
   h_S2->SetTitle("");
   h_S2->GetYaxis()->SetRangeUser(0,1.2*h_S2->GetBinContent(h_S2->GetMaximumBin()));
   h_S2->GetXaxis()->SetTitle("S [c.t.]");
   h_S2->GetYaxis()->SetTitle("count/0.003 c.t.");
-  h_S1->SetLineColor(2);
+  h_S1->SetLineColor(4);
   h_S1->SetLineWidth(2);
   h_S1->Draw("same");
 
