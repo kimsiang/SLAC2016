@@ -45,9 +45,12 @@ bool isSameWFD5(int ch1, int ch2){
 void TimeResolution(){
 
   gStyle->SetOptStat(0);
+  gStyle->SetTitleH(0.07);
+  gStyle->SetTitleSize(0.045,"xy");
+  gStyle->SetLabelSize(0.045,"xy");
 
   // set important const variables here 
-  int startRun = 1751; // 1751 or 2133 for now
+  int startRun = 2133; // 1751 or 2133 for now
   const int nRun = 8;
   const int nXtal = 54;
 
@@ -168,10 +171,10 @@ void TimeResolution(){
   }
 
   // histograms for fitted C and S terms for same and diff WFD5
-  TH1D *h_C1 = new TH1D("C_term_same", "C_term_same",200,0,0.04); 
-  TH1D *h_C2 = new TH1D("C_term_diff", "C_term_diff",200,0,0.04); 
-  TH1D *h_S1 = new TH1D("S_term_same", "S_term_same",200,0.3,0.6); 
-  TH1D *h_S2 = new TH1D("S_term_diff", "S_term_diff",200,0.3,0.6); 
+  TH1D *h_C1 = new TH1D("C_term_same", "C_term",200,0,0.04); 
+  TH1D *h_C2 = new TH1D("C_term_diff", "C_term",200,0,0.04); 
+  TH1D *h_S1 = new TH1D("S_term_same", "S_term",200,0.3,0.6); 
+  TH1D *h_S2 = new TH1D("S_term_diff", "S_term",200,0.3,0.6); 
 
   // define TGraphs and later store them in a TMultiGraph
   TGraph *g[sipmPair.size()];
@@ -223,52 +226,65 @@ void TimeResolution(){
     g[i]->Clear();
   }
 
-  TCanvas *c1 = new TCanvas("c1","c1",1000,600);
-  c1->cd();
+  TCanvas *c1 = new TCanvas("c1","c1",1000,1000);
 
-  mg->SetTitle(Form("dt(i,j) vs E_{eff}"));
+  TPad *pad1 = new TPad("pad1", "pad1", 0.02, 0.4, 0.98, 0.98);
+  pad1->Draw(); // Draw the upper pad: pad1
+  pad1->cd(); // pad1 becomes the current pad
+
+  mg->SetTitle(Form("#sigma(t_{2}-t_{1}) vs E_{eff}"));
   mg->Draw("AP");
-  mg->GetYaxis()->SetRangeUser(0.01,0.1);
+  mg->GetYaxis()->SetRangeUser(0.0,0.1);
   mg->GetXaxis()->SetLimits(0,1800);
+  mg->GetXaxis()->SetTitle("E_{eff} [npe]");
+  mg->GetYaxis()->SetTitle("#sigma(t_{2}-t_{1})");
+
+  TLatex *tex = new TLatex();
+  tex->SetTextSize(0.06);
+  tex->SetLineWidth(1);
+  tex->DrawLatex(700,0.07,"#sigma(t_{2}-t_{1}) =  #sqrt{2C^{2} + #frac{S^{2}}{E_{eff} /#sigma_{n}}}");
 
   // leg->SetNColumns(5);
   // leg->Draw();
 
-  // Another canvas to plot the fitted C and S distributions
-  TCanvas *c2 = new TCanvas("c2","c2",1000,600);
+  // Another pad to plot the fitted C and S distributions
+  c1->cd();
+  TPad *pad2 = new TPad("pad2", "pad2", 0.02, 0.02, 0.5, 0.4);
+  pad2->Draw();
+  pad2->cd(); // pad2 becomes the current pad
 
-  c2->Divide(2,1);
-  c2->cd(1);
   h_C2->SetLineColor(2);
   h_C2->SetLineWidth(2);
   h_C2->Draw();
   h_C2->GetYaxis()->SetRangeUser(0,1.2*h_C2->GetBinContent(h_C2->GetMaximumBin()));
   h_C2->GetXaxis()->SetTitle("C [c.t.]");
-  h_C2->GetYaxis()->SetTitle("count/0.0004 c.t.");
-  h_C2->SetTitle("");
+  h_C2->GetYaxis()->SetTitle("count / 0.0004 c.t.");
   h_C1->SetLineColor(4);
   h_C1->SetLineWidth(2);
   h_C1->Draw("same");
 
-  TLegend *legC = new TLegend(0.6,0.7,0.89,0.89);
+  TLegend *legC = new TLegend(0.65,0.7,0.89,0.85);
   legC->AddEntry(h_C1,"Same WFD5","l");
   legC->AddEntry(h_C2,"Diff WFD5","l");
   legC->SetLineColor(0);
   legC->Draw();
 
-  c2->cd(2);
+  c1->cd();
+  TPad *pad3 = new TPad("pad3", "pads3", 0.5, 0.02, 0.96, 0.4);
+  pad3->Draw();
+  pad3->cd(); 
+
   h_S2->SetLineColor(2);
   h_S2->SetLineWidth(2);
   h_S2->Draw();
-  h_S2->SetTitle("");
   h_S2->GetYaxis()->SetRangeUser(0,1.2*h_S2->GetBinContent(h_S2->GetMaximumBin()));
   h_S2->GetXaxis()->SetTitle("S [c.t.]");
-  h_S2->GetYaxis()->SetTitle("count/0.003 c.t.");
+  h_S2->GetYaxis()->SetTitle("count / 0.003 c.t.");
   h_S1->SetLineColor(4);
   h_S1->SetLineWidth(2);
   h_S1->Draw("same");
 
-  TLegend *legS = new TLegend(0.6,0.7,0.89,0.89);
+  TLegend *legS = new TLegend(0.65,0.7,0.89,0.85);
   legS->AddEntry(h_S1,"Same WFD5","l");
   legS->AddEntry(h_S2,"Diff WFD5","l");
   legS->SetLineColor(0);
