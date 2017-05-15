@@ -44,6 +44,8 @@ bool isSameWFD5(int ch1, int ch2){
 
 void TimeResolution(){
 
+  gStyle->SetOptStat(0);
+
   // set important const variables here 
   int startRun = 1751; // 1751 or 2133 for now
   const int nRun = 8;
@@ -71,7 +73,7 @@ void TimeResolution(){
 
     cout<<"File["<<i+1<<"/"<<nRun<<"] Run: "<<i+startRun<<endl;
     // c[i] = new TCanvas(Form("c%d",i),Form("c%d",i),1200,900);
-    //  c[i]->Divide(9,6);
+    // c[i]->Divide(9,6);
 
     // loop for each crystal
     for(int j=0;j<nXtal;j++){
@@ -141,9 +143,10 @@ void TimeResolution(){
 
         delete syncTimeDiff[k][j][i];
       }
+
       delete syncE[j][i];  
     }
-    // c[i]->Print(Form("syncE_run%d.pdf",startRun+i));
+
     delete f[i];
   }
 
@@ -270,8 +273,6 @@ void TimeResolution(){
   legS->AddEntry(h_S2,"Diff WFD5","l");
   legS->SetLineColor(0);
   legS->Draw();
-
-  gStyle->SetOptStat(0);
 
 }
 
